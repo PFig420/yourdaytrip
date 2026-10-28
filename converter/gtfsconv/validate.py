@@ -10,7 +10,7 @@ from pathlib import Path
 from .load import BuildError
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
-DEFAULT_JAR = REPO_ROOT / "MVP_LiveBus" / ".cache" / "gtfs-validator-cli.jar"
+DEFAULT_JAR = REPO_ROOT / "tools" / "gtfs-validator-cli.jar"     # not committed: copy the MobilityData jar there
 
 
 def internal_checks(tables: dict) -> list[str]:

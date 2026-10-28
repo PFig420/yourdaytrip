@@ -220,9 +220,11 @@ __marimo__/
 .streamlit/secrets.toml
 
 # ---- YourDayTrip (project rules, 2026-10-28) ----
-# Not part of this repository: the Tempo Real / LiveBus project (Pedro, 2026-10-28)
-MVP_LiveBus/
-WorkingProduct.md
+# Not part of this repository: local/ holds the Tempo Real / LiveBus project and its files (Pedro, 2026-10-28)
+local/
+
+# Tool binaries (copy them in by hand; see converter/Documentation.md)
+tools/*.jar
 
 # Timetable data stays out: the repository holds code and specs only (Issues.md #1; Pedro, 2026-10-28).
 # The operators' PDFs, the CSV extracted from them, and the GTFS feeds must be copied or rebuilt by hand.

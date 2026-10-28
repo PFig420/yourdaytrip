@@ -42,7 +42,7 @@ PYTHONPATH=<dir with pytest> python -m pytest
 
 Options: `--csv`, `--out` (default `../data/gtfs/aveiro.zip`), `--config DIR` (a copy of `config/` for experiments), `--cache`, `--build-dir`, `--build-date YYYY-MM-DD` (pins `feed_version`, so builds are reproducible), `--no-validate`, `--validator-jar`. Exit code is 1 on failure.
 
-The validator jar defaults to `../MVP_LiveBus/.cache/gtfs-validator-cli.jar` and needs `java` on the PATH. If either is missing, the validation step is skipped and the report says why. It does not fail the build.
+The validator jar defaults to `../tools/gtfs-validator-cli.jar` (not committed: copy MobilityData's `gtfs-validator` CLI jar there; moved there from the LiveBus project on 2026-10-28) and needs `java` on the PATH. If either is missing, the validation step is skipped and the report says why. It does not fail the build.
 
 **Current state (23 Oct 2026):** the strict build passes (`build/report.md`: 828 trips, 26 routes, 20 services, 319 stops, 8,741 stop_times, validator 0 errors), and all 86 tests pass (about 12 s). Two statements in the README are out of date: the "Run" section still says strict `build` stops at line 17 `p5t1c6`, and the "Tests" section says 85 tests. The "Status" line at the top is the accurate one.
 

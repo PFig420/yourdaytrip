@@ -127,7 +127,7 @@ Measured on 18 Oct 2026, after accent-folding and punctuation stripping, matched
 - Python ≥ 3.11, **standard library only** (`csv`, `zipfile`, `tomllib`, `difflib`, `unicodedata`, `json`, `urllib`, `hashlib`, `datetime`). Same reason as LiveBus: nothing to install.
 - `pytest` for tests.
 - Config in TOML (read with `tomllib`) and CSV.
-- MobilityData `gtfs-validator` for validation: the jar is already at `MVP_LiveBus/.cache/gtfs-validator-cli.jar` and needs Java (installed, per LiveBus).
+- MobilityData `gtfs-validator` for validation: the jar is at `tools/gtfs-validator-cli.jar` (since 2026-10-28; not committed) and needs Java.
 
 ## 4. Repository layout to create
 
@@ -330,7 +330,7 @@ Lines 32 and 37 both run Sever do Vouga ↔ Aveiro; keep them as separate routes
 
 ### 5.8 Validate
 1. Internal checks: every referenced id exists; every trip has ≥ 2 stop_times; times non-decreasing; every service has ≥ 1 date; every stop inside the bounding box.
-2. MobilityData validator: `java -jar MVP_LiveBus/.cache/gtfs-validator-cli.jar -i data/gtfs/aveiro.zip -o converter/build/validator`. Zero errors required. List every warning type with its count in the report. Expected warnings to accept: none known in advance; record each with a reason in README "Decisions".
+2. MobilityData validator: `java -jar tools/gtfs-validator-cli.jar -i data/gtfs/aveiro.zip -o converter/build/validator`. Zero errors required. List every warning type with its count in the report. Expected warnings to accept: none known in advance; record each with a reason in README "Decisions".
 
 ## 6. Config files
 

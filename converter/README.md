@@ -15,7 +15,7 @@ python -m gtfsconv review --drop-unplaced   # review files only, no zip
 PYTHONPATH=<dir with pytest> python -m pytest
 ```
 
-Useful options: `--config DIR` (a copy of `config/` for experiments), `--out`, `--build-dir`, `--build-date YYYY-MM-DD` (pins `feed_version`), `--no-validate`, `--validator-jar`. The validator jar defaults to `../MVP_LiveBus/.cache/gtfs-validator-cli.jar` (needs Java).
+Useful options: `--config DIR` (a copy of `config/` for experiments), `--out`, `--build-dir`, `--build-date YYYY-MM-DD` (pins `feed_version`), `--no-validate`, `--validator-jar`. The validator jar defaults to `../tools/gtfs-validator-cli.jar` (needs Java; not committed).
 
 With the real `config/`, strict `build` and `--drop-unplaced` give the same feed (nothing is unplaced and no time is dropped).
 
