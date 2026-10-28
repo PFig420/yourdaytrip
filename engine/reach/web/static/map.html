@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reach map</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+  :root { --bg:#fff; --fg:#1b2430; --panel:#f4f6f8; --line:#d5dbe1; --accent:#0b6bcb; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14181d; --fg:#e6eaef; --panel:#1d232a; --line:#333c46; --accent:#5aa9ff; } }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--fg); font:14px/1.4 system-ui, sans-serif; }
+  #bar { display:flex; flex-wrap:wrap; gap:8px 14px; align-items:end; padding:8px 16px; background:var(--panel); border-bottom:1px solid var(--line); }
+  #bar label { display:flex; flex-direction:column; font-size:12px; gap:2px; }
+  #bar input { padding:4px 6px; border:1px solid var(--line); border-radius:4px; background:var(--bg); color:var(--fg); }
+  #bar button { padding:6px 14px; border:0; border-radius:4px; background:var(--accent); color:#fff; cursor:pointer; }
+  #msg { padding:4px 16px; font-size:12px; min-height:18px; }
+  #map { height:calc(100% - 118px); }
+  .legend { background:var(--bg); color:var(--fg); padding:6px 8px; border-radius:4px; border:1px solid var(--line); font-size:12px; line-height:1.5; }
+  .legend i { display:inline-block; width:12px; height:12px; margin-right:6px; vertical-align:-1px; border-radius:50%; }
+  .j h4 { margin:6px 0 2px; } .j div { font-size:12px; }
+  @media (max-width: 600px) { #map { height:calc(100% - 190px); } }
+</style>
+</head>
+<body>
+<div id="bar">
+  <label>Origin (click map or type lat,lon)<input id="origin" value="41.14872,-8.58484" size="22"></label>
+  <label>Date<input id="date" type="date" value="2026-10-24"></label>
+  <label>Leave after<input id="after" type="time" value="08:00"></label>
+  <label>Back by<input id="back" type="time" value="21:00"></label>
+  <button id="go">Show reachable stops</button>
+</div>
+<div id="msg"></div>
+<div id="map"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const map = L.map('map').setView([40.75, -8.6], 9);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {maxZoom: 18, attribution: '&copy; OpenStreetMap'}).addTo(map);
+const $ = id => document.getElementById(id);
+const layer = L.layerGroup().addTo(map);
+let originMarker = null;
+const BANDS = [[6, '#1a9850', '6 h or more'], [4, '#91cf60', '4 to 6 h'], [2, '#fee08b', '2 to 4 h'], [0, '#fc8d59', 'under 2 h']];
+const NONE = '#8b949e';
+const msg = t => { $('msg').textContent = t; };
+
+function color(s) { if (s == null) return NONE; const h = s / 3600; for (const [min, c] of BANDS) if (h >= min) return c; return BANDS[3][1]; }
+function hm(t) { return t ? t.local.slice(11, 16) : '--:--'; }
+function dur(s) { return s == null ? '-' : Math.floor(s / 3600) + ' h ' + String(Math.floor(s % 3600 / 60)).padStart(2, '0') + ' min'; }
+
+function setOrigin(ll) {
+  $('origin').value = ll.lat.toFixed(5) + ',' + ll.lng.toFixed(5);
+  if (originMarker) originMarker.setLatLng(ll); else originMarker = L.marker(ll).addTo(map);
+}
+map.on('click', e => setOrigin(e.latlng));
+
+function el(tag, text, cls) { const e = document.createElement(tag); if (text != null) e.textContent = text; if (cls) e.className = cls; return e; }
+
+function journeyNode(title, j) {
+  const box = el('div'); box.appendChild(el('h4', title));
+  if (!j) { box.appendChild(el('div', 'none')); return box; }
+  box.appendChild(el('div', hm(j.depart) + ' to ' + hm(j.arrive) + ' (' + dur(j.duration_s) + ')'));
+  for (const l of j.legs) {
+    box.appendChild(el('div', l.type === 'ride'
+      ? hm(l.board_time) + ' ' + (l.route_short || l.route_long) + ': ' + l.board_stop + ' to ' + l.alight_stop + ' ' + hm(l.alight_time)
+      : 'walk ' + l.metres + ' m (' + Math.round(l.seconds / 60) + ' min): ' + l.from + ' to ' + l.to));
+  }
+  return box;
+}
+
+async function stopDetail(f, latlng) {
+  const [lon, lat] = f.geometry.coordinates;
+  const [olat, olon] = $('origin').value.split(',').map(Number);
+  const body = {origin: {lat: olat, lon: olon}, date: $('date').value, leave_after: $('after').value, back_by: $('back').value,
+                points: [{id: f.properties.name, lat, lon}], include_journeys: true};
+  const r = await fetch('/windows', {method: 'POST', headers: {'content-type': 'application/json'}, body: JSON.stringify(body)});
+  const data = await r.json();
+  const root = el('div', null, 'j');
+  root.appendChild(el('b', f.properties.name));
+  if (!r.ok) { root.appendChild(el('div', data.detail || 'error')); } else {
+    const w = data.windows[0];
+    root.appendChild(el('div', 'status: ' + w.status + ', available ' + dur(w.available_s)));
+    root.appendChild(journeyNode('Outbound', w.outbound));
+    root.appendChild(journeyNode('Return', w.return));
+  }
+  L.popup({maxWidth: 360}).setLatLng(latlng).setContent(root).openOn(map);
+}
+
+async function load() {
+  const o = $('origin').value.trim();
+  const q = new URLSearchParams({from: o, date: $('date').value, after: $('after').value, back_by: $('back').value});
+  msg('Loading...');
+  const r = await fetch('/stops/windows?' + q);
+  const data = await r.json();
+  if (!r.ok) { msg((data.error || 'error') + ': ' + (data.detail || '')); return; }
+  layer.clearLayers();
+  let n = 0;
+  for (const f of data.features) {
+    const p = f.properties;
+    const ok = p.available_s != null && p.available_s >= 0;
+    const m = L.circleMarker([f.geometry.coordinates[1], f.geometry.coordinates[0]], {
+      radius: ok ? 6 : 3, color: ok ? '#222' : NONE, weight: 1, fillColor: color(ok ? p.available_s : null), fillOpacity: ok ? 0.9 : 0.4});
+    m.bindTooltip(p.name + (ok ? ' - ' + dur(p.available_s) : ''));
+    m.on('click', e => stopDetail(f, e.latlng));
+    m.addTo(layer);
+    if (ok) n++;
+  }
+  const [la, lo] = o.split(',').map(Number);
+  setOrigin(L.latLng(la, lo));
+  msg(n + ' stops with time to spend.' + (data.warnings.length ? ' ' + data.warnings.join(' ') : ''));
+}
+$('go').addEventListener('click', () => load().catch(e => msg(String(e))));
+
+const legend = L.control({position: 'bottomright'});
+legend.onAdd = () => {
+  const d = el('div', null, 'legend'); d.appendChild(el('b', 'Hours available'));
+  for (const [, c, t] of BANDS) { const row = el('div'); const i = el('i'); i.style.background = c; row.appendChild(i); row.appendChild(document.createTextNode(t)); d.appendChild(row); }
+  const row = el('div'); const i = el('i'); i.style.background = NONE; row.appendChild(i); row.appendChild(document.createTextNode('no window')); d.appendChild(row);
+  return d;
+};
+legend.addTo(map);
+</script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+id = "calidris-praia-de-mira"
+name = "Calidris Vinhos e Petiscos"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Mira"
+lat = 40.455910
+lon = -8.799080
+osm = "node/12693562926"
+
+hours = ""
+hours_note = "Listed by the Mira Câmara (Mira à Mesa). No opening hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["petiscos", "wine"]
+meals = ["lunch", "dinner"]
+
+description = """A wine and petiscos restaurant in the village centre, one of the places in Mira's yearly regional food event."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-mira.pt/node/3768"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

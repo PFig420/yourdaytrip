@@ -1,0 +1,32 @@
+id = "museu-vista-alegre"
+name = "Museu Vista Alegre"
+kind = "sight"
+category = "museum"
+tags = ["porcelain", "history", "art", "indoor", "rainy-day"]
+municipality = "Ílhavo"
+lat = 40.589300
+lon = -8.683950
+osm = "way/788668431"
+website = "https://www.vistaalegre.com"
+
+hours = "Oct-Apr 10:00-19:00; May-Sep 10:00-19:30"
+hours_note = "Hours from the regional tourism site (daily). One aggregator lists Mondays closed. Last entry and ticket price unverified (estimate)."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+description = """The museum of one of Portugal's best-known porcelain makers, set in its historic factory village. It shows two centuries of tableware and art pieces. The nearby chapel can be visited on timed slots."""
+priority = 1
+
+[provenance]
+sources = ["https://turismodocentro.pt/poi/museu-da-vista-alegre/", "https://www.vistaalegre.com/"]
+hours_source = "https://turismodocentro.pt/poi/museu-da-vista-alegre/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "price"]

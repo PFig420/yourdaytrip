@@ -218,3 +218,21 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ---- YourDayTrip (project rules, 2026-10-28) ----
+# Not part of this repository: the Tempo Real / LiveBus project (Pedro, 2026-10-28)
+MVP_LiveBus/
+WorkingProduct.md
+
+# Timetable data stays out: the repository holds code and specs only (Issues.md #1; Pedro, 2026-10-28).
+# The operators' PDFs, the CSV extracted from them, and the GTFS feeds must be copied or rebuilt by hand.
+schedules/pdfs/
+schedules/schedules.csv
+schedules/.ocr_cache/
+schedules/run.log
+data/gtfs/
+
+# OSM downloads, fetched source pages and the OSM-derived path cache (ODbL; rebuilt with python -m mapdata.build)
+mapdata/osm/
+data/paths/
+places/cache/

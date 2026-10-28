@@ -1,0 +1,872 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64831,
+     40.6318
+    ]
+   },
+   "properties": {
+    "name": "Centro de Saúde A",
+    "confidence": "high",
+    "record": "busway 11099",
+    "evidence": "Busway 'Av. Dr. Mário Sacramento - Centro Saude A'; 1 min after Av. de Araújo e Silva",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64836,
+     40.6313
+    ]
+   },
+   "properties": {
+    "name": "Centro de Saúde B",
+    "confidence": "high",
+    "record": "busway 11010",
+    "evidence": "Busway '... Centro Saude B'. ALSO FIXES a wrong placement: the feed currently puts this stop 11.5 km north (40.747, -8.647)",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64139,
+     40.64089
+    ]
+   },
+   "properties": {
+    "name": "Forca - Túnel B",
+    "confidence": "high",
+    "record": "osm n5394204043",
+    "evidence": "OSM 'Forca - Túnel', member of the Verde route relation",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64926,
+     40.63372
+    ]
+   },
+   "properties": {
+    "name": "Av. de Araújo e Silva B",
+    "confidence": "high",
+    "record": "osm n5409307682",
+    "evidence": "OSM 'Av. Araújo Silva', member of the Verde route relation",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.65433,
+     40.63624
+    ]
+   },
+   "properties": {
+    "name": "Conservatório B",
+    "confidence": "high",
+    "record": "osm n1487572481",
+    "evidence": "OSM 'Conservatório', opposite side from Conservatório A",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.65599,
+     40.6408
+    ]
+   },
+   "properties": {
+    "name": "R. Clube dos Galitos B",
+    "confidence": "high",
+    "record": "busway 10302",
+    "evidence": "Busway 'R. Clube dos Galitos B' (exact name)",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.65145,
+     40.64537
+    ]
+   },
+   "properties": {
+    "name": "Escola da Vera Cruz",
+    "confidence": "high",
+    "record": "osm n5409286719",
+    "evidence": "OSM bus stop 'Escola Básica da Vera Cruz', at the school",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64144,
+     40.64311
+    ]
+   },
+   "properties": {
+    "name": "Estação de Aveiro - Arlindo Vincente",
+    "confidence": "high",
+    "record": "osm n2711749211",
+    "evidence": "OSM 'Estação - R. Arlindo Vicente'",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64822,
+     40.62723
+    ]
+   },
+   "properties": {
+    "name": "R. de Ovar - Urbanizacao Santiago",
+    "confidence": "high",
+    "record": "osm n1364747314",
+    "evidence": "OSM 'R. de Ovar', inside OSM stop area 'Rua de Ovar / Urbanização de Santiago'; 2 min before ISCAUA B",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.60215,
+     40.68983
+    ]
+   },
+   "properties": {
+    "name": "Sarrazola - Largo S. Bartolomeu",
+    "confidence": "high",
+    "record": "osm n4873464185",
+    "evidence": "OSM 'Largo São Bartolomeu' in Sarrazola (line 1 runs 'via Sarrazola')",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64054,
+     40.61187
+    ]
+   },
+   "properties": {
+    "name": "Escola EB23 de Aradas",
+    "confidence": "high",
+    "record": "osm n5412037199",
+    "evidence": "OSM 'EB 23 Aradas'",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.61025,
+     40.59147
+    ]
+   },
+   "properties": {
+    "name": "Estação Quintas A",
+    "confidence": "high",
+    "record": "osm n5405327163",
+    "evidence": "OSM 'Estação de Quintãs'",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.67202,
+     40.5928
+    ]
+   },
+   "properties": {
+    "name": "EB23 (Ílhavo)",
+    "confidence": "high",
+    "record": "busway 10994",
+    "evidence": "Busway 'Ílhavo EB23'",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.70541,
+     40.4786
+    ]
+   },
+   "properties": {
+    "name": "Colégio - Calvão",
+    "confidence": "high",
+    "record": "busway 11239",
+    "evidence": "Busway 'COLÉGIO', 56 m from Colégio Diocesano de N. Sra. da Apresentação, Calvão",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.7102,
+     40.7614
+    ]
+   },
+   "properties": {
+    "name": "Torreira - Assembleia Theatro",
+    "confidence": "high",
+    "record": "busway 10029",
+    "evidence": "Busway 'Assembleia Theatro'",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6233,
+     40.8704
+    ]
+   },
+   "properties": {
+    "name": "Esc. Dias Simões - A (Ovar)",
+    "confidence": "high",
+    "record": "busway 10871",
+    "evidence": "Busway 'Ovar (Esc. Dias Simões) - A' (exact)",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.57505,
+     40.7639
+    ]
+   },
+   "properties": {
+    "name": "Escola Padre Donaciano - Arrotinha",
+    "confidence": "high",
+    "record": "busway 10088",
+    "evidence": "Busway 'Escola Padre Donaciano'",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.57079,
+     40.801
+    ]
+   },
+   "properties": {
+    "name": "São Sebastião (Estarreja)",
+    "confidence": "high",
+    "record": "busway 10203",
+    "evidence": "Busway 'S. Sebastião', between Avanca Centro and Amoníaco Português",
+    "marker-color": "#2e7d32"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64036,
+     40.64001
+    ]
+   },
+   "properties": {
+    "name": "Av. Adelino Amaro da Costa A",
+    "confidence": "medium",
+    "record": "osm n5394204039",
+    "evidence": "OSM stop named 'Forca - Loja do Cidadão' (ref A) stands ON Av. Adelino Amaro da Costa (street sign mapped beside it). Assumes the 1 Oct timetable renamed it",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64061,
+     40.64001
+    ]
+   },
+   "properties": {
+    "name": "Av. Adelino Amaro da Costa B",
+    "confidence": "medium",
+    "record": "osm n5394204040",
+    "evidence": "As above, ref B",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.639,
+     40.63825
+    ]
+   },
+   "properties": {
+    "name": "Loja do Cidadão A",
+    "confidence": "medium",
+    "record": "osm n14294036672",
+    "evidence": "Unnamed stop, member of the Azul relation, 55 m from the Loja do Cidadão building",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.63881,
+     40.63825
+    ]
+   },
+   "properties": {
+    "name": "Loja do Cidadão B",
+    "confidence": "medium",
+    "record": "osm n14294036671",
+    "evidence": "Unnamed stop, member of the Verde relation, opposite side",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.63496,
+     40.63804
+    ]
+   },
+   "properties": {
+    "name": "Forca - Hospital A",
+    "confidence": "medium",
+    "record": "osm n14294036640",
+    "evidence": "Unnamed stop, Azul relation member, 110 m from Hospital da Luz Aveiro",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.63554,
+     40.63759
+    ]
+   },
+   "properties": {
+    "name": "Forca - Hospital B",
+    "confidence": "medium",
+    "record": "osm n14294036639",
+    "evidence": "Unnamed stop, Verde relation member, 60 m from Hospital da Luz Aveiro",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.65223,
+     40.64642
+    ]
+   },
+   "properties": {
+    "name": "Sra. das Febres A",
+    "confidence": "medium",
+    "record": "osm n13905936393",
+    "evidence": "Unnamed stop, Azul relation member, 80 m from Igreja N. Sra. das Febres",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6516,
+     40.64649
+    ]
+   },
+   "properties": {
+    "name": "Sra. das Febres B",
+    "confidence": "medium",
+    "record": "osm n14294137868",
+    "evidence": "Unnamed stop, Verde relation member, 25 m from the church",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.65161,
+     40.64418
+    ]
+   },
+   "properties": {
+    "name": "Arco do Comércio",
+    "confidence": "medium",
+    "record": "osm n14294137870",
+    "evidence": "Unnamed stop, Azul relation member between Vera Cruz and Galitos (route order only; no 'Arco do Comércio' found in OSM)",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64825,
+     40.64312
+    ]
+   },
+   "properties": {
+    "name": "Segurança Social",
+    "confidence": "medium",
+    "record": "osm n14294137869",
+    "evidence": "Unnamed stop, Verde relation member, 110 m from 'Segurança Social de Aveiro'",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.58733,
+     40.4999
+    ]
+   },
+   "properties": {
+    "name": "Bustos - Sobreiro",
+    "confidence": "medium",
+    "record": "busway 16194",
+    "evidence": "Busway 'BUSTOS SOBREIRO 2 B': the return-direction twin of the placed 'Bustos - Sobreiro 2'",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.60872,
+     40.5289
+    ]
+   },
+   "properties": {
+    "name": "Palhaça",
+    "confidence": "medium",
+    "record": "busway 15858",
+    "evidence": "Busway 'PALHACA FEIRA B': return-direction twin of 'Palhaca - Feira'",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.5883,
+     40.3399
+    ]
+   },
+   "properties": {
+    "name": "Cantanhede",
+    "confidence": "medium",
+    "record": "busway 11068",
+    "evidence": "Busway 'Cantanhede - Estação CP' = OSM 'Estação de Autocarros de Cantanhede' (line 19 terminus)",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.77011,
+     40.5192
+    ]
+   },
+   "properties": {
+    "name": "Areão - Praia",
+    "confidence": "medium",
+    "record": "busway 11101",
+    "evidence": "Busway 'AREÃO', between Escola da Vagueira and Poço da Cruz (7 min each)",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.71731,
+     40.6305
+    ]
+   },
+   "properties": {
+    "name": "Rua Nossa Sra. da Nazaré - Esc. Secundária",
+    "confidence": "medium",
+    "record": "busway 11237",
+    "evidence": "Busway 'Rua Nossa Sra. da Nazaré' (same pattern as Rua Camilo Castelo Branco - Esc. Secundária)",
+    "marker-color": "#f9a825"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64726,
+     40.6365
+    ]
+   },
+   "properties": {
+    "name": "Escola nº1 - A",
+    "confidence": "low",
+    "record": "busway 10428",
+    "evidence": "Position fits the route (between Centro de Saúde and Cais da Fonte Nova), but the record is 'Av. 25 de Abril - Escola Mário Sacramento A'; name not explained",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64768,
+     40.6368
+    ]
+   },
+   "properties": {
+    "name": "Escola nº1 - B",
+    "confidence": "low",
+    "record": "busway 10423",
+    "evidence": "As above, side B",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.65213,
+     40.63598
+    ]
+   },
+   "properties": {
+    "name": "Parque da Cidade A",
+    "confidence": "low",
+    "record": "osm n1699728724",
+    "evidence": "OSM 'Av. Araújo Silva / R. Castro Matoso', the only stop between Conservatório and Av. de Araújo e Silva; park name not found in OSM",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.65213,
+     40.63598
+    ]
+   },
+   "properties": {
+    "name": "Parque da Cidade B",
+    "confidence": "low",
+    "record": "osm n1699728724",
+    "evidence": "As above (only one record; both sides)",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64378,
+     40.63867
+    ]
+   },
+   "properties": {
+    "name": "Cais da Fonte Nova A",
+    "confidence": "low",
+    "record": "none (street)",
+    "evidence": "No stop record; point on the street 'Cais da Fonte Nova'",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.64378,
+     40.63867
+    ]
+   },
+   "properties": {
+    "name": "Cais da Fonte Nova B",
+    "confidence": "low",
+    "record": "none (street)",
+    "evidence": "As above",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.65668,
+     40.63661
+    ]
+   },
+   "properties": {
+    "name": "R. Calouste Gulbenkian A",
+    "confidence": "low",
+    "record": "none (street)",
+    "evidence": "No stop record; point on Rua Calouste Gulbenkian between Galitos and Conservatório",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.65668,
+     40.63661
+    ]
+   },
+   "properties": {
+    "name": "R. Calouste Gulbenkian B",
+    "confidence": "low",
+    "record": "none (street)",
+    "evidence": "As above",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.65817,
+     40.63769
+    ]
+   },
+   "properties": {
+    "name": "Ciência Viva",
+    "confidence": "low",
+    "record": "none (street)",
+    "evidence": "No stop record; point on Rua Calouste Gulbenkian 60 m from Fábrica Centro Ciência Viva",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.63587,
+     40.64038
+    ]
+   },
+   "properties": {
+    "name": "R. Neves Amado A",
+    "confidence": "low",
+    "record": "none (street)",
+    "evidence": "No stop record; point on Rua de José Neves Amado, between Forca - Hospital and the Terminal",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.63587,
+     40.64038
+    ]
+   },
+   "properties": {
+    "name": "R. Neves Amado B",
+    "confidence": "low",
+    "record": "none (street)",
+    "evidence": "As above",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.58687,
+     40.67642
+    ]
+   },
+   "properties": {
+    "name": "R. do Padrao A",
+    "confidence": "low",
+    "record": "none (street)",
+    "evidence": "No stop record; point on Rua do Padrão (Cacia), 1 min from Largo Manuel Mateus Ventura",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.58687,
+     40.67642
+    ]
+   },
+   "properties": {
+    "name": "R. do Padrao B",
+    "confidence": "low",
+    "record": "none (street)",
+    "evidence": "As above",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.61242,
+     40.57497
+    ]
+   },
+   "properties": {
+    "name": "R. de José Rosas",
+    "confidence": "low",
+    "record": "none (street)",
+    "evidence": "No stop record; point on Rua de José Rosas, 1.1 km south of Igreja Quintãs (out-and-back loop)",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6221,
+     40.61359
+    ]
+   },
+   "properties": {
+    "name": "Cruz Alta A",
+    "confidence": "low",
+    "record": "none (street)",
+    "evidence": "No stop record; point on Travessa da Cruz Alta, between R. Dr. Mário Sacramento and EB23 Castro Matoso",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.6221,
+     40.61359
+    ]
+   },
+   "properties": {
+    "name": "Cruz Alta B",
+    "confidence": "low",
+    "record": "none (street)",
+    "evidence": "As above",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.59243,
+     40.57418
+    ]
+   },
+   "properties": {
+    "name": "Igreja Povoa do Valado",
+    "confidence": "low",
+    "record": "none (landmark)",
+    "evidence": "No stop record; at Capela de Póvoa do Valado",
+    "marker-color": "#c62828"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.57233,
+     40.57615
+    ]
+   },
+   "properties": {
+    "name": "Mamodeiro Centro",
+    "confidence": "low",
+    "record": "none (landmark)",
+    "evidence": "No stop record; at Capela de Mamodeiro",
+    "marker-color": "#c62828"
+   }
+  }
+ ]
+}

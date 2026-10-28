@@ -1,0 +1,59 @@
+# Stop-name aliases: raw (after clean_raw) -> canonical. Lines starting with # are comments.
+# Seeded by the build agent on 2026-10-19; a human should review every row.
+raw,canonical
+# --- stray OCR prefix "N " (spec 2.2); clean_raw already strips it, kept for the record
+N Av. Dr. Lourenço Peixinho - CTT B,Av. Dr. Lourenço Peixinho - CTT B
+N Eixo - Praca J. Magalhães Lima B,Eixo - Praca J. Magalhães Lima B
+N Escolas de Nariz,Escolas de Nariz
+N Fonte da Vessada,Fonte da Vessada
+N Lavadouros de Sarrazola B,Lavadouros de Sarrazola B
+# --- OCR variants named in spec 2.2 (Lourengo, Qulntas, Satide/Saide, Eix0) and the same family
+Av. Dr. Lourenco Peixinho - Capitania B,Av. Dr. Lourenço Peixinho - Capitania B
+Av. Dr. Lourengo Peixinho - CTT B,Av. Dr. Lourenço Peixinho - CTT B
+Av. Dr. Lourengo Peixinho - Capitania A,Av. Dr. Lourenço Peixinho - Capitania A
+Av. Dr. Lourengo Peixinho - Capitania B,Av. Dr. Lourenço Peixinho - Capitania B
+Av. Dr. Mário Sacramento - Centro Saide A,Av. Dr. Mário Sacramento - Centro Saúde A
+Av. Dr. Mário Sacramento - Centro Satide B,Av. Dr. Mário Sacramento - Centro Saúde B
+Cagadores 10 - Misericórdia,Caçadores 10 - Misericórdia
+Cagadores 10 - Sé,Caçadores 10 - Sé
+EB23 de Eix0,EB23 de Eixo
+Escolasde Nariz,Escolas de Nariz
+Igreja Qulntas A,Igreja Quintas A
+Igreja Qulntas B,Igreja Quintas B
+"R, do Rossio",R. do Rossio
+# --- OCR noise prefix/suffix (I_orie, M ... I_R, reversed "Horarios", spaced letters) -> the plain stop name seen elsewhere
+I_orie Caçadores 10 - Sé,Caçadores 10 - Sé
+I_orie Farol - Forte da Barra,Farol - Forte da Barra
+M Forte da Barra - Ferry I_R,Forte da Barra - Ferry
+M Escola João Afonso I_R,Escola João Afonso
+v A T e r m i n a l R o d o v i á ri o d e A v e i r o _soiraro H,Terminal Rodoviário de Aveiro
+v A L a r g o A r r a i s A n ç ã - C o s t a N o v a _soiraro H,Largo Arrais Ançã - Costa Nova
+# --- FUSED names (two table rows read as one name). CORRECTED 2026-10-19 after re-reading bus.pdf pp. 6, 7, 20, 21:
+# --- in all four cases the single printed time is the FIRST component's; the second component's time is added in
+# --- extra_stop_times.csv. (Earlier text below, which took the terminal's time, is superseded.)
+# --- Original note: FUSED names (two table columns read as one name). Each is the LAST stop of its trip and the
+# --- preceding component already appears (or is the previous printed stop), so the single printed time
+# --- is taken as the arrival at the terminal component. Human to confirm against bus.pdf pp. 7, 20, 21.
+Caçadores 10 - Sé Terminal Rodoviário de Aveiro,Caçadores 10 - Sé
+# Saturday line 36: the fused row's single time is the Farol time (07:57 = Farol column in bus.pdf p.20); the Costa Nova
+# time is added separately in extra_stop_times.csv. (Earlier reading as the terminal's time was wrong; issue 12.)
+Farol - Forte da Barra Largo Arrais Ançã - Costa Nova,Farol - Forte da Barra
+Hospital / Universidade B (Aveiro) Terminal Rodoviário de Aveiro,Hospital / Universidade B (Aveiro)
+# Line 18 Ida: Tocha -> (fused) is 7-10 min, the Tocha->Hospital Rovisco Pais time elsewhere on the sheet (p. 7),
+# so the printed time belongs to the FIRST component; the terminal's own time is missing from the CSV.
+Hospital Rovisco Pais Figueira da Foz (Estação CP),Hospital Rovisco Pais
+# --- same physical stop under two names: Busway stop 10299 "Farol" (Barra lighthouse). Line 35's route map
+# (bus.pdf pp. 18-19) and line 36's (p. 22) both name it; merged so the feed has one stop. Added 2026-10-19.
+Farol - Praia da Barra,Farol - Forte da Barra
+# --- OCR/accent variants of remaining stops (Claude, 2026-10-19; see review/alias_candidates_remaining.csv)
+R. de Ovar - Urbanizagao Santiago,R. de Ovar - Urbanizacao Santiago
+R. de Jose Rosas,R. de José Rosas
+# --- name-cluster review 2026-10-19 (build/name_clusters.csv): accepted = same stop, accent/case/OCR variant
+Caçadores 10 - sé,Caçadores 10 - Sé
+Colégio D. Jose I,Colégio D. José I
+Escola Jaime Magalhaes Lima B,Escola Jaime Magalhães Lima B
+Estagao de Aveiro,Estação de Aveiro
+ISCAUAA,ISCAUA A
+Av. 25 de Abril - Escola Mario Sacramento B,Av. 25 de Abril - Escola Mário Sacramento B
+# Rejected: FORTE DA BARRA (FERRY) vs Forte da Barra - Ferry (ferry quay vs bus stop, kept apart);
+# Pessegueiro do Vouga - Av. Joaquim Martins vs "... (2)" ("(2)" marks a second post).

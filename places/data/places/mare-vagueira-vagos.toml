@@ -1,0 +1,34 @@
+id = "mare-vagueira-vagos"
+name = "Maré Restaurante & Gin Bar"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "nightlife"]
+municipality = "Vagos"
+lat = 40.561930
+lon = -8.769470
+osm = "node/11210138237"
+website = "https://marevagueira.pt"
+
+hours = "Mo,We-Su 12:00-02:00"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["regional", "portuguese", "wine"]
+meals = ["lunch", "dinner", "drinks"]
+
+description = """A Vagueira restaurant with local Vagos dishes and a gin bar, open until 02:00. Closed Tuesdays."""
+priority = 2
+
+[provenance]
+sources = ["https://estacoesnauticas.turismodocentro.pt/pages/1441?geo_article_id=5659", "https://www.cm-vagos.pt/visitar/estacao-nautica-de-vagos/ofertas/restauracao"]
+hours_source = "https://estacoesnauticas.turismodocentro.pt/pages/1441?geo_article_id=5659"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

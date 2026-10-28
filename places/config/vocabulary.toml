@@ -1,0 +1,26 @@
+# The only values allowed in `tags`, `cuisine` and `category` (PlacesLayer.md 4.2).
+# Extend the lists here, never ad hoc in a record.
+
+kinds = ["sight", "activity", "food", "drink"]
+sight_categories = ["museum", "church", "monument", "architecture", "beach", "nature", "viewpoint", "park",
+                    "neighbourhood", "market", "activity"]
+food_categories = ["restaurant", "cafe", "pastry", "bar"]
+weather = ["indoor", "outdoor", "mixed"]
+prices = ["free", "€", "€€", "€€€"]
+bookings = ["no", "recommended", "required"]
+meals = ["lunch", "dinner", "snack", "drinks"]
+statuses = ["draft", "confirmed", "rejected"]
+
+tags = [
+  # themes
+  "history", "religious", "art", "art-nouveau", "azulejos", "architecture", "maritime", "salt", "ria", "science",
+  "porcelain", "local-life", "street-art",
+  # setting
+  "beach", "nature", "birdwatching", "walk", "viewpoint", "garden", "boat",
+  # audience
+  "family", "kids", "romantic", "nightlife", "rainy-day", "free",
+  # weather
+  "indoor", "outdoor",
+]
+cuisine = ["seafood", "fish", "eel", "portuguese", "regional", "petiscos", "vegetarian-friendly", "pastry",
+           "ovos-moles", "coffee", "wine", "cocktails", "beer"]

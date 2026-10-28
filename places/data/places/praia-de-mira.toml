@@ -1,0 +1,30 @@
+id = "praia-de-mira"
+name = "Praia de Mira"
+kind = "sight"
+category = "beach"
+tags = ["beach", "nature", "free", "outdoor"]
+municipality = "Mira"
+lat = 40.456460
+lon = -8.798650
+
+hours = "24/7"
+hours_note = "Open beach; position is the village seafront, not a surveyed access."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 60
+visit_typical = 150
+price = "free"
+booking = "no"
+
+description = """About a kilometre of fine white sand with a Blue Flag, linked by dune boardwalks to the lagoons and dunes. The south end suits surfers."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-mira.pt/node/3468"]
+hours_source = "https://www.cm-mira.pt/node/3468"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

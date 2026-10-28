@@ -1,0 +1,33 @@
+id = "kikito-vagos"
+name = "Kikito"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Vagos"
+lat = 40.562180
+lon = -8.768570
+osm = "way/114492664"
+
+hours = ""
+hours_note = "Municipal listing gives no opening hours. Position is the street (Rua Padre Ferro)."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["regional", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A restaurant at Vagueira beach serving traditional dishes of the Vagos area."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-vagos.pt/visitar/estacao-nautica-de-vagos/ofertas/restauracao"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

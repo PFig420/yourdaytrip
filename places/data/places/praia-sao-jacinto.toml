@@ -1,0 +1,32 @@
+id = "praia-sao-jacinto"
+name = "Praia de São Jacinto"
+kind = "sight"
+category = "beach"
+tags = ["beach", "nature", "walk", "free", "outdoor"]
+municipality = "Aveiro"
+lat = 40.668680
+lon = -8.743040
+osm = "way/1204258144"
+
+hours = "24/7"
+hours_note = "Open beach; lifeguard season not checked. Position is the main access (car park, toilets and Café Dunas), about 1.4 km from the ferry quay stop, so max_walk_m is set to 1500."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 60
+visit_typical = 150
+price = "free"
+booking = "no"
+max_walk_m = 1500
+
+description = """A long, almost wild ocean beach inside the dune reserve, popular for walks and surfing. Lifeguards cover only part of it, so swim with care. It is a long walk from the ferry quay."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/visitar/praia-de-sao-jacinto"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/visitar/praia-de-sao-jacinto"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

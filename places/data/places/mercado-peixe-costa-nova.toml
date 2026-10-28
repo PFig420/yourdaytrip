@@ -1,0 +1,30 @@
+id = "mercado-peixe-costa-nova"
+name = "Costa Nova fish market and quay"
+kind = "sight"
+category = "market"
+tags = ["local-life", "maritime", "ria", "outdoor"]
+municipality = "Ílhavo"
+lat = 40.610820
+lon = -8.749620
+osm = "node/3370824014"
+
+hours = ""
+hours_note = "No market hours found (the only dated source is a 2019 guided visit). Draft until confirmed."
+last_entry_min = 0
+daylight_only = false
+weather = "outdoor"
+
+visit_min = 15
+visit_typical = 30
+price = "free"
+booking = "no"
+
+description = """A small fish market by the fishermen's quay, supplied by the catch landed at the fish auction. The municipality has run guided visits here. A stop for a feel of working Costa Nova, not a set sight."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-ilhavo.pt/municipio/comunicacao/eventos/evento/de-moliceiro-a-vela-entre-o-cais-e-o-mercado-do-peixe-da-costa-nova-visita-orientada-sentidos-de-mar"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

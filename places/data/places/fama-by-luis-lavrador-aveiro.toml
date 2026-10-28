@@ -1,0 +1,34 @@
+id = "fama-by-luis-lavrador-aveiro"
+name = "Fama by Luís Lavrador"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "romantic"]
+municipality = "Aveiro"
+lat = 40.625780
+lon = -8.645080
+osm = "node/7044609131"
+website = "https://www.famaveiro.pt"
+
+hours = "Tu-Sa 12:00-15:00,19:00-23:00; Su 12:00-15:00"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€€"
+booking = "recommended"
+
+cuisine = ["regional", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A small fine-dining room run by a father and son, with a seasonal menu rooted in family recipes and regional ingredients. Around fifty seats, so reserve ahead."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/quinta-dos-abibes/poi/fama-by-luis-lavrador", "https://www.centerofportugal.com/article/eating-in-aveiro"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/quinta-dos-abibes/poi/fama-by-luis-lavrador"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

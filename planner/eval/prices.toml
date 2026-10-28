@@ -1,0 +1,14 @@
+# USD per million tokens. Source: Claude API model table cached 2026-10-06 (checked 2026-10-23 for this file).
+# Re-check against https://platform.claude.com/docs/en/about-claude/pricing before a run; the date is stored in each run log.
+# Cache writes are billed at a premium that is not listed here, so cost counts them as plain input: a slight underestimate.
+as_of = "2026-10-06"
+
+[models.claude-sonnet-5-5]
+input = 2.00
+output = 10.00
+cache_read = 0.20
+
+[models.claude-opus-5-5]
+input = 4.00
+output = 20.00
+cache_read = 0.20

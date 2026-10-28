@@ -1,0 +1,31 @@
+id = "praca-do-peixe-aveiro"
+name = "Praça do Peixe (Mercado José Estêvão)"
+kind = "sight"
+category = "architecture"
+tags = ["architecture", "local-life", "ria", "indoor"]
+municipality = "Aveiro"
+lat = 40.642480
+lon = -8.655330
+osm = "node/11916428814"
+
+hours = "24/7"
+hours_note = "Treated as an open space: the square and surrounding streets are public and always accessible (daylight only). The market hall itself is under a private concession and has no published hours."
+last_entry_min = 0
+daylight_only = true
+weather = "mixed"
+
+visit_min = 15
+visit_typical = 30
+price = "free"
+booking = "no"
+
+description = """An early-1900s iron market hall by the old fish and salt quay. Fish sales have been moving to another market, so it now works more as a food and culture space. The surrounding streets are the draw."""
+priority = 3
+
+[provenance]
+sources = ["https://estacoesnauticas.turismodocentro.pt/pages/1421?geo_article_id=5170"]
+hours_source = ""
+checked = 2026-10-23
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

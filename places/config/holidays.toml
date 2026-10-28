@@ -1,0 +1,27 @@
+# Municipal holidays per municipality (PlacesLayer.md 2.4). National holidays are computed, not listed here.
+# An entry is "MM-DD" or a movable "easter+N" (days after Easter Sunday).
+# Never guess a date: a municipality that could not be confirmed stays empty with a "# VERIFY" comment.
+# Checked 2026-10-20 against each Câmara's own pages (URL given per entry).
+[municipal]
+# Confirmed by the Câmara's press note on the 2026 Festas do Município (Issues.md #8):
+# https://www.cm-aveiro.pt/municipio/comunicacao/noticias/noticia/festas-do-municipio-de-aveiro-2026-decorrem-de-6-a-16-de-maio
+"Aveiro" = ["05-12"]
+# Easter Monday, yearly (Câmara page "Comemoração do Feriado Municipal"):
+# https://www.cm-ilhavo.pt/municipio/comemoracao-do-feriado-municipal
+"Ílhavo" = ["easter+1"]
+# VERIFY: no municipal holiday date found on cm-murtosa.pt (searched 2026-10-20). Left empty on purpose.
+"Murtosa" = []
+# 25 July, Dia do Município (news items of 2021-2025 on the Câmara site):
+# https://www.cm-ovar.pt/pt/noticias/74479/dia-do-municipio-de-ovar-com-homenagens-empreitadas-e-momentos-culturais.aspx
+"Ovar" = ["07-25"]
+# 13 June, Dia do Município (Câmara news item no. 94 and the page on the holiday's history):
+# https://www.cm-estarreja.pt/noticias/94   https://www.cm-estarreja.pt/noticias/5507
+"Estarreja" = ["06-13"]
+# Monday after the Espírito Santo (Pentecost) Sunday = Easter + 50 days; 25 May 2026, 9 Jun 2025, 20 May 2024
+# (Assembleia Municipal minutes of 27 Jun 2025): https://www.cm-vagos.pt/cmvagos/uploads/document/file/6176/ata_no24___27_06_2025_docx.pdf
+"Vagos" = ["easter+50"]
+# 25 July, São Tomé (the Câmara's agenda calls it "feriado municipal"): https://www.cm-mira.pt/node/3963
+"Mira" = ["07-25"]
+# First Monday after Pentecost = Easter + 50 days; 25 May 2026, 20 May 2024:
+# https://www.cm-agueda.pt/viver/comunicacao/noticias-agueda/noticia/agueda-celebra-feriado-municipal-com-dois-dias-de-cultura-tradicao-e-atividades-ao-ar-livre
+"Águeda" = ["easter+50"]

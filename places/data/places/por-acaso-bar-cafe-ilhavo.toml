@@ -1,0 +1,33 @@
+id = "por-acaso-bar-cafe-ilhavo"
+name = "Por Acaso Bar e Café"
+kind = "food"
+category = "cafe"
+tags = ["indoor"]
+municipality = "Ílhavo"
+lat = 40.600280
+lon = -8.665370
+osm = "node/11213633536"
+
+hours = ""
+hours_note = "Website exists but returned 403 here; OSM hours say 'by appointment'. No hours recorded."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 15
+visit_typical = 40
+price = "€"
+booking = "no"
+
+cuisine = ["coffee"]
+meals = ["snack", "lunch"]
+
+description = """A café-bar in Ílhavo with its own website, offering coffee, burgers, sandwiches and Brazilian snacks such as coxinhas."""
+priority = 3
+
+[provenance]
+sources = ["https://www.poracasobar.pt"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

@@ -1,0 +1,31 @@
+id = "se-de-aveiro"
+name = "Sé de Aveiro"
+kind = "sight"
+category = "church"
+tags = ["religious", "history", "architecture", "indoor"]
+municipality = "Aveiro"
+lat = 40.639730
+lon = -8.650120
+osm = "way/237407818"
+
+hours = "Mo-Su 09:00-19:00"
+hours_note = "Hours from the regional tourism site (undated); the parish decides on the day."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 15
+visit_typical = 25
+price = "free"
+booking = "no"
+
+description = """Aveiro's cathedral grew from a Dominican convent church. A Gothic-Manueline cross in its sacred-art room is the original of the one outside. Expect limited access during services."""
+priority = 2
+
+[provenance]
+sources = ["https://turismodocentro.pt/poi/se-de-aveiro/", "https://www.cm-aveiro.pt/visitantes/arte-publica/patrimonio-edificado/poi/se-de-aveiro-71"]
+hours_source = "https://turismodocentro.pt/poi/se-de-aveiro/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon"]

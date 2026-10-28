@@ -1,0 +1,33 @@
+id = "igreja-das-carmelitas-aveiro"
+name = "Igreja das Carmelitas"
+kind = "sight"
+category = "church"
+tags = ["religious", "azulejos", "architecture", "indoor", "rainy-day"]
+municipality = "Aveiro"
+lat = 40.638320
+lon = -8.653420
+osm = "node/11835349758"
+website = "https://www.cm-aveiro.pt/visitantes/visitar/patrimonio-religioso/igreja-do-convento-de-s-joao-evangelista-carmelitas"
+
+hours = "Tu-Su 10:00-12:30,13:30-18:00; Jan 01 off; May 01 off; Dec 25 off"
+hours_note = "Municipal hours; closed Mondays and on Easter Sunday. The 2025 tariff lists 2 EUR, another municipal page says free entry."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 15
+visit_typical = 30
+price = "€"
+ticket_eur = 2.0
+booking = "no"
+
+description = """A baroque church of a former Carmelite convent, begun in 1704. Gilded wood carving sits against blue-and-white tiles, and the sacristy has a painted panelled ceiling. A handy stop inside the old centre."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/visitar/patrimonio-religioso/igreja-do-convento-de-s-joao-evangelista-carmelitas", "https://www.cm-aveiro.pt/inovacao/aveiro-steam-city/noticia/definicao-dos-dias-de-encerramento-horarios-precario-e-isencoes-dos-museus-de-aveiro-para-2025"]
+hours_source = "https://www.cm-aveiro.pt/inovacao/aveiro-steam-city/noticia/definicao-dos-dias-de-encerramento-horarios-precario-e-isencoes-dos-museus-de-aveiro-para-2025"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon"]

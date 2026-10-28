@@ -1,0 +1,34 @@
+id = "bacalhau-e-afins-aveiro"
+name = "Bacalhau e Afins"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Aveiro"
+lat = 40.642440
+lon = -8.657060
+osm = "way/135674908"
+
+hours = "Mo-Sa 12:00-14:45,19:00-22:45; Su 12:00-14:45"
+hours_note = "Position is the street (Rua de João Afonso de Aveiro), not the entrance."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["fish", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """As the name suggests, a salt-cod specialist, with a daily menu and take-away. Closed Sunday evenings."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/s-domingos/poi/bacalhau-e-afins"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/s-domingos/poi/bacalhau-e-afins"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

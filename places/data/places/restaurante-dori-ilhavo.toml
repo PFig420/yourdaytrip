@@ -1,0 +1,33 @@
+id = "restaurante-dori-ilhavo"
+name = "Restaurante Dóri"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "local-life"]
+municipality = "Ílhavo"
+lat = 40.611160
+lon = -8.749840
+osm = "way/267825821"
+
+hours = ""
+hours_note = "No opening hours found in the regional or municipal listings."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["fish", "seafood", "eel"]
+meals = ["lunch", "dinner"]
+
+description = """Upstairs at the Costa Nova fish market, serving fresh fish, eel stew and fish fry. The Michelin Guide listed it as a Bib Gourmand in 2015-2017."""
+priority = 1
+
+[provenance]
+sources = ["https://estacoesnauticas.turismodocentro.pt/pages/1032?geo_article_id=2269", "https://www.cm-ilhavo.pt/municipio/comunicacao/noticias/noticia-96/o-ponto-delicioso"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

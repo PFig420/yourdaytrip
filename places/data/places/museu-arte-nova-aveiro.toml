@@ -1,0 +1,33 @@
+id = "museu-arte-nova-aveiro"
+name = "Museu Arte Nova (Casa Major Pessoa)"
+kind = "sight"
+category = "museum"
+tags = ["art-nouveau", "architecture", "history", "indoor", "rainy-day"]
+municipality = "Aveiro"
+lat = 40.641800
+lon = -8.655610
+osm = "node/1799584360"
+website = "https://museusdeaveiro.cm-aveiro.pt"
+
+hours = "Tu-Su 10:00-12:30,13:30-18:00; Jan 01 off; May 01 off; Dec 25 off"
+hours_note = "Closed on Mondays, 1 Jan, Easter Sunday, 1 May and 25 Dec (Easter Sunday is not in the hours rule). Municipal tariffs are those approved for 2025. The 5 EUR ticket covers this museum, the City Museum and the Ecomuseu."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 30
+visit_typical = 45
+price = "€€"
+ticket_eur = 5.0
+booking = "no"
+
+description = """The 1900s Casa Major Pessoa is the best-known Art Nouveau house in a city that calls itself Portugal's Art Nouveau capital. Inside, the museum shows the style through decorative arts. It is also the start of the town's Art Nouveau walk."""
+priority = 1
+
+[provenance]
+sources = ["https://museusdeaveiro.cm-aveiro.pt/horario", "https://www.cm-aveiro.pt/inovacao/aveiro-steam-city/noticia/definicao-dos-dias-de-encerramento-horarios-precario-e-isencoes-dos-museus-de-aveiro-para-2025", "https://museusdeaveiro.cm-aveiro.pt/museu-arte-nova/o-museu", "https://www.cm-aveiro.pt/visitantes/arte-publica/monumentos/poi/museu-arte-nova-antiga-casa-major-pessoa"]
+hours_source = "https://museusdeaveiro.cm-aveiro.pt/horario"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon"]

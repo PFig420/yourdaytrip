@@ -1,0 +1,34 @@
+id = "bastos-torreira"
+name = "Restaurante Bastos"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "local-life", "ria"]
+municipality = "Murtosa"
+lat = 40.760043
+lon = -8.711942
+osm = "node/3833233847"
+
+hours = ""
+hours_note = "No hours found. Specialities from a Lifecooler listing read only through a search summary (the page could not be fetched)."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 60
+visit_typical = 90
+price = "€€"
+booking = "no"
+
+cuisine = ["eel", "regional", "fish"]
+meals = ["lunch", "dinner"]
+
+description = """Torreira restaurant a few minutes from the line 25 stop, whose specialities are the lagoon's eels in three classic forms: eel soup, fried eels, and eel stew."""
+priority = 2
+
+[provenance]
+sources = ["https://lifecooler.com/artigo/atividades/restaurante-bastos/332048", "https://www.openstreetmap.org/node/3833233847"]
+hours_source = ""
+checked = 2026-10-22
+drafted_by = "claude"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

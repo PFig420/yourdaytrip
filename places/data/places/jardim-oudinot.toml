@@ -1,0 +1,31 @@
+id = "jardim-oudinot"
+name = "Jardim Oudinot"
+kind = "sight"
+category = "park"
+tags = ["garden", "maritime", "family", "free", "outdoor"]
+municipality = "Ílhavo"
+lat = 40.641990
+lon = -8.729110
+osm = "relation/18358471"
+
+hours = "24/7"
+hours_note = "Public park; gate times not found."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 20
+visit_typical = 60
+price = "free"
+booking = "no"
+
+description = """A waterfront park of about eleven hectares in Gafanha da Nazaré, with play and sport areas, a small beach, a marina and the Santo André ship. It hosts the cod festival each August."""
+priority = 2
+
+[provenance]
+sources = ["https://museumaritimo.cm-ilhavo.pt/conhecer/navio-museu-santo-andre/historia/jardim-oudinot", "https://estacoesnauticas.turismodocentro.pt/pages/1132?geo_article_id=2370"]
+hours_source = "https://museumaritimo.cm-ilhavo.pt/conhecer/navio-museu-santo-andre/historia/jardim-oudinot"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

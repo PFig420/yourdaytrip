@@ -1,0 +1,23 @@
+id = "p9a-sao-jacinto-beach"
+name = "P9a beach"
+kind = "sight"
+category = "beach"
+tags = ["maritime"]
+municipality = "Ílhavo"
+lat = 40.66868
+lon = -8.74304
+hours = "24/7"
+daylight_only = true
+weather = "outdoor"
+visit_min = 30
+visit_typical = 60
+price = "free"
+description = "Fixture place."
+priority = 2
+
+[provenance]
+sources = []
+hours_source = ""
+checked = 2026-10-01
+status = "confirmed"
+estimates = []

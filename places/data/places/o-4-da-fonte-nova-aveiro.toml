@@ -1,0 +1,33 @@
+id = "o-4-da-fonte-nova-aveiro"
+name = "O 4 da Fonte Nova"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Aveiro"
+lat = 40.639830
+lon = -8.645220
+osm = "way/146414478"
+
+hours = ""
+hours_note = "Municipal listing gives no opening hours. OSM 'Fonte Nova' restaurant is the probable position."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """Plain traditional Portuguese cooking by the Fonte Nova quay, with a daily menu and take-away."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/marques-de-marialva/poi/o-4-da-fonte-nova"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/marques-de-marialva/poi/o-4-da-fonte-nova"
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

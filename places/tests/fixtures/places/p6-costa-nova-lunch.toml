@@ -1,0 +1,25 @@
+id = "p6-costa-nova-lunch"
+name = "P6 Costa Nova lunch"
+kind = "food"
+category = "restaurant"
+tags = ["maritime"]
+municipality = "Ílhavo"
+lat = 40.612500
+lon = -8.749740
+hours = "Mo-Su 12:00-23:00"
+daylight_only = false
+weather = "indoor"
+visit_min = 30
+visit_typical = 60
+price = "€€"
+description = "Fixture place."
+priority = 2
+cuisine = ["seafood"]
+meals = ["lunch"]
+
+[provenance]
+sources = []
+hours_source = ""
+checked = 2026-10-01
+status = "confirmed"
+estimates = []

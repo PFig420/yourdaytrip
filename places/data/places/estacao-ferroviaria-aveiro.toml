@@ -1,0 +1,31 @@
+id = "estacao-ferroviaria-aveiro"
+name = "Antiga Estação de Aveiro (azulejo panels)"
+kind = "sight"
+category = "architecture"
+tags = ["azulejos", "architecture", "history", "free", "outdoor"]
+municipality = "Aveiro"
+lat = 40.644160
+lon = -8.640590
+osm = "way/152191013"
+
+hours = "24/7"
+hours_note = "Exterior panels, always visible."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 10
+visit_typical = 20
+price = "free"
+booking = "no"
+
+description = """The old station building is covered in 59 tile panels showing local trades, people and landscapes, placed in the 1910s. Look at both facades from the platform side and the forecourt."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/arte-publica/paineis-azulejares/poi/estacao-de-caminhos-de-ferro-de-aveiro-60", "https://www.cm-aveiro.pt/visitantes/visitar/patrimonio-cultural/antiga-estacao-da-cp-aveiro"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/arte-publica/paineis-azulejares/poi/estacao-de-caminhos-de-ferro-de-aveiro-60"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

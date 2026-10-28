@@ -1,0 +1,2 @@
+https://www.openstreetmap.org/node/12459286429 fetched 2026-10-22
+OSM tags: name=La Bella Barra; amenity=restaurant; cuisine=italian;portuguese; opening_hours=Mo-Su 10:30-22:00; contact:facebook=https://www.facebook.com/labellabarra.pt

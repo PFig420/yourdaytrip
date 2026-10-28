@@ -1,0 +1,31 @@
+id = "pateira-de-fermentelos"
+name = "Pateira de Fermentelos"
+kind = "sight"
+category = "nature"
+tags = ["nature", "birdwatching", "ria", "walk", "free", "outdoor"]
+municipality = "Águeda"
+lat = 40.576720
+lon = -8.512380
+osm = "way/1130603935"
+
+hours = "24/7"
+hours_note = "Open shoreline park."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 45
+visit_typical = 120
+price = "free"
+booking = "no"
+
+description = """The largest natural lagoon in the Iberian Peninsula, a bird haven with herons, harriers and kingfishers. Parks at Óis da Ribeira and Espinhel are good starting points for the walking routes."""
+priority = 1
+
+[provenance]
+sources = ["https://www.cm-agueda.pt/visite/turismo/turismo-de-natureza/pateira-de-fermentelos-turismo", "https://www.centerofportugal.com/poi/pateira-de-fermentelos"]
+hours_source = "https://www.cm-agueda.pt/visite/turismo/turismo-de-natureza/pateira-de-fermentelos-turismo"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

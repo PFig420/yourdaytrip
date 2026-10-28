@@ -1,0 +1,33 @@
+id = "revolta-aveiro"
+name = "A Revolta"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "nightlife"]
+municipality = "Aveiro"
+lat = 40.641610
+lon = -8.648830
+osm = "node/6037674511"
+
+hours = ""
+hours_note = "Listed on the regional tourism site; no hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€"
+booking = "no"
+
+cuisine = ["beer"]
+meals = ["lunch", "dinner", "drinks"]
+
+description = """A burger restaurant and craft-beer bar with a view of the lagoon, serving Portuguese craft beer and many creative burgers."""
+priority = 3
+
+[provenance]
+sources = ["https://www.centerofportugal.com/article/eating-in-aveiro"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

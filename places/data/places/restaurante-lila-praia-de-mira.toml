@@ -1,0 +1,34 @@
+id = "restaurante-lila-praia-de-mira"
+name = "Restaurante Lila"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Mira"
+lat = 40.455660
+lon = -8.802330
+osm = "node/10072770918"
+
+hours = "Mo-Su 09:00-24:00"
+hours_note = "Listed by the Mira Câmara (Mira à Mesa). Hours come from OpenStreetMap only (lower confidence). "
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["portuguese", "regional"]
+meals = ["lunch", "dinner"]
+
+description = """A restaurant in Praia de Mira that takes part in the municipality's regional food event, open daily."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-mira.pt/node/3768"]
+hours_source = "https://www.cm-mira.pt/node/3768"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

@@ -1,0 +1,33 @@
+id = "rapotacho-gafanha"
+name = "Rapotacho Take Away"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Ílhavo"
+lat = 40.637320
+lon = -8.712290
+osm = "node/6276977151"
+
+hours = ""
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. Page lists 11:00-14:00 and 18:00-21:00 without days; OSM says Tu-Sa 11:30-14:00,18:00-22:00; Su 11:30-14:00. Left empty."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 15
+visit_typical = 30
+price = "€"
+booking = "no"
+
+cuisine = ["portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A take-away serving home-style meals ready to carry, in Gafanha da Nazaré."""
+priority = 3
+
+[provenance]
+sources = ["https://www.facebook.com/rapotachotakeaway/"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "planner"
+version = "0.1.0"
+description = "Day planner and validator (YourDayTrip): Claude chooses places, code schedules and checks them"
+requires-python = ">=3.11"
+dependencies = ["anthropic>=2.2"]
+
+[project.optional-dependencies]
+web = ["fastapi", "uvicorn"]
+dev = ["pytest", "httpx"]
+
+[tool.setuptools.packages.find]
+include = ["planner*"]
+
+[tool.setuptools.package-data]
+"planner.web" = ["static/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests", "../engine", "../places"]

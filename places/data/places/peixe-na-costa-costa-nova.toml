@@ -1,0 +1,34 @@
+id = "peixe-na-costa-costa-nova"
+name = "Peixe na Costa"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "local-life"]
+municipality = "Ílhavo"
+lat = 40.617168
+lon = -8.750937
+osm = "node/10266036923"
+
+hours = "Tu-Sa 12:00-15:30,19:00-22:30; Su 12:00-15:00; Mo off"
+hours_note = "Hours from a Lifecooler listing read only through a search summary (the page could not be fetched); confirm before use."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 60
+visit_typical = 90
+price = "€€"
+booking = "no"
+
+cuisine = ["seafood", "fish", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """Portuguese fish and seafood restaurant on the avenue that runs into Costa Nova, about seven minutes on foot from the bus terminus. A practical lunch stop on a beach day."""
+priority = 2
+
+[provenance]
+sources = ["https://lifecooler.com/artigo/comer/peixe-na-costa/520527/", "https://www.openstreetmap.org/node/10266036923"]
+hours_source = "https://lifecooler.com/artigo/comer/peixe-na-costa/520527/"
+checked = 2026-10-22
+drafted_by = "claude"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

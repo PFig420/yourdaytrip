@@ -1,0 +1,31 @@
+id = "forte-da-barra"
+name = "Forte da Barra de Aveiro"
+kind = "sight"
+category = "monument"
+tags = ["history", "maritime", "ria", "outdoor"]
+municipality = "Ílhavo"
+lat = 40.645180
+lon = -8.732800
+osm = "way/995816098"
+
+hours = "24/7"
+hours_note = "Treated as an open space: the exterior is seen from the public quay beside the São Jacinto ferry, always accessible (daylight only). Interior visits are not confirmed."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 15
+visit_typical = 30
+price = "free"
+booking = "no"
+
+description = """A 1640 fort at the mouth of the lagoon, built during the Restoration War and later used to guide boats in. The ferry to São Jacinto leaves from beside it. Interior access is not confirmed."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-ilhavo.pt/p/fortedabarra"]
+hours_source = ""
+checked = 2026-10-23
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

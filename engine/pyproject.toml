@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reach"
+version = "0.1.0"
+description = "Public transport reachability engine (YourDayTrip)"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+web = ["fastapi", "uvicorn"]
+dev = ["pytest", "httpx"]
+
+[tool.setuptools.packages.find]
+include = ["reach*"]
+
+[tool.setuptools.package-data]
+"reach.web" = ["static/*.html"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests"]

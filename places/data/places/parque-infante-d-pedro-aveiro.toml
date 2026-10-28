@@ -1,0 +1,31 @@
+id = "parque-infante-d-pedro-aveiro"
+name = "Parque Infante D. Pedro"
+kind = "sight"
+category = "park"
+tags = ["garden", "azulejos", "family", "free", "outdoor"]
+municipality = "Aveiro"
+lat = 40.635510
+lon = -8.653100
+osm = "way/31865779"
+
+hours = "24/7"
+hours_note = "Open public park; gate times were not found, so daylight is assumed."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 20
+visit_typical = 40
+price = "free"
+booking = "no"
+
+description = """Aveiro's city park, with a grotto and shady paths. Four tile panels beside the grotto show lagoon scenes such as seaweed harvesting. A calm break between the museums and the canals."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/arte-publica/paineis-azulejares/poi/parque-infante-d-pedro-98"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/arte-publica/paineis-azulejares/poi/parque-infante-d-pedro-98"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

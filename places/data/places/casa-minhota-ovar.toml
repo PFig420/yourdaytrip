@@ -1,0 +1,33 @@
+id = "casa-minhota-ovar"
+name = "Casa Minhota – Vinhos & Petiscos"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "local-life"]
+municipality = "Ovar"
+lat = 40.863860
+lon = -8.617610
+osm = "node/7033970199"
+
+hours = ""
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. No opening hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["petiscos", "wine", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A traditional tavern serving wines and petiscos, a few minutes from the centre of Ovar."""
+priority = 2
+
+[provenance]
+sources = ["https://www.facebook.com/CasaMinhotaOvar/"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

@@ -1,0 +1,67 @@
+id = "praia-costa-nova"
+name = "Praia da Costa Nova"
+kind = "sight"
+category = "beach"
+tags = ["beach", "family", "free", "outdoor"]
+municipality = "Ílhavo"
+lat = 40.620080
+lon = -8.752980
+osm = "way/301852964"
+
+hours = "24/7"
+hours_note = "Open beach; lifeguard season not checked."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 60
+visit_typical = 150
+price = "free"
+booking = "no"
+
+description = """A broad ocean beach reached across a short boardwalk from the striped houses. It has Blue Flag status and an accessible-beach flag, and is good for walks as well as swimming in season."""
+priority = 1
+
+[provenance]
+sources = ["https://www.cm-ilhavo.pt/viver/ambiente/zonas-costeiras/bandeira-azul", "https://www.visitportugal.com/pt-pt/content/costa-nova"]
+hours_source = "https://www.cm-ilhavo.pt/viver/ambiente/zonas-costeiras/bandeira-azul"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]
+
+[[points]]
+name = "south end, dune boardwalk from the Costa Nova houses"
+lat = 40.610659
+lon = -8.753393
+source = "OSM way/152223321 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+
+[[points]]
+name = "south part of the beach"
+lat = 40.613841
+lon = -8.754652
+source = "OSM way/301852964 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+
+[[points]]
+name = "south-middle part of the beach"
+lat = 40.617090
+lon = -8.754163
+source = "OSM way/301852964 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+
+[[points]]
+name = "north-middle part of the beach"
+lat = 40.624255
+lon = -8.751756
+source = "OSM way/301852964 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+
+[[points]]
+name = "north part of the beach"
+lat = 40.627792
+lon = -8.750682
+source = "OSM way/301852964 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+
+[[points]]
+name = "north end of the beach"
+lat = 40.631062
+lon = -8.750288
+source = "OSM way/301852964 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"

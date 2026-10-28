@@ -1,0 +1,33 @@
+id = "cafe-farol-ilhavo"
+name = "Café Farol"
+kind = "food"
+category = "cafe"
+tags = ["outdoor", "viewpoint"]
+municipality = "Ílhavo"
+lat = 40.643020
+lon = -8.747000
+osm = "node/1214724424"
+
+hours = ""
+hours_note = "Regional tourism article gives no hours."
+last_entry_min = 0
+daylight_only = false
+weather = "mixed"
+
+visit_min = 20
+visit_typical = 45
+price = "€"
+booking = "no"
+
+cuisine = ["coffee", "pastry"]
+meals = ["snack", "lunch"]
+
+description = """A café open since 1921 next to Portugal's tallest lighthouse, known for one of the best terraces in town."""
+priority = 2
+
+[provenance]
+sources = ["https://turismodocentro.pt/artigo/cafes-historicos-da-regiao-de-aveiro/"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

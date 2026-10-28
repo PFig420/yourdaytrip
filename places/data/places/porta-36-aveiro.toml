@@ -1,0 +1,35 @@
+id = "porta-36-aveiro"
+name = "Porta 36"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Aveiro"
+lat = 40.642370
+lon = -8.655540
+osm = "relation/7764822"
+website = "https://www.porta36.com"
+
+hours = "Mo-Fr 12:00-15:00,19:00-23:00"
+hours_note = "Position is the street (Largo da Praça do Peixe), not the entrance."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["fish", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A glass-walled corner restaurant on the fish square, with fresh sea fish and Mediterranean touches. Closed at weekends."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/sao-lourenco/poi/porta-36-67"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/sao-lourenco/poi/porta-36-67"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

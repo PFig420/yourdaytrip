@@ -1,0 +1,32 @@
+id = "cais-do-bico"
+name = "Cais do Bico"
+kind = "sight"
+category = "neighbourhood"
+tags = ["ria", "boat", "local-life", "free", "outdoor"]
+municipality = "Murtosa"
+lat = 40.729030
+lon = -8.646310
+osm = "way/1375049310"
+
+hours = "24/7"
+hours_note = "Public quay."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 30
+visit_typical = 60
+price = "free"
+booking = "no"
+
+description = """The largest group of quays in Murtosa, where hundreds of moliceiro boats once moored. Boat trips, kayaks and cycle tours start here, and the eel and lamprey festivals are held on the quay."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-murtosa.pt/pages/704?poi_id=9", "https://estacaonautica.cm-murtosa.pt/pages/753"]
+hours_source = "https://www.cm-murtosa.pt/pages/704?poi_id=9"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "rejected"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]
+status_reason = "no public transport in the current feeds"

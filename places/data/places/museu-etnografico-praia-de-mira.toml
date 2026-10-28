@@ -1,0 +1,31 @@
+id = "museu-etnografico-praia-de-mira"
+name = "Museu Etnográfico da Praia de Mira"
+kind = "sight"
+category = "museum"
+tags = ["history", "local-life", "maritime", "indoor", "rainy-day"]
+municipality = "Mira"
+lat = 40.451660
+lon = -8.801610
+osm = "node/12503271216"
+
+hours = "Mo-Su 09:00-13:00,14:00-17:00; PH off"
+hours_note = "Hours from a municipal page that dates from the Covid period; confirm. Closed on holidays. Timed entries were used then."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 20
+visit_typical = 40
+price = "free"
+booking = "no"
+
+description = """A small museum on the fishing and village life of Praia de Mira, including its traditional palheiros. The tourist office is in the same building."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-mira.pt/node/145"]
+hours_source = "https://www.cm-mira.pt/node/145"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical"]

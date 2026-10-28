@@ -1,0 +1,33 @@
+id = "confeitaria-peixinho-aveiro"
+name = "Confeitaria Peixinho"
+kind = "food"
+category = "pastry"
+tags = ["indoor", "local-life"]
+municipality = "Aveiro"
+lat = 40.640900
+lon = -8.653610
+osm = "node/5217198546"
+
+hours = ""
+hours_note = "Address Rua de Coimbra 9. No opening hours found in official sources."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 15
+visit_typical = 30
+price = "€"
+booking = "no"
+
+cuisine = ["ovos-moles", "pastry", "coffee"]
+meals = ["snack"]
+
+description = """Said to be Aveiro's oldest ovos moles house, founded in 1856, on a pedestrian street by the main canal. Sit down for the sweets with tea or coffee."""
+priority = 1
+
+[provenance]
+sources = ["https://centerofportugal.com/article/confeitaria-peixinho-2", "https://www.centerofportugal.com/poi/ovos-moles-of-aveiro"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

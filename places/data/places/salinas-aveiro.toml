@@ -1,0 +1,30 @@
+id = "salinas-aveiro"
+name = "Salt pans of Aveiro"
+kind = "sight"
+category = "nature"
+tags = ["salt", "ria", "nature", "walk", "outdoor"]
+municipality = "Aveiro"
+lat = 40.648350
+lon = -8.667380
+osm = "node/7752677385"
+
+hours = ""
+hours_note = "Private working pans: no visiting hours published; open days only at events. Draft until an operator or schedule is confirmed."
+last_entry_min = 0
+daylight_only = false
+weather = "outdoor"
+
+visit_min = 30
+visit_typical = 60
+price = "free"
+booking = "no"
+
+description = """Working salt pans reached on foot along earth paths outside the centre. Regional guides suggest leaving the car, walking in and buying locally made salt. Guided and open days are tied to events, so no regular schedule is known."""
+priority = 3
+
+[provenance]
+sources = ["https://turismodocentro.pt/roteiro/road-trip-ria-de-aveiro/de-ilhavo-a-aveiro/", "https://www.cm-aveiro.pt/municipio/comunicacao/noticias/noticia/festa-da-botadela-e-dia-aberto-nas-marinhas-de-sal-de-aveiro-decorrem-a-5-de-julho"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

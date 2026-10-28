@@ -1,0 +1,33 @@
+id = "restaurante-o-santos-sao-jacinto"
+name = "Restaurante O Santos"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "family"]
+municipality = "Aveiro"
+lat = 40.662570
+lon = -8.727530
+osm = "node/1920409670"
+
+hours = ""
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. No opening hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["fish", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A family restaurant on São Jacinto's seafront avenue, with fish and meat grilled over charcoal."""
+priority = 2
+
+[provenance]
+sources = ["https://www.facebook.com/p/Restaurante-O-Santos--100037978406538/"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

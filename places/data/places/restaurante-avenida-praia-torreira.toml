@@ -1,0 +1,34 @@
+id = "restaurante-avenida-praia-torreira"
+name = "Restaurante Avenida-Praia"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "local-life"]
+municipality = "Murtosa"
+lat = 40.760720
+lon = -8.712650
+osm = "way/1193779784"
+
+hours = "Tu-Su 10:00-24:00"
+hours_note = "Position is the Largo da Varina square, not the entrance."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["eel", "seafood", "regional"]
+meals = ["lunch", "dinner"]
+
+description = """A Torreira restaurant since 1991, famous for fried eels in escabeche and eel stew, alongside fresh shellfish and traditional meat dishes. Closed Mondays."""
+priority = 1
+
+[provenance]
+sources = ["https://estacaonautica.cm-murtosa.pt/pages/766?poi_id=67"]
+hours_source = "https://estacaonautica.cm-murtosa.pt/pages/766?poi_id=67"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

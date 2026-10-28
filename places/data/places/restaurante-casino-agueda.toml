@@ -1,0 +1,34 @@
+id = "restaurante-casino-agueda"
+name = "Café Restaurante Casino"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "local-life"]
+municipality = "Águeda"
+lat = 40.634890
+lon = -8.450620
+osm = "node/11080761533"
+website = "http://www.casinorestaurante.net"
+
+hours = ""
+hours_note = "Website gives no hours; a 2021 municipal list showed Sunday dinner and take-away."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["regional", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A café-restaurant in Carvalhal da Portela with Bairrada specialities such as chanfana, roast veal and suckling pig, plus fish and snacks."""
+priority = 3
+
+[provenance]
+sources = ["http://www.casinorestaurante.net/"]
+hours_source = "http://www.casinorestaurante.net/"
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

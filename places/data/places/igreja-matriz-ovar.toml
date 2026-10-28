@@ -1,0 +1,31 @@
+id = "igreja-matriz-ovar"
+name = "Igreja Matriz de Ovar"
+kind = "sight"
+category = "church"
+tags = ["religious", "azulejos", "architecture", "indoor"]
+municipality = "Ovar"
+lat = 40.861420
+lon = -8.620910
+osm = "way/251255929"
+
+hours = "Tu-Fr 09:00-12:00,15:00-19:30; Sa 09:00-12:00,14:00-19:30; Su 07:30-12:00"
+hours_note = "Hours as read in a search snippet of the Câmara page (page not cached). The regional tourism site lists different, longer hours. Confirm with the parish."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 10
+visit_typical = 20
+price = "free"
+booking = "no"
+
+description = """Ovar's parish church stands on high ground, its front covered in tiles, with three naves inside. It is the first station of the town's Easter way of the cross, which ends at the Calvary chapel."""
+priority = 2
+
+[provenance]
+sources = ["https://turismodocentro.pt/poi/igreja-matriz-de-ovar/", "https://www.cm-ovar.pt/pt/menu/2902/igreja-matriz-de-ovar.aspx"]
+hours_source = "https://www.cm-ovar.pt/pt/menu/2902/igreja-matriz-de-ovar.aspx"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon"]

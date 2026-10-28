@@ -1,0 +1,59 @@
+# Clean route names (spec 5.6). Busway names come from the booklet; the Aveirobus names were
+# reconstructed from the OCR-garbled CSV route strings and stop lists.
+# Aveirobus (ab-*) names were checked against the sheet titles (page 1 of each PDF) on 2026-10-19
+# (Azul/Verde keep the "(L15)" suffix by decision).
+
+[bw-16]
+long_name = "Aveiro – Oliveira de Azeméis"
+[bw-17]
+long_name = "Aveiro – Vale de Cambra"
+[bw-18]
+long_name = "Aveiro (Terminal) – Figueira da Foz (Estação CP)"
+[bw-19]
+long_name = "Aveiro – Cantanhede"
+[bw-20]
+long_name = "Aveiro – Praia de Mira"
+[bw-25]
+long_name = "Ovar – São Jacinto"
+[bw-32]
+long_name = "Sever do Vouga – Aveiro"
+[bw-33]
+long_name = "Aveiro – Ovar (por Válega)"
+[bw-34]
+long_name = "Aveiro – Ílhavo"
+[bw-35]
+long_name = "Aveiro – Praia da Barra"
+[bw-36]
+long_name = "Aveiro – Costa Nova"
+[bw-37]
+long_name = "Aveiro – Sever do Vouga"
+
+[ab-1]
+long_name = "Cacia (EB23 Rio Novo Príncipe) – Sarrazola – Aveiro"
+[ab-2]
+long_name = "Monte Cacia (por JF Cacia) – Aveiro – Aradas"
+[ab-3]
+long_name = "Cacia - EB23 Rio Novo do Príncipe – Taboeira – Aveiro"
+[ab-4]
+long_name = "Carregal – Eixo – Aveiro"
+[ab-5]
+long_name = "Colégio D. José I – Aveiro (via Solposto)"
+[ab-6]
+long_name = "Escolas Velhas Oliveirinha – Aveiro"
+[ab-7]
+long_name = "Colégio D. José I – Aveiro (via Quinta do Torto)"
+[ab-8]
+long_name = "São Bento – Mamodeiro – Aveiro"
+[ab-10]
+long_name = "Verba – Nariz – Aveiro"
+[ab-11]
+long_name = "Terminal Rodoviário – Universidade Crasto"
+[ab-12]
+long_name = "Verba – Nariz – EB23 Castro Matoso"
+[ab-15-azul]
+long_name = "Linha Centro Azul (L15)"
+[ab-15-verde]
+long_name = "Linha Centro Verde (L15)"
+[ab-ferry]
+long_name = "Forte da Barra – São Jacinto (ferry)"
+desc = "Replaced by buses in bad weather"

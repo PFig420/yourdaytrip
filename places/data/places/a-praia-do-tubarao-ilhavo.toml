@@ -1,0 +1,34 @@
+id = "a-praia-do-tubarao-ilhavo"
+name = "A Praia do Tubarão"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "family"]
+municipality = "Ílhavo"
+lat = 40.609680
+lon = -8.749040
+osm = "way/54570759"
+
+hours = "Tu-Su 12:15-15:00,19:15-21:30; Su 12:15-15:00"
+hours_note = "Dinners Tuesday to Saturday only. Position is the street (Av. José Estêvão), not the entrance."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["fish", "seafood"]
+meals = ["lunch", "dinner"]
+
+description = """Fresh fish for the grill or frying pan, plus fish stews, by the Costa Nova seafront. Closed Mondays."""
+priority = 2
+
+[provenance]
+sources = ["https://estacoesnauticas.turismodocentro.pt/pages/1461?geo_article_id=5516"]
+hours_source = "https://estacoesnauticas.turismodocentro.pt/pages/1461?geo_article_id=5516"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

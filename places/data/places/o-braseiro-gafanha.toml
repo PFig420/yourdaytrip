@@ -1,0 +1,33 @@
+id = "o-braseiro-gafanha"
+name = "O Braseiro"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Ílhavo"
+lat = 40.629780
+lon = -8.717030
+osm = "node/4603796018"
+
+hours = ""
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. No opening hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["regional", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A grill-style restaurant serving regional dishes in Gafanha da Nazaré."""
+priority = 3
+
+[provenance]
+sources = ["https://www.facebook.com/p/O-Braseiro-Restaurante-100045432315097/"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

@@ -1,0 +1,33 @@
+id = "pizzaria-do-nosso-bairro-aveiro"
+name = "Pizzaria do Nosso Bairro"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "family"]
+municipality = "Aveiro"
+lat = 40.643680
+lon = -8.655910
+osm = "node/1799607372"
+
+hours = "Mo,Tu,Th-Sa 12:00-15:30,19:00-22:30; We,Su 12:00-15:30"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€"
+booking = "no"
+
+cuisine = ["portuguese", "fish"]
+meals = ["lunch", "dinner"]
+
+description = """On the Botirões canal quay, this mixes Portuguese stews, fish and salt cod with pasta, risottos and pizzas. No dinner Wednesday or Sunday."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/mexilhoes/mexilhoes-gratinados/poi/pizzaria-do-nosso-bairro-by-4nos"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/mexilhoes/mexilhoes-gratinados/poi/pizzaria-do-nosso-bairro-by-4nos"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

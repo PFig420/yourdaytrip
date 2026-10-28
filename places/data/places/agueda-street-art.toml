@@ -1,0 +1,31 @@
+id = "agueda-street-art"
+name = "Águeda street art route"
+kind = "sight"
+category = "architecture"
+tags = ["street-art", "art", "walk", "free", "outdoor"]
+municipality = "Águeda"
+lat = 40.572340
+lon = -8.447280
+osm = "node/8149836920"
+
+hours = "24/7"
+hours_note = "Street route."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 30
+visit_typical = 75
+price = "free"
+booking = "no"
+
+description = """A trail of more than thirty murals and installations across the town centre, with works by artists such as Bordalo II, Millo and Arico. A map is on the municipal tourism page."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-agueda.pt/visite/turismo/1-2-3-dias-em-agueda", "https://www.cm-agueda.pt/viver/comunicacao/noticias-agueda/noticia/arte-urbana-surpreende-visitantes-de-agueda"]
+hours_source = "https://www.cm-agueda.pt/visite/turismo/1-2-3-dias-em-agueda"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

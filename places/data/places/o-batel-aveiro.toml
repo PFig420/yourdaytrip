@@ -1,0 +1,33 @@
+id = "o-batel-aveiro"
+name = "O Batel"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Aveiro"
+lat = 40.642090
+lon = -8.654560
+osm = "node/2810703920"
+
+hours = "Mo-Sa 12:00-15:00,19:00-23:00"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["seafood", "regional"]
+meals = ["lunch", "dinner"]
+
+description = """An intimate dining room with a nautical look, serving sea flavours typical of Aveiro. About twenty-six seats."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/s-domingos/poi/o-batel-34"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/s-domingos/poi/o-batel-34"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

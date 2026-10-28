@@ -1,0 +1,34 @@
+id = "restaurante-sal-poente-aveiro"
+name = "Salpoente"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "romantic"]
+municipality = "Aveiro"
+lat = 40.646840
+lon = -8.651160
+osm = "node/2462130432"
+website = "https://salpoente.pt"
+
+hours = "Mo-Su 12:30-15:00,19:30-22:30"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€€"
+booking = "recommended"
+
+cuisine = ["fish", "regional", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A chef-led restaurant in old salt warehouses beside the São Roque canal, built around lagoon produce and imaginative salt cod. It is popular, so book. You can even arrive by moliceiro boat."""
+priority = 1
+
+[provenance]
+sources = ["https://salpoente.pt/", "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/quinta-dos-abibes/poi/salpoente-restaurante", "https://www.centerofportugal.com/article/eating-in-aveiro"]
+hours_source = "https://salpoente.pt/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

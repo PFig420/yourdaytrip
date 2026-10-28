@@ -1,0 +1,33 @@
+id = "glorys-ovar"
+name = "Glory's"
+kind = "drink"
+category = "bar"
+tags = ["indoor", "nightlife"]
+municipality = "Ovar"
+lat = 40.859020
+lon = -8.624080
+osm = "node/1297998154"
+
+hours = ""
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. A transfer-of-business post suggests it may have changed hands or closed; check before use. No opening hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 60
+visit_typical = 120
+price = "€"
+booking = "no"
+
+cuisine = ["cocktails", "beer"]
+meals = ["drinks"]
+
+description = """A dance club in the centre of Ovar, on Largo Mouzinho de Albuquerque."""
+priority = 3
+
+[provenance]
+sources = ["https://www.facebook.com/Glorysovar/"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

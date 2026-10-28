@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "places"
+version = "0.1.0"
+description = "Places layer (YourDayTrip): curated places, opening hours and day shortlists"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+web = ["fastapi", "uvicorn"]
+dev = ["pytest", "httpx"]
+
+[tool.setuptools.packages.find]
+include = ["places*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "tests", "../engine"]

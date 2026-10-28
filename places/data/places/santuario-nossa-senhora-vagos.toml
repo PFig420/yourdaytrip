@@ -1,0 +1,30 @@
+id = "santuario-nossa-senhora-vagos"
+name = "Santuário de Nossa Senhora de Vagos"
+kind = "sight"
+category = "church"
+tags = ["religious", "history", "garden", "outdoor"]
+municipality = "Vagos"
+lat = 40.566140
+lon = -8.694840
+osm = "way/130913097"
+
+hours = ""
+hours_note = "No opening hours published on the municipal page."
+last_entry_min = 0
+daylight_only = false
+weather = "mixed"
+
+visit_min = 15
+visit_typical = 30
+price = "free"
+booking = "no"
+
+description = """A pilgrimage sanctuary housing a medieval limestone statue of Our Lady, with a 16th-century church renewed in the 1800s. A municipal park lies beside it. Pilgrimages peak around the Vagos festivals in late May."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-vagos.pt/pages/1296?poi_id=138", "https://www.cm-vagos.pt/visitar/pontos-de-interesse/parques-de-lazer/galeria-95"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

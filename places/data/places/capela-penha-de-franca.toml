@@ -1,0 +1,32 @@
+id = "capela-penha-de-franca"
+name = "Capela de Nossa Senhora da Penha de França"
+kind = "sight"
+category = "church"
+tags = ["religious", "azulejos", "history", "indoor"]
+municipality = "Ílhavo"
+lat = 40.589000
+lon = -8.684160
+osm = "way/179049712"
+
+hours = "May-Sep 10:30-12:00,14:00-18:30; Oct-Apr 10:30-12:00,14:00-18:00"
+hours_note = "Guided visits through the Vista Alegre museum at the fixed times in entry_times (from the museum's regional listing). The chapel hours are a separate source and are wider."
+entry_times = "May-Sep 10:45,11:45,15:00,16:00,17:00,18:30; Oct-Apr 10:45,11:45,15:00,16:00,17:00,18:00"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 10
+visit_typical = 20
+price = "free"
+booking = "no"
+
+description = """A late-1600s chapel in the Vista Alegre factory village, protected as a national monument. Inside are three altars, a painted ceiling and 17th-century tiles. Visits run through the porcelain museum."""
+priority = 2
+
+[provenance]
+sources = ["https://turismodocentro.pt/poi/capela-de-na-sra-da-penha-de-franca/", "https://www.centerofportugal.com/poi/vista-alegre-chapel"]
+hours_source = "https://www.centerofportugal.com/poi/vista-alegre-chapel"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon"]

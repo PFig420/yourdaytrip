@@ -1,0 +1,50 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.74974,
+     40.6125
+    ]
+   },
+   "properties": {
+    "name": "Largo Arrais Ançã - Costa Nova",
+    "confidence": "high",
+    "busway": "10317 'Largo Arrais Ançã'"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.74545,
+     40.6429
+    ]
+   },
+   "properties": {
+    "name": "Farol - Forte da Barra",
+    "confidence": "high",
+    "busway": "10299 'Farol'"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.71701,
+     40.6301
+    ]
+   },
+   "properties": {
+    "name": "Rua Camilo Castelo Branco - Esc. Secundária",
+    "confidence": "medium",
+    "busway": "10318 'Rua Camilo Castelo Branco'"
+   }
+  }
+ ]
+}

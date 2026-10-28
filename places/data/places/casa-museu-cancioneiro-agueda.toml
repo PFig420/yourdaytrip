@@ -1,0 +1,30 @@
+id = "casa-museu-cancioneiro-agueda"
+name = "Casa-Museu Cancioneiro de Águeda"
+kind = "sight"
+category = "museum"
+tags = ["local-life", "history", "indoor"]
+municipality = "Águeda"
+lat = 40.574470
+lon = -8.446390
+osm = "way/107382493"
+
+hours = ""
+hours_note = "The municipal museums page gives no hours or contact for this museum."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 20
+visit_typical = 40
+price = "free"
+booking = "no"
+
+description = """A small house museum in the centre of Águeda, listed among the town's museums by the municipality. Opening hours are not published, so ask the tourist office before going."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-agueda.pt/visite/turismo/a-visitar"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

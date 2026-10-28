@@ -1,0 +1,31 @@
+id = "casa-museu-julio-dinis"
+name = "Museu Júlio Dinis – Uma Casa Ovarense"
+kind = "sight"
+category = "museum"
+tags = ["history", "local-life", "free", "indoor", "rainy-day"]
+municipality = "Ovar"
+lat = 40.859590
+lon = -8.628210
+osm = "way/752722699"
+
+hours = "Tu-Sa 09:30-12:30,14:00-17:00; PH off"
+hours_note = "Hours as read in a search snippet of the Câmara page (page not reachable from this machine). Closed Sundays, Mondays and holidays."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 20
+visit_typical = 40
+price = "free"
+booking = "no"
+
+description = """A house museum devoted to the 19th-century novelist Júlio Dinis, set in a typical Ovar home. Entry is free."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-ovar.pt/pt/menu/2891/museu-julio-dinis---uma-casa-ovarense.aspx"]
+hours_source = "https://www.cm-ovar.pt/pt/menu/2891/museu-julio-dinis---uma-casa-ovarense.aspx"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon"]

@@ -1,0 +1,33 @@
+id = "adega-tia-micas-aveiro"
+name = "Adega Tia Micas"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "family"]
+municipality = "Aveiro"
+lat = 40.641200
+lon = -8.647710
+osm = "node/2432495287"
+
+hours = "Tu-Sa 12:00-15:30,19:00-23:00"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["portuguese", "regional"]
+meals = ["lunch", "dinner"]
+
+description = """A big, traditional tavern with room for about 300 diners. Closed Sundays and Mondays outside summer."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/marques-de-marialva/poi/adega-tia-micas"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/marques-de-marialva/poi/adega-tia-micas"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

@@ -1,0 +1,31 @@
+id = "praia-da-barra"
+name = "Praia da Barra"
+kind = "sight"
+category = "beach"
+tags = ["beach", "family", "free", "outdoor"]
+municipality = "Ílhavo"
+lat = 40.642090
+lon = -8.749390
+osm = "way/168740960"
+
+hours = "24/7"
+hours_note = "Open beach; lifeguard season not checked."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 60
+visit_typical = 150
+price = "free"
+booking = "no"
+
+description = """A wide ocean beach just south of the breakwater at the lagoon mouth, near the lighthouse. It has flown the Blue Flag for decades and has accessibility facilities, shade areas and showers."""
+priority = 2
+
+[provenance]
+sources = ["https://estacoesnauticas.turismodocentro.pt/pages/1135?geo_article_id=2368", "https://www.cm-ilhavo.pt/viver/ambiente/zonas-costeiras/bandeira-azul"]
+hours_source = "https://estacoesnauticas.turismodocentro.pt/pages/1135?geo_article_id=2368"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

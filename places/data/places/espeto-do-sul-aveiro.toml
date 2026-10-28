@@ -1,0 +1,35 @@
+id = "espeto-do-sul-aveiro"
+name = "Espeto do Sul"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "family"]
+municipality = "Aveiro"
+lat = 40.635730
+lon = -8.649400
+osm = "node/1699874667"
+website = "https://espetodosul.pt"
+
+hours = "Mo,Th,Fr,Su 12:00-14:30,19:30-22:30; Sa 12:00-14:30,19:00-22:30"
+hours_note = "Meat grill and sushi; not a regional kitchen."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["fish"]
+meals = ["lunch", "dinner"]
+
+description = """A large rodízio grill that also makes sushi and sashimi, seating about 200. Closed Tuesdays and Wednesdays."""
+priority = 3
+
+[provenance]
+sources = ["https://espetodosul.pt/"]
+hours_source = "https://espetodosul.pt/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

@@ -1,0 +1,34 @@
+id = "bar-7-cacia-aveiro"
+name = "Bar 7"
+kind = "drink"
+category = "bar"
+tags = ["indoor", "local-life"]
+municipality = "Aveiro"
+lat = 40.683840
+lon = -8.597530
+osm = "node/11446194395"
+
+hours = "Mo-Su 09:00-21:00"
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. Hours come from OpenStreetMap only (lower confidence). Out of the centre, in Cacia."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 20
+visit_typical = 45
+price = "€"
+booking = "no"
+
+cuisine = ["coffee", "beer"]
+meals = ["snack", "drinks"]
+
+description = """A neighbourhood bar in Cacia, a short walk from the stop."""
+priority = 3
+
+[provenance]
+sources = ["https://www.facebook.com/bar7cacia/"]
+hours_source = "https://www.facebook.com/bar7cacia/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

@@ -1,0 +1,30 @@
+id = "museu-etnografico-regiao-vouga"
+name = "Museu Etnográfico da Região do Vouga"
+kind = "sight"
+category = "museum"
+tags = ["history", "local-life", "indoor"]
+municipality = "Águeda"
+lat = 40.609460
+lon = -8.462460
+osm = "way/107382261"
+
+hours = ""
+hours_note = "Visits are by appointment (email gfrv@sapo.pt); no fixed hours."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 30
+visit_typical = 60
+price = "free"
+booking = "required"
+
+description = """A folk-life museum run by the local folklore group, in Mourisca do Vouga. Visits are by prior booking only."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-agueda.pt/visite/turismo/museus/museu-etnografico-da-regiao-do-vouga"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

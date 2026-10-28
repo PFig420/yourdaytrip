@@ -1,0 +1,30 @@
+id = "ovar-azulejos"
+name = "Ovar's azulejo facades"
+kind = "sight"
+category = "architecture"
+tags = ["azulejos", "architecture", "walk", "free", "outdoor"]
+municipality = "Ovar"
+lat = 40.859310
+lon = -8.624570
+
+hours = "24/7"
+hours_note = "Street route; starting point is the tourist office area."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 30
+visit_typical = 75
+price = "free"
+booking = "no"
+
+description = """Streets in the centre of Ovar are lined with house fronts covered in tiles, over 800 panels dating from the mid-1800s to the 1900s. The town even has a workshop dedicated to restoring them. Pick up a map at the tourist office."""
+priority = 1
+
+[provenance]
+sources = ["https://turismodocentro.pt/artigo/ovar-a-cidade-museu-vivo-do-azulejo/", "https://www.centerofportugal.com/tour/tile-tour-in-ovar"]
+hours_source = "https://turismodocentro.pt/artigo/ovar-a-cidade-museu-vivo-do-azulejo/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

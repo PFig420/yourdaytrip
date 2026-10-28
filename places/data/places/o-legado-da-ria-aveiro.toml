@@ -1,0 +1,33 @@
+id = "o-legado-da-ria-aveiro"
+name = "O Legado da Ria"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Aveiro"
+lat = 40.641880
+lon = -8.655230
+osm = "node/2810679449"
+
+hours = "Tu-Sa 12:00-15:30,19:30-22:30; Su 12:00-15:30"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["regional", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """Quiet, family-run cooking with a menu of Aveiro dishes and a daily lunch special. Closed Sunday evenings and Mondays."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/volupia/poi/o-legado-da-ria-66"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/volupia/poi/o-legado-da-ria-66"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

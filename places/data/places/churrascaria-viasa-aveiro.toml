@@ -1,0 +1,35 @@
+id = "churrascaria-viasa-aveiro"
+name = "Churrascaria Viasa"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "family"]
+municipality = "Aveiro"
+lat = 40.666100
+lon = -8.610060
+osm = "node/2813015917"
+website = "https://www.viasa.pt"
+
+hours = "Mo 08:30-15:00; We-Su 08:30-24:00"
+hours_note = "Out of the centre, in Cacia."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€"
+booking = "no"
+
+cuisine = ["portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A roadside grill in Cacia known for roast chicken and salt cod with cream, open since the 1980s. Closed Monday evenings and Tuesdays."""
+priority = 3
+
+[provenance]
+sources = ["https://www.viasa.pt/"]
+hours_source = "https://www.viasa.pt/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

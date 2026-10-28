@@ -1,0 +1,31 @@
+id = "praia-vagueira"
+name = "Praia da Vagueira"
+kind = "sight"
+category = "beach"
+tags = ["beach", "local-life", "free", "outdoor"]
+municipality = "Vagos"
+lat = 40.562030
+lon = -8.765400
+osm = "node/1296860995"
+
+hours = "24/7"
+hours_note = "Open beach; lifeguard season not checked."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 60
+visit_typical = 150
+price = "free"
+booking = "no"
+
+description = """A popular, wide beach with a seafront promenade, Blue Flag awards since 1989 and a tradition of arte xávega net fishing. Surfers like it too."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-vagos.pt/visitar/pontos-de-interesse/praias/poi/praia-da-vagueira"]
+hours_source = "https://www.cm-vagos.pt/visitar/pontos-de-interesse/praias/poi/praia-da-vagueira"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

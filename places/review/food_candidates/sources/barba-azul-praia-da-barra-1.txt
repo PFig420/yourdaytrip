@@ -1,0 +1,2 @@
+https://www.openstreetmap.org/node/4992595524 fetched 2026-10-22
+OSM tags: name=Barba Azul - the sushi house; amenity=restaurant; cuisine=japanese;sushi; opening_hours=We-Su 12:30-15:00, 19:30-23:00; Tu 19:30-23:00; addr=Avenida Fernão de Magalhães 168

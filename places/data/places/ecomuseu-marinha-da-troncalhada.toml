@@ -1,0 +1,33 @@
+id = "ecomuseu-marinha-da-troncalhada"
+name = "Ecomuseu Marinha da Troncalhada"
+kind = "sight"
+category = "nature"
+tags = ["salt", "ria", "local-life", "outdoor", "family"]
+municipality = "Aveiro"
+lat = 40.644090
+lon = -8.662980
+osm = "way/280348854"
+website = "https://museusdeaveiro.cm-aveiro.pt"
+
+hours = "Tu-Su 10:00-12:30,13:30-18:00; Jan 01 off; May 01 off; Dec 25 off"
+hours_note = "Municipal hours shown; the regional tourism site calls it an open space with free entry and the sources disagree. Guided groups (6+) book with the City Museum."
+last_entry_min = 0
+daylight_only = false
+weather = "outdoor"
+
+visit_min = 30
+visit_typical = 60
+price = "€"
+ticket_eur = 5.0
+booking = "no"
+
+description = """A working traditional salt pan beside the lagoon, with signs explaining how seawater becomes salt. Walk the paths between the pans at your own pace. Best in dry weather."""
+priority = 1
+
+[provenance]
+sources = ["https://museusdeaveiro.cm-aveiro.pt/horario", "https://www.cm-aveiro.pt/inovacao/aveiro-steam-city/noticia/definicao-dos-dias-de-encerramento-horarios-precario-e-isencoes-dos-museus-de-aveiro-para-2025", "https://turismodocentro.pt/poi/eco-museu-marinha-da-troncalhada/"]
+hours_source = "https://museusdeaveiro.cm-aveiro.pt/horario"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon"]

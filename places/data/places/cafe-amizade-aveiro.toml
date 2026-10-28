@@ -1,0 +1,34 @@
+id = "cafe-amizade-aveiro"
+name = "Café Amizade"
+kind = "drink"
+category = "bar"
+tags = ["indoor", "nightlife", "local-life"]
+municipality = "Aveiro"
+lat = 40.633960
+lon = -8.645930
+osm = "node/1699881443"
+website = "https://www.cafeamizade.pt"
+
+hours = "Tu-Fr 11:30-01:00; Sa,Su 16:30-01:00"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 30
+visit_typical = 60
+price = "€"
+booking = "no"
+
+cuisine = ["wine", "beer", "portuguese"]
+meals = ["lunch", "drinks"]
+
+description = """A tavern-style café-bar with home cooking by day and drinks until 01:00. Closed Mondays."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cafeamizade.pt/"]
+hours_source = "https://www.cafeamizade.pt/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

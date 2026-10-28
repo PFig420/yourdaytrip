@@ -1,0 +1,2 @@
+https://www.openstreetmap.org/node/3833233847 fetched 2026-10-22
+OSM tags: name=Bastos; amenity=restaurant

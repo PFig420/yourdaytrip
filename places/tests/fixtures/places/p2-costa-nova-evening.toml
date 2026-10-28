@@ -1,0 +1,23 @@
+id = "p2-costa-nova-evening"
+name = "P2 Costa Nova evening"
+kind = "sight"
+category = "beach"
+tags = ["maritime"]
+municipality = "Ílhavo"
+lat = 40.612500
+lon = -8.749740
+hours = "Sa 19:00-23:00"
+daylight_only = false
+weather = "outdoor"
+visit_min = 30
+visit_typical = 60
+price = "free"
+description = "Fixture place."
+priority = 2
+
+[provenance]
+sources = []
+hours_source = ""
+checked = 2026-10-01
+status = "confirmed"
+estimates = []

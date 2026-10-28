@@ -1,0 +1,2 @@
+https://www.openstreetmap.org/way/354964376 fetched 2026-10-22
+OSM tags: name=Assalam; amenity=bar; addr=Rua da Quinta do Cravo 17; contact:facebook=https://pt-pt.facebook.com/assalambeachclub/

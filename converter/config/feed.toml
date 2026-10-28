@@ -1,0 +1,52 @@
+# Feed configuration (spec 5.5, 5.6, 6.1)
+
+[window]
+start = 2026-10-19
+# Day before the second Sunday of September 2027 (12 Sep), when school-year services restart.
+end = 2027-09-11
+
+[agencies.busway]
+name = "Busway-CirAveiro"
+url = "http://busway-cira.pt"
+timezone = "Europe/Lisbon"
+lang = "pt"
+
+[agencies.aveirobus]
+name = "Aveirobus"
+url = "https://www.aveirobus.pt"
+timezone = "Europe/Lisbon"
+lang = "pt"
+
+[holidays]
+# National holidays are computed (1 Jan, Good Friday, Easter, 25 Apr, 1 May, Corpus Christi,
+# 10 Jun, 15 Aug, 5 Oct, 1 Nov, 1 Dec, 8 Dec, 25 Dec).
+# Carnival is not a national holiday.
+carnival_is_holiday = false
+
+[holidays.municipal]
+# "MM-DD" per agency. Busway lines cross several municipalities: none by default (Decision).
+busway = []
+# Aveiro municipal holiday, 12 May. Confirmed 2026-10-19 by the Câmara's press note ("Feriado Municipal, dia 12 de maio", Festas do Município 2026, noticiasdeaveiro.pt).
+aveirobus = ["05-12"]
+
+[school]
+# 2026/27 term periods, Despacho n.º 8368/2024 (Annexes I and II, IAVE copy; Diário da República),
+# supplied by the user on 2026-10-19. Breaks: Christmas 16-31 Dec 2026, Carnival 8-10 Feb 2027,
+# Easter 22 Mar - 2 Apr 2027. Term starts 11-15 Sep 2026; 14 Sep is used.
+# DECISION (user): the last term ends 11 Jun 2027 (years 5-8 and 10), because school-term buses
+# mostly carry pupils in years 5-12. Years 9/11/12 end 4 Jun; pre-school/1st cycle end 30 Jun.
+[[school.terms]]
+start = 2026-09-14
+end = 2026-12-15
+
+[[school.terms]]
+start = 2027-01-04
+end = 2027-02-07
+
+[[school.terms]]
+start = 2027-02-11
+end = 2027-03-19
+
+[[school.terms]]
+start = 2027-04-05
+end = 2027-06-11

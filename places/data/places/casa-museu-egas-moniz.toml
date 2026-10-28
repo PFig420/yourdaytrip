@@ -1,0 +1,32 @@
+id = "casa-museu-egas-moniz"
+name = "Casa-Museu Egas Moniz"
+kind = "sight"
+category = "museum"
+tags = ["history", "science", "indoor", "rainy-day"]
+municipality = "Estarreja"
+lat = 40.806400
+lon = -8.589060
+osm = "way/839837528"
+
+hours = "Mar-Oct Tu-Sa 10:00-18:00; Nov-Feb Tu-Sa 09:00-17:00; PH off"
+hours_note = "Guided visits only, at the fixed times in entry_times (the hours are the house's opening hours). Booking by email. Closed on 13 June (municipal holiday). Ticket price not confirmed (estimate)."
+entry_times = "Mar-Oct Tu-Sa 10:30,11:30,14:30,15:30,16:30; Nov-Feb Tu-Sa 09:30,10:30,11:30,14:30,15:30; PH off"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 60
+price = "€"
+booking = "required"
+
+description = """The family house of Egas Moniz, the Portuguese neurologist who won the 1949 Nobel Prize, in Avanca. Visits are guided only and at fixed times, so book ahead by email."""
+priority = 2
+
+[provenance]
+sources = ["https://turismodocentro.pt/poi/casa-museu-egas-moniz/"]
+hours_source = "https://turismodocentro.pt/poi/casa-museu-egas-moniz/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "price"]

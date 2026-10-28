@@ -1,0 +1,30 @@
+id = "art-nouveau-route-aveiro"
+name = "Art Nouveau facades route"
+kind = "sight"
+category = "architecture"
+tags = ["art-nouveau", "architecture", "walk", "free", "outdoor"]
+municipality = "Aveiro"
+lat = 40.641800
+lon = -8.655610
+
+hours = "24/7"
+hours_note = "Street route, always accessible; best seen in daylight."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 30
+visit_typical = 75
+price = "free"
+booking = "no"
+
+description = """A self-guided walk past about ten Art Nouveau frontages with stone arches, painted tiles and wrought iron, starting at the Art Nouveau Museum. Aveiro belongs to the international Art Nouveau city network. Interiors are mostly private."""
+priority = 1
+
+[provenance]
+sources = ["https://turismodocentro.pt/artigo/arte-nova/", "https://www.centerofportugal.com/tour/art-nouveau-tour-aveiro"]
+hours_source = "https://turismodocentro.pt/artigo/arte-nova/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

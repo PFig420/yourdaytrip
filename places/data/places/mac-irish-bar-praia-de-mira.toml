@@ -1,0 +1,33 @@
+id = "mac-irish-bar-praia-de-mira"
+name = "Mac Irish Bar"
+kind = "drink"
+category = "bar"
+tags = ["indoor", "nightlife"]
+municipality = "Mira"
+lat = 40.454820
+lon = -8.802880
+osm = "node/2930471583"
+
+hours = ""
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. No opening hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 30
+visit_typical = 90
+price = "€"
+booking = "no"
+
+cuisine = ["beer"]
+meals = ["drinks"]
+
+description = """An Irish-style pub in Praia de Mira with a large local following."""
+priority = 3
+
+[provenance]
+sources = ["https://www.facebook.com/MacIrishBarPraiaDeMira/"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

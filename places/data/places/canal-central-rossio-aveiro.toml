@@ -1,0 +1,31 @@
+id = "canal-central-rossio-aveiro"
+name = "Canal Central and the Rossio"
+kind = "sight"
+category = "neighbourhood"
+tags = ["ria", "local-life", "walk", "free", "outdoor"]
+municipality = "Aveiro"
+lat = 40.642150
+lon = -8.656220
+osm = "way/135424847"
+
+hours = "24/7"
+hours_note = "Public open space; works around the canal bridges were reported, check on site."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 20
+visit_typical = 45
+price = "free"
+booking = "no"
+
+description = """The palm-lined Rossio garden sits where the central canal meets the Pyramids canal. Walk the quays past moored moliceiros towards the fishermen's quarter. Go early for a quieter look."""
+priority = 1
+
+[provenance]
+sources = ["https://turismodocentro.pt/artigo/roteiro-de-um-dia-em-aveiro/", "https://www.visitportugal.com/en/NR/exeres/0DC0B310-FFC8-41FE-9EA3-9F5CF48639F8"]
+hours_source = "https://turismodocentro.pt/artigo/roteiro-de-um-dia-em-aveiro/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

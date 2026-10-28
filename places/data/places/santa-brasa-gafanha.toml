@@ -1,0 +1,33 @@
+id = "santa-brasa-gafanha"
+name = "Restaurante Santa Brasa"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Ílhavo"
+lat = 40.637190
+lon = -8.711730
+osm = "way/49204263"
+
+hours = ""
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. No opening hours found. Position is the avenue (geocoded), not the entrance."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A restaurant on Gafanha da Nazaré's main avenue."""
+priority = 3
+
+[provenance]
+sources = ["https://www.facebook.com/santabrasarestaurante/"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

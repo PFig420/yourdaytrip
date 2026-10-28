@@ -1,0 +1,34 @@
+id = "forneria-1870-aveiro"
+name = "Forneria 1870"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "romantic"]
+municipality = "Aveiro"
+lat = 40.640510
+lon = -8.657820
+osm = "way/135664624"
+
+hours = "Tu-Su 12:00-14:00,19:00-22:30; PH 12:00-14:00,19:00-22:30"
+hours_note = "Position is the Cais do Paraíso street, not the entrance."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["portuguese", "ovos-moles"]
+meals = ["lunch", "dinner"]
+
+description = """A vintage-styled restaurant in an 1870 building overlooking the salt pans, cooking much of its food in a wood oven. Ovos moles feature on the dessert side."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/ovos-moles/folhado-de-ovos-moles/poi/forneria-1870"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/ovos-moles/folhado-de-ovos-moles/poi/forneria-1870"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

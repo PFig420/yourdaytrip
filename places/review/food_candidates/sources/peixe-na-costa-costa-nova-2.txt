@@ -1,0 +1,2 @@
+https://www.openstreetmap.org/node/10266036923 fetched 2026-10-22
+OSM tags: name=Peixe na Costa; amenity=restaurant; cuisine=portuguese;seafood; addr=Avenida Nossa Senhora da Saúde 73

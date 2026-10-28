@@ -1,0 +1,33 @@
+id = "marisqueira-da-vagueira-vagos"
+name = "Marisqueira da Vagueira"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "family"]
+municipality = "Vagos"
+lat = 40.563950
+lon = -8.766960
+osm = "way/114492643"
+
+hours = ""
+hours_note = "Listing shows 11:00-15:30 and 19:00-22:30 without days, so hours are left empty. Position is the street (Rua Arménio Abreu), not the entrance."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€€"
+booking = "no"
+
+cuisine = ["seafood"]
+meals = ["lunch", "dinner"]
+
+description = """A seafood restaurant at Vagueira beach with grilled seafood, boiled and tavern-style prawns, stuffed spider crab and grilled lobster."""
+priority = 2
+
+[provenance]
+sources = ["https://estacoesnauticas.turismodocentro.pt/pages/1032?geo_article_id=5660", "https://www.cm-vagos.pt/visitar/estacao-nautica-de-vagos/ofertas/restauracao"]
+hours_source = "https://estacoesnauticas.turismodocentro.pt/pages/1032?geo_article_id=5660"
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

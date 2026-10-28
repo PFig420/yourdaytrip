@@ -1,0 +1,32 @@
+id = "bioria-percurso-salreu"
+name = "BioRia – Percurso de Salreu"
+kind = "sight"
+category = "nature"
+tags = ["nature", "birdwatching", "ria", "walk", "free", "outdoor"]
+municipality = "Estarreja"
+lat = 40.732710
+lon = -8.568080
+osm = "node/12517265430"
+website = "https://www.bioria.com"
+
+hours = "24/7"
+hours_note = "The trail is open all year. The environmental centre is open daily April-October (October 09:00-12:30, 14:00-18:30) and only at weekends and holidays November-March."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 60
+visit_typical = 150
+price = "free"
+booking = "no"
+
+description = """A flat, signed loop of about 8 km (around 2.5 hours) through the lagoon wetlands at Salreu, with roughly 180 bird species seen across the year. The environmental centre is the start point and lends bikes."""
+priority = 1
+
+[provenance]
+sources = ["https://www.cm-estarreja.pt/bioria", "https://www.centerofportugal.com/poi/bioria-estarreja"]
+hours_source = "https://www.cm-estarreja.pt/bioria"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon"]

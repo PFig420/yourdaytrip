@@ -1,0 +1,31 @@
+id = "moliceiro-tour-aveiro"
+name = "Moliceiro boat tour on the Canal Central"
+kind = "activity"
+category = "activity"
+tags = ["boat", "ria", "romantic", "family", "outdoor"]
+municipality = "Aveiro"
+lat = 40.641280
+lon = -8.655140
+osm = "node/3596762024"
+
+hours = "Mo-Su 09:00-18:00"
+hours_note = "Hours are one operator's (Aveiro com Paixão, 09:00-18:00, longer July-September). Price is an estimate: operators set their own."
+last_entry_min = 0
+daylight_only = false
+weather = "outdoor"
+
+visit_min = 45
+visit_typical = 60
+price = "€€"
+booking = "no"
+
+description = """A short ride along the city canals in a traditional, brightly painted moliceiro boat, the same type once used to gather seaweed. Several operators board near the Rossio and canal quays. Trips usually last under an hour."""
+priority = 1
+
+[provenance]
+sources = ["https://estacoesnauticas.turismodocentro.pt/pages/1421?geo_article_id=5116", "https://www.centerofportugal.com/tour/moliceiro-tours-in-the-aveiro-lagoon"]
+hours_source = "https://estacoesnauticas.turismodocentro.pt/pages/1421?geo_article_id=5116"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "price"]

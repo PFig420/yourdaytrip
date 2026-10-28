@@ -1,0 +1,33 @@
+id = "historias-da-terra-e-do-mare-vagos"
+name = "Histórias da Terra e do Mare"
+kind = "food"
+category = "cafe"
+tags = ["indoor"]
+municipality = "Vagos"
+lat = 40.563130
+lon = -8.768110
+osm = "relation/8030477"
+
+hours = ""
+hours_note = "Municipal listing gives no opening hours. Position is the square, not the entrance."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 15
+visit_typical = 30
+price = "€"
+booking = "no"
+
+cuisine = ["coffee"]
+meals = ["snack"]
+
+description = """A café and ice-cream shop on the Largo Parracho Branco square in Vagueira, close to the beach and fish market."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-vagos.pt/visitar/estacao-nautica-de-vagos/ofertas/restauracao"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

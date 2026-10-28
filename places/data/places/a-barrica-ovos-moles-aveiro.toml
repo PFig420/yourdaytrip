@@ -1,0 +1,33 @@
+id = "a-barrica-ovos-moles-aveiro"
+name = "A Barrica – Casa dos Ovos Moles"
+kind = "food"
+category = "pastry"
+tags = ["indoor", "local-life"]
+municipality = "Aveiro"
+lat = 40.641610
+lon = -8.654990
+osm = "node/1799584294"
+
+hours = ""
+hours_note = "A private tourism guide shows 09:00-19:00 daily; not an official source, so hours are left empty."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 15
+visit_typical = 30
+price = "€"
+booking = "no"
+
+cuisine = ["ovos-moles", "pastry", "coffee"]
+meals = ["snack"]
+
+description = """A café in the building known for ovos moles, beside the city museum. The sweet is the local speciality."""
+priority = 3
+
+[provenance]
+sources = ["https://www.allaboutportugal.pt/en/aveiro/monuments/edificio-da-casa-dos-ovos-moles-a-barrica"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

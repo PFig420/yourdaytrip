@@ -1,0 +1,31 @@
+id = "lagoa-de-mira"
+name = "Lagoa de Mira"
+kind = "sight"
+category = "nature"
+tags = ["nature", "birdwatching", "boat", "walk", "free", "outdoor"]
+municipality = "Mira"
+lat = 40.438580
+lon = -8.756100
+osm = "way/974575596"
+
+hours = "24/7"
+hours_note = "Public shoreline park."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 45
+visit_typical = 90
+price = "free"
+booking = "no"
+
+description = """A lagoon in the Natura 2000 network, with a cycle and walking path round it, bird watching and boat trips. The lake and its neighbour near the beach are not official bathing waters."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-mira.pt/lagoa", "https://www.cm-mira.pt/node/1742"]
+hours_source = "https://www.cm-mira.pt/lagoa"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

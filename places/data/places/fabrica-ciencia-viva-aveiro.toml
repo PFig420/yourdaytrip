@@ -1,0 +1,33 @@
+id = "fabrica-ciencia-viva-aveiro"
+name = "Fábrica Centro Ciência Viva de Aveiro"
+kind = "sight"
+category = "museum"
+tags = ["science", "family", "kids", "indoor", "rainy-day"]
+municipality = "Aveiro"
+lat = 40.638150
+lon = -8.657700
+osm = "way/157717525"
+website = "https://www.ua.pt/fabrica"
+
+hours = "Tu-Fr 10:00-13:00,14:00-17:00; Sa,Su,PH 10:00-13:00,14:00-18:00"
+hours_note = "Hours as shown on the centre's family-activities page (JavaScript page; read through a search snippet, not cached). Closed Mondays. Ticket: full day about 8 EUR for adults."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 60
+visit_typical = 120
+price = "€€"
+ticket_eur = 8.0
+booking = "no"
+
+description = """A hands-on science centre in a converted factory, run with the University of Aveiro. Interactive exhibits, a teaching lab and a lab kitchen make it a solid rainy-day choice for families."""
+priority = 2
+
+[provenance]
+sources = ["https://www.ua.pt/pt/fabrica/", "https://www.ua.pt/pt/fabrica/atividades-para-familias", "https://www.ua.pt/pt/fabrica/page/17176", "https://turismodocentro.pt/poi/fabrica-centro-de-ciencia-viva-de-aveiro/"]
+hours_source = "https://www.ua.pt/pt/fabrica/atividades-para-familias"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon"]

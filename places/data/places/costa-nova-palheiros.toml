@@ -1,0 +1,55 @@
+id = "costa-nova-palheiros"
+name = "Costa Nova seafront and the striped palheiros"
+kind = "sight"
+category = "neighbourhood"
+tags = ["local-life", "history", "walk", "free", "outdoor"]
+municipality = "Ílhavo"
+lat = 40.622120
+lon = -8.749990
+osm = "way/356389320"
+
+hours = "24/7"
+hours_note = "Public street and seafront."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 30
+visit_typical = 75
+price = "free"
+booking = "no"
+
+description = """Rows of narrow wooden beach houses painted in bold stripes, once fishermen's storehouses and later summer homes. The seafront promenade and cafés make it the region's most photographed spot."""
+priority = 1
+
+[provenance]
+sources = ["https://www.cm-ilhavo.pt/pages/911", "https://turismodocentro.pt/artigo/palheiros-da-costa-nova/"]
+hours_source = "https://www.cm-ilhavo.pt/pages/911"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]
+
+[[points]]
+name = "south end of the seafront, on Avenida José Estêvão"
+lat = 40.610325
+lon = -8.749084
+source = "OSM way/54570759 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+
+[[points]]
+name = "seafront road by the Largo Arrais Ançã bus stop"
+lat = 40.613170
+lon = -8.749521
+source = "OSM way/109898722 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+
+[[points]]
+name = "middle of the seafront road"
+lat = 40.616830
+lon = -8.749737
+source = "OSM way/109898722 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+
+[[points]]
+name = "north of the middle of the seafront road"
+lat = 40.619674
+lon = -8.749152
+source = "OSM way/109898722 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"

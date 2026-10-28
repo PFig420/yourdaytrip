@@ -1,0 +1,33 @@
+id = "adamastor-cervejaria-aveiro"
+name = "Adamastor Cervejaria"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "nightlife"]
+municipality = "Aveiro"
+lat = 40.642630
+lon = -8.655830
+osm = "node/1799494439"
+
+hours = "Mo-Su 12:00-02:00"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["seafood", "beer"]
+meals = ["lunch", "dinner", "drinks"]
+
+description = """A seafood beer hall by the old fish square, open all day into the small hours. A good fallback when the kitchens elsewhere have closed."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/quinta-dos-abibes/poi/adamastor-cervejaria-do-povo-lda"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/quinta-dos-abibes/poi/adamastor-cervejaria-do-povo-lda"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

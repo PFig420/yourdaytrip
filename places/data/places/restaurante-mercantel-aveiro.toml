@@ -1,0 +1,33 @@
+id = "restaurante-mercantel-aveiro"
+name = "O Mercantel"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Aveiro"
+lat = 40.642900
+lon = -8.656080
+osm = "node/1799494469"
+
+hours = "Tu-Su 12:00-22:00"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["seafood", "fish"]
+meals = ["lunch", "dinner"]
+
+description = """A restaurant specialising in fresh fish and shellfish, a few steps from the canal quays. Serves all day without a mid-afternoon break."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/marques-de-marialva/poi/restaurante-mercantel"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/marques-de-marialva/poi/restaurante-mercantel"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

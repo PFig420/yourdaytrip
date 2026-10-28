@@ -1,0 +1,31 @@
+id = "museu-fabrica-historia-arroz"
+name = "Museu Fábrica da História – Arroz"
+kind = "sight"
+category = "museum"
+tags = ["history", "local-life", "indoor", "rainy-day"]
+municipality = "Estarreja"
+lat = 40.749360
+lon = -8.574360
+osm = "node/12513244203"
+
+hours = "Tu-Sa 10:00-18:00; PH off"
+hours_note = "Hours from the 2024 opening announcement; a 2025 programme shows weekend opening, so sources disagree. Entry was free in the opening month."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 30
+visit_typical = 45
+price = "free"
+booking = "no"
+
+description = """A museum in the restored rice-husking factory near Estarreja station, telling the story of the town's rice growing and its people. It opened in 2024."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-estarreja.pt/noticias/9999"]
+hours_source = "https://www.cm-estarreja.pt/noticias/9999"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon"]

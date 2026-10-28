@@ -1,0 +1,12 @@
+# Pinned feeds. Paths are relative to the repo root. A hash mismatch is a warning only.
+[[feeds]]
+id = "cp"
+path = "data/gtfs/cp.zip"
+sha256 = "48813f44f4257ca192f8970c9a7b0854fbdceb75e2b2eee09497d9d756ae9f58"
+
+[[feeds]]
+id = "av"
+path = "data/gtfs/aveiro.zip"
+# Rebuilt by converter/ on 2026-10-19 (Issues.md #4, #5, #6, #7, #9, #12; feed_version 20261019-cb0e4432).
+# Previous pins: 88927e86... (spec 2.1), b3b007b6... (after #12 only).
+sha256 = "205a30af619b2e8cd66201e3721b06f780d29f57f406b8e3d019bf83a747328d"

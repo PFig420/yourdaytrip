@@ -1,0 +1,34 @@
+id = "tasca-do-sal-aveiro"
+name = "Tasca do Sal"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "local-life"]
+municipality = "Aveiro"
+lat = 40.643190
+lon = -8.655980
+osm = "way/255655637"
+
+hours = "Mo-Sa 11:00-24:00"
+hours_note = "Position is the quay street (Cais dos Mercantéis), not the entrance."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["petiscos", "regional"]
+meals = ["lunch", "dinner", "snack", "drinks"]
+
+description = """A cosy sharing-plates tavern overlooking the canal, open from late morning to midnight. A handy choice between standard meal times."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/quinta-do-ortigao/poi/tasca-do-sal-49"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/quinta-do-ortigao/poi/tasca-do-sal-49"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

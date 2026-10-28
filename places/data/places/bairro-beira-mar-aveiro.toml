@@ -1,0 +1,31 @@
+id = "bairro-beira-mar-aveiro"
+name = "Bairro da Beira-Mar and Capela de São Gonçalinho"
+kind = "sight"
+category = "neighbourhood"
+tags = ["local-life", "history", "ria", "walk", "free", "outdoor"]
+municipality = "Aveiro"
+lat = 40.643120
+lon = -8.655220
+osm = "way/135412554"
+
+hours = "24/7"
+hours_note = "Streets are open; the chapel itself has no published hours."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 20
+visit_typical = 40
+price = "free"
+booking = "no"
+
+description = """The old fishermen's quarter beside the canals, with colourful houses and the small 1700s chapel of São Gonçalinho. At its January festival pilgrims share small cavaca cakes. Streets are shared with traffic in places."""
+priority = 2
+
+[provenance]
+sources = ["https://www.visitportugal.com/en/content/aveiro-accessible-itinerary", "https://estacoesnauticas.turismodocentro.pt/pages/1421?geo_article_id=5170"]
+hours_source = "https://www.visitportugal.com/en/content/aveiro-accessible-itinerary"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

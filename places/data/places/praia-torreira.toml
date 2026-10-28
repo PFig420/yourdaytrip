@@ -1,0 +1,31 @@
+id = "praia-torreira"
+name = "Praia da Torreira"
+kind = "sight"
+category = "beach"
+tags = ["beach", "nature", "free", "outdoor"]
+municipality = "Murtosa"
+lat = 40.763780
+lon = -8.711290
+osm = "node/6366161254"
+
+hours = "24/7"
+hours_note = "Open beach. Position is the beach-front access in Torreira town (toilets and cafés by the sea), about 270 m from the Assembleia Theatro stop; the sand area mapped as Praia da Torreira is 3 km south."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 60
+visit_typical = 150
+price = "free"
+booking = "no"
+
+description = """The ocean beach of Torreira, rated by the municipality among the region's best. Estuary beaches at Monte Branco and Bico offer calmer water on the lagoon side."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-murtosa.pt/p/praias"]
+hours_source = "https://www.cm-murtosa.pt/p/praias"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

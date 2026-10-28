@@ -1,0 +1,32 @@
+id = "praia-furadouro"
+name = "Praia do Furadouro"
+kind = "sight"
+category = "beach"
+tags = ["beach", "local-life", "free", "outdoor"]
+municipality = "Ovar"
+lat = 40.875210
+lon = -8.676820
+osm = "way/440122681"
+
+hours = "24/7"
+hours_note = "Open beach."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 60
+visit_typical = 120
+price = "free"
+booking = "no"
+
+description = """A long Atlantic beach about 3 km from Ovar, known for surfing and the traditional arte xávega, where nets are hauled in from the sand. The cycle path from town makes it an easy add-on."""
+priority = 2
+
+[provenance]
+sources = ["https://www.visitportugal.com/en/NR/exeres/7E6A50D8-C4CA-42BC-8896-43CA8726DA41", "https://turismodocentro.pt/concelho/ovar/"]
+hours_source = "https://www.visitportugal.com/en/NR/exeres/7E6A50D8-C4CA-42BC-8896-43CA8726DA41"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "rejected"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]
+status_reason = "no public transport in the current feeds"

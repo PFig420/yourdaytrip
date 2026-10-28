@@ -1,0 +1,31 @@
+id = "universidade-aveiro-campus"
+name = "University of Aveiro campus architecture"
+kind = "sight"
+category = "architecture"
+tags = ["architecture", "art", "walk", "free", "outdoor"]
+municipality = "Aveiro"
+lat = 40.632020
+lon = -8.657210
+osm = "way/240515188"
+
+hours = "24/7"
+hours_note = "Open campus; visiting hours not published, daylight assumed."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 30
+visit_typical = 60
+price = "free"
+booking = "no"
+
+description = """A campus with buildings by well-known Portuguese architects, including the library and water tower by Siza Vieira, plus many murals and sculptures. Open to walk through; a good stop for architecture fans."""
+priority = 3
+
+[provenance]
+sources = ["https://www.centerofportugal.com/poi/aveiro-university"]
+hours_source = "https://www.centerofportugal.com/poi/aveiro-university"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

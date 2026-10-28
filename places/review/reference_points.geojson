@@ -1,0 +1,265 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.75298,
+     40.62008
+    ]
+   },
+   "properties": {
+    "place": "praia-costa-nova",
+    "point": "main",
+    "main": true,
+    "marker-color": "#1f78b4",
+    "marker-symbol": "star",
+    "title": "Praia da Costa Nova: main (main point, unchanged)",
+    "source": "record lat/lon"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.753393,
+     40.610659
+    ]
+   },
+   "properties": {
+    "place": "praia-costa-nova",
+    "point": "south end, dune boardwalk from the Costa Nova houses",
+    "main": false,
+    "marker-color": "#1f78b4",
+    "marker-symbol": "circle",
+    "title": "Praia da Costa Nova: south end, dune boardwalk from the Costa Nova houses",
+    "source": "OSM way/152223321 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.754652,
+     40.613841
+    ]
+   },
+   "properties": {
+    "place": "praia-costa-nova",
+    "point": "south part of the beach",
+    "main": false,
+    "marker-color": "#1f78b4",
+    "marker-symbol": "circle",
+    "title": "Praia da Costa Nova: south part of the beach",
+    "source": "OSM way/301852964 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.754163,
+     40.61709
+    ]
+   },
+   "properties": {
+    "place": "praia-costa-nova",
+    "point": "south-middle part of the beach",
+    "main": false,
+    "marker-color": "#1f78b4",
+    "marker-symbol": "circle",
+    "title": "Praia da Costa Nova: south-middle part of the beach",
+    "source": "OSM way/301852964 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.751756,
+     40.624255
+    ]
+   },
+   "properties": {
+    "place": "praia-costa-nova",
+    "point": "north-middle part of the beach",
+    "main": false,
+    "marker-color": "#1f78b4",
+    "marker-symbol": "circle",
+    "title": "Praia da Costa Nova: north-middle part of the beach",
+    "source": "OSM way/301852964 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.750682,
+     40.627792
+    ]
+   },
+   "properties": {
+    "place": "praia-costa-nova",
+    "point": "north part of the beach",
+    "main": false,
+    "marker-color": "#1f78b4",
+    "marker-symbol": "circle",
+    "title": "Praia da Costa Nova: north part of the beach",
+    "source": "OSM way/301852964 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.750288,
+     40.631062
+    ]
+   },
+   "properties": {
+    "place": "praia-costa-nova",
+    "point": "north end of the beach",
+    "main": false,
+    "marker-color": "#1f78b4",
+    "marker-symbol": "circle",
+    "title": "Praia da Costa Nova: north end of the beach",
+    "source": "OSM way/301852964 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.74999,
+     40.62212
+    ]
+   },
+   "properties": {
+    "place": "costa-nova-palheiros",
+    "point": "main",
+    "main": true,
+    "marker-color": "#e66101",
+    "marker-symbol": "star",
+    "title": "Costa Nova seafront and the striped palheiros: main (main point, unchanged)",
+    "source": "record lat/lon"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.749084,
+     40.610325
+    ]
+   },
+   "properties": {
+    "place": "costa-nova-palheiros",
+    "point": "south end of the seafront, on Avenida José Estêvão",
+    "main": false,
+    "marker-color": "#e66101",
+    "marker-symbol": "circle",
+    "title": "Costa Nova seafront and the striped palheiros: south end of the seafront, on Avenida José Estêvão",
+    "source": "OSM way/54570759 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.749521,
+     40.61317
+    ]
+   },
+   "properties": {
+    "place": "costa-nova-palheiros",
+    "point": "seafront road by the Largo Arrais Ançã bus stop",
+    "main": false,
+    "marker-color": "#e66101",
+    "marker-symbol": "circle",
+    "title": "Costa Nova seafront and the striped palheiros: seafront road by the Largo Arrais Ançã bus stop",
+    "source": "OSM way/109898722 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.749737,
+     40.61683
+    ]
+   },
+   "properties": {
+    "place": "costa-nova-palheiros",
+    "point": "middle of the seafront road",
+    "main": false,
+    "marker-color": "#e66101",
+    "marker-symbol": "circle",
+    "title": "Costa Nova seafront and the striped palheiros: middle of the seafront road",
+    "source": "OSM way/109898722 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.749152,
+     40.619674
+    ]
+   },
+   "properties": {
+    "place": "costa-nova-palheiros",
+    "point": "north of the middle of the seafront road",
+    "main": false,
+    "marker-color": "#e66101",
+    "marker-symbol": "circle",
+    "title": "Costa Nova seafront and the striped palheiros: north of the middle of the seafront road",
+    "source": "OSM way/109898722 (ODbL); point chosen by Claude 2026-10-27, confirmed by Pedro 2026-10-27"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.749324,
+     40.610345
+    ]
+   },
+   "properties": {
+    "place": "canastra-do-fidalgo-costa-nova",
+    "point": "reference",
+    "marker-color": "#333333",
+    "title": "Canastra do Fidalgo (for the Costa Nova check)"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -8.74974,
+     40.6125
+    ]
+   },
+   "properties": {
+    "place": "stop",
+    "point": "bus stop",
+    "marker-color": "#666666",
+    "title": "Largo Arrais Ançã - Costa Nova (bus 36 stop)"
+   }
+  }
+ ]
+}

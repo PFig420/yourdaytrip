@@ -1,0 +1,2 @@
+https://www.openstreetmap.org/node/1309601711 fetched 2026-10-22
+OSM tags: name=Canastra do Fidalgo; amenity=restaurant; cuisine=regional;portuguese; opening_hours=Fr-We 10:00-02:00; addr=Avenida José Estevão 240

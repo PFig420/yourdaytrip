@@ -1,0 +1,32 @@
+id = "reserva-natural-dunas-sao-jacinto"
+name = "Reserva Natural das Dunas de São Jacinto"
+kind = "sight"
+category = "nature"
+tags = ["nature", "birdwatching", "walk", "outdoor"]
+municipality = "Aveiro"
+lat = 40.670860
+lon = -8.724920
+osm = "way/181145325"
+
+hours = "24/7"
+hours_note = "max_walk_m 1500: at the default 1,200 m the engine finds no way back on weekends. Trail access assumed daylight; centre opening hours and guided-visit slots were not found (ICNF 234 331 282)."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 60
+visit_typical = 150
+price = "free"
+booking = "no"
+max_walk_m = 1500
+
+description = """A protected strip of dunes and pine woods between the lagoon and the ocean. A signed walking trail with bird hides and a raised boardwalk starts at the interpretation centre. The usual way in is the ferry from Aveiro."""
+priority = 1
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/servicos/ambiente/reserva-natural-das-dunas-de-sao-jacinto-rndsj", "https://www.cm-aveiro.pt/pages/950?poi_id=552", "https://www.cm-aveiro.pt/cmaveiro/uploads/writer_file/document/3872/plano_de_cogestao_da_rndsj_2023_2025_final.pdf"]
+hours_source = "https://www.cm-aveiro.pt/servicos/ambiente/reserva-natural-das-dunas-de-sao-jacinto-rndsj"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

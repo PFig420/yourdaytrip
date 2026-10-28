@@ -1,0 +1,34 @@
+id = "clandestino-salpoente-aveiro"
+name = "Clandestino by Salpoente"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Aveiro"
+lat = 40.639350
+lon = -8.656080
+osm = "node/10121462726"
+website = "https://restauranteclandestino.pt"
+
+hours = ""
+hours_note = "Site gives service times 12:15-15:00 and 19:15-23:00 but not the days; add the days when confirmed."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["portuguese", "regional"]
+meals = ["lunch", "dinner"]
+
+description = """The relaxed sister of Salpoente, with a menu about home-style comfort food that blends traditional dishes and current trends. Good for a shared family meal or a quiet table for two."""
+priority = 2
+
+[provenance]
+sources = ["https://restauranteclandestino.pt/"]
+hours_source = "https://restauranteclandestino.pt/"
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

@@ -1,0 +1,33 @@
+id = "casa-blanca-lounge-bar-vagos"
+name = "Casa Blanca Lounge Bar"
+kind = "drink"
+category = "bar"
+tags = ["indoor", "nightlife"]
+municipality = "Vagos"
+lat = 40.562100
+lon = -8.764780
+osm = "way/160368994"
+
+hours = ""
+hours_note = "Municipal listing gives no opening hours. Position is the avenue (Av. Claudino Santos Costa), not the entrance."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 30
+visit_typical = 60
+price = "€"
+booking = "no"
+
+cuisine = ["cocktails", "beer"]
+meals = ["drinks", "snack"]
+
+description = """A lounge bar on the main avenue of Vagueira beach, listed by the Vagos municipality as a place to eat and drink."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-vagos.pt/visitar/estacao-nautica-de-vagos/ofertas/restauracao"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

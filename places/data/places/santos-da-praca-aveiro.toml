@@ -1,0 +1,33 @@
+id = "santos-da-praca-aveiro"
+name = "Santos da Praça"
+kind = "drink"
+category = "bar"
+tags = ["indoor", "outdoor", "nightlife"]
+municipality = "Aveiro"
+lat = 40.642060
+lon = -8.655330
+osm = "node/2810673671"
+
+hours = ""
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. No opening hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "mixed"
+
+visit_min = 30
+visit_typical = 90
+price = "€"
+booking = "no"
+
+cuisine = ["beer", "cocktails"]
+meals = ["drinks"]
+
+description = """A two-floor bar with a terrace in the middle of the fish square, playing Latin, 80s and 90s and current commercial music."""
+priority = 3
+
+[provenance]
+sources = ["https://www.facebook.com/SantosDaPraca/"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

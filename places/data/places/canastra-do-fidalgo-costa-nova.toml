@@ -1,0 +1,34 @@
+id = "canastra-do-fidalgo-costa-nova"
+name = "Canastra do Fidalgo"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "ria", "local-life"]
+municipality = "Ílhavo"
+lat = 40.610345
+lon = -8.749324
+osm = "node/1309601711"
+
+hours = "Mo-We,Fr-Su 10:00-02:00; Th off"
+hours_note = "Hours from OpenStreetMap only (lower confidence); the tourism listing gives none. Facebook and Instagram pages are linked from the listing."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 60
+visit_typical = 90
+price = "€€"
+booking = "recommended"
+
+cuisine = ["seafood", "fish", "eel", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """Seafood restaurant beside the small marina on the lagoon side of Costa Nova, a short walk from the striped palheiros. The kitchen is built around fresh fish and shellfish, from oysters and Bulhão Pato clams to oven-baked octopus and a lagoon eel stew; the biscuit cake is the dessert to try."""
+priority = 1
+
+[provenance]
+sources = ["https://centerofportugal.com/article/canastra-do-fidalgo", "https://www.openstreetmap.org/node/1309601711"]
+hours_source = "https://www.openstreetmap.org/node/1309601711"
+checked = 2026-10-22
+drafted_by = "claude"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "booking", "lat", "lon"]

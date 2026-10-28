@@ -1,0 +1,23 @@
+id = "p3-sao-jacinto-weekdays"
+name = "P3 Sao Jacinto weekdays"
+kind = "sight"
+category = "nature"
+tags = ["maritime"]
+municipality = "Aveiro"
+lat = 40.660682
+lon = -8.729750
+hours = "Mo-Fr 09:00-17:00"
+daylight_only = false
+weather = "outdoor"
+visit_min = 30
+visit_typical = 60
+price = "free"
+description = "Fixture place."
+priority = 2
+
+[provenance]
+sources = []
+hours_source = ""
+checked = 2026-10-01
+status = "confirmed"
+estimates = []

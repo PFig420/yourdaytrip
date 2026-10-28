@@ -1,0 +1,33 @@
+id = "taberna-do-rockabilio-aveiro"
+name = "Taberna do Rockabilio"
+kind = "drink"
+category = "bar"
+tags = ["indoor", "nightlife"]
+municipality = "Aveiro"
+lat = 40.639020
+lon = -8.656940
+osm = "node/2810646340"
+
+hours = ""
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. No opening hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 30
+visit_typical = 90
+price = "€"
+booking = "no"
+
+cuisine = ["beer"]
+meals = ["drinks"]
+
+description = """A beer bar built around rock music and culture, with a pub quiz on Thursday evenings."""
+priority = 3
+
+[provenance]
+sources = ["https://www.facebook.com/rockabilio/"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

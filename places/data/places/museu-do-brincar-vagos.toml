@@ -1,0 +1,30 @@
+id = "museu-do-brincar-vagos"
+name = "Museu do Brincar"
+kind = "sight"
+category = "museum"
+tags = ["family", "kids", "history", "indoor", "rainy-day"]
+municipality = "Vagos"
+lat = 40.552570
+lon = -8.677680
+
+hours = "Tu-Su 10:00-12:30,14:00-17:30; Jan 01 off; Jan 02 off; Dec 24 off; Dec 25 off; Dec 26 off; Dec 31 off; PH off"
+hours_note = "Closed Mondays, holidays and Carnival Tuesday (the date varies, not in the hours rule). Location is the street, not surveyed. Ticket price not found (estimate)."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 30
+visit_typical = 60
+price = "€"
+booking = "no"
+
+description = """A museum about children's play and toys in the town of Vagos, which also houses a tourist information point. A good indoor choice with children."""
+priority = 2
+
+[provenance]
+sources = ["https://turismodocentro.pt/poi/museu-do-brincar/"]
+hours_source = "https://turismodocentro.pt/poi/museu-do-brincar/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "price"]

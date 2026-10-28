@@ -1,0 +1,33 @@
+id = "o-alemao-vagos"
+name = "O Alemão"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Vagos"
+lat = 40.561130
+lon = -8.769000
+osm = "way/114492641"
+
+hours = ""
+hours_note = "Municipal listing gives no hours or cuisine. Position is the street (Rua Professor Ernesto Neves)."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A restaurant in the Vagueira beach village, listed by the Vagos municipality."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-vagos.pt/visitar/estacao-nautica-de-vagos/ofertas/restauracao"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

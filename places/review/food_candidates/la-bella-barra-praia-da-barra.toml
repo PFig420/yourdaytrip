@@ -1,0 +1,35 @@
+id = "la-bella-barra-praia-da-barra"
+name = "La Bella Barra"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "family"]
+municipality = "Ílhavo"
+lat = 40.640264
+lon = -8.748127
+osm = "node/12459286429"
+website = "https://www.facebook.com/labellabarra.pt"
+
+hours = "Mo-Su 10:30-22:00"
+hours_note = "Hours from OpenStreetMap only (lower confidence). Facebook page found via OSM; current activity could not be checked. Cuisine is Italian and Portuguese; 'italian' is not in the vocabulary."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """Italian and Portuguese kitchen in Praia da Barra, a few minutes on foot from the lighthouse bus stop. A relaxed choice for pizza or pasta when someone in the group wants a break from fish."""
+priority = 3
+
+[provenance]
+sources = ["https://www.openstreetmap.org/node/12459286429"]
+hours_source = "https://www.openstreetmap.org/node/12459286429"
+checked = 2026-10-22
+drafted_by = "claude"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "cuisine", "lat", "lon"]

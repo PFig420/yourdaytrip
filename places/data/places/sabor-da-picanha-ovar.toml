@@ -1,0 +1,34 @@
+id = "sabor-da-picanha-ovar"
+name = "Sabor da Picanha"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "family"]
+municipality = "Ovar"
+lat = 40.868430
+lon = -8.613300
+osm = "way/558848528"
+
+hours = "Th-Mo 12:00-14:30,19:30-23:00; Tu 12:00-14:30"
+hours_note = "Hours come from OpenStreetMap only (lower confidence). The website gives no hours; OSM: Th-Mo 12:00-14:30,19:30-23:00; Tu lunch only; We closed."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = []
+meals = ["lunch", "dinner"]
+
+description = """A Brazilian rodízio steakhouse with its own website, choosing its meat carefully and serving cuts at the table. Closed Wednesdays and Tuesday evenings."""
+priority = 3
+
+[provenance]
+sources = ["https://www.sabordapicanha.com/"]
+hours_source = "https://www.sabordapicanha.com/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

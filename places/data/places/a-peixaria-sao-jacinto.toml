@@ -1,0 +1,33 @@
+id = "a-peixaria-sao-jacinto"
+name = "A Peixaria"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "local-life"]
+municipality = "Aveiro"
+lat = 40.662160
+lon = -8.728830
+osm = "node/1915179519"
+
+hours = ""
+hours_note = "Regional tourism article lists it; it gives no hours. Facebook: facebook.com/apeixaria."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["fish", "seafood", "eel"]
+meals = ["lunch", "dinner"]
+
+description = """A plain, family-run fish restaurant by the São Jacinto ferry quay, known for grilled fish, seafood rice and eel stew."""
+priority = 1
+
+[provenance]
+sources = ["https://www.centerofportugal.com/article/a-peixaria"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

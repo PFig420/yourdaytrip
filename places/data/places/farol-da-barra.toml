@@ -1,0 +1,33 @@
+id = "farol-da-barra"
+name = "Farol da Barra"
+kind = "activity"
+category = "activity"
+tags = ["maritime", "viewpoint", "family", "free", "outdoor"]
+municipality = "Ílhavo"
+lat = 40.642830
+lon = -8.747960
+osm = "node/5719254421"
+website = "https://www.cm-ilhavo.pt"
+
+hours = "Apr-Oct We 14:00-17:15; Nov-Mar We 13:30-16:45; PH off"
+hours_note = "Wednesdays only, not on holidays. Climbs leave at the fixed times in entry_times (summer-time and winter-time lists); the rule switches on 1 Nov and 1 Apr, but clocks change on the last Sunday of Oct and Mar. Groups are small and first come first served."
+entry_times = "Apr-Oct We 14:00,14:30,15:00,15:30,16:30; Nov-Mar We 13:30,14:00,14:30,15:00,16:00; PH off"
+last_entry_min = 45
+daylight_only = false
+weather = "outdoor"
+
+visit_min = 45
+visit_typical = 60
+price = "free"
+booking = "no"
+
+description = """Portugal's tallest lighthouse, 62 m high, with views over the lagoon mouth and the coast. Free guided climbs run on Wednesday afternoons in small groups, registered on the day with no advance booking."""
+priority = 1
+
+[provenance]
+sources = ["https://www.cm-ilhavo.pt/municipio/comunicacao/eventos/evento/visita-ao-farol-da-barra-254a19b5-7ff2-4f0a-a014-b6ead17b4915", "https://turismodocentro.pt/poi/farol-da-barra/"]
+hours_source = "https://www.cm-ilhavo.pt/municipio/comunicacao/eventos/evento/visita-ao-farol-da-barra-254a19b5-7ff2-4f0a-a014-b6ead17b4915"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon"]

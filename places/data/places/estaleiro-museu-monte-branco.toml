@@ -1,0 +1,30 @@
+id = "estaleiro-museu-monte-branco"
+name = "Estaleiro-Museu do Monte Branco"
+kind = "sight"
+category = "museum"
+tags = ["maritime", "boat", "local-life", "free", "family"]
+municipality = "Murtosa"
+lat = 40.756290
+lon = -8.701630
+
+hours = "Tu-Fr 14:00-18:00; Sa,Su 10:00-12:30,14:00-18:00"
+hours_note = "Closed Mondays. Coordinates given on the municipal page."
+last_entry_min = 0
+daylight_only = false
+weather = "mixed"
+
+visit_min = 20
+visit_typical = 40
+price = "free"
+booking = "no"
+
+description = """A municipal boatyard-museum where traditional moliceiro boats are built and repaired by hand. You can watch the master builder at work. Free to enter, with group visits by prior booking."""
+priority = 2
+
+[provenance]
+sources = ["https://www.cm-murtosa.pt/pages/751?poi_id=30"]
+hours_source = "https://www.cm-murtosa.pt/pages/751?poi_id=30"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical"]

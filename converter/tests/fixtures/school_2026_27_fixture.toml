@@ -1,0 +1,49 @@
+# TEST DATA ONLY. These are NOT the official 2026/27 school calendar dates.
+# Same as config/feed.toml but with a fixture [school] calendar.
+# Feed configuration (spec 5.5, 5.6, 6.1)
+
+[window]
+start = 2026-10-19
+# Day before the second Sunday of September 2027 (12 Sep), when school-year services restart.
+end = 2027-09-11
+
+[agencies.busway]
+name = "Busway-CirAveiro"
+url = "http://busway-cira.pt"
+timezone = "Europe/Lisbon"
+lang = "pt"
+
+[agencies.aveirobus]
+name = "Aveirobus"
+url = "https://www.aveirobus.pt"
+timezone = "Europe/Lisbon"
+lang = "pt"
+
+[holidays]
+# National holidays are computed (1 Jan, Good Friday, Easter, 25 Apr, 1 May, Corpus Christi,
+# 10 Jun, 15 Aug, 5 Oct, 1 Nov, 1 Dec, 8 Dec, 25 Dec).
+# Carnival is not a national holiday.
+carnival_is_holiday = false
+
+[holidays.municipal]
+# "MM-DD" per agency. Busway lines cross several municipalities: none by default (Decision).
+busway = []
+# Aveiro municipal holiday, 12 May. Confirmed 2026-10-19 by the Câmara's press note ("Feriado Municipal, dia 12 de maio", Festas do Município 2026, noticiasdeaveiro.pt).
+aveirobus = ["05-12"]
+
+[school]
+[[school.terms]]
+start = 2026-09-14
+end = 2026-12-18
+
+[[school.terms]]
+start = 2027-01-04
+end = 2027-02-12
+
+[[school.terms]]
+start = 2027-02-18
+end = 2027-03-19
+
+[[school.terms]]
+start = 2027-04-05
+end = 2027-06-18

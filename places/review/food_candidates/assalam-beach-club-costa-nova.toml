@@ -1,0 +1,35 @@
+id = "assalam-beach-club-costa-nova"
+name = "Assalam Beach Club"
+kind = "drink"
+category = "bar"
+tags = ["beach", "outdoor", "nightlife"]
+municipality = "Ílhavo"
+lat = 40.616517
+lon = -8.752990
+osm = "way/354964376"
+website = "https://pt-pt.facebook.com/assalambeachclub/"
+
+hours = ""
+hours_note = "No published hours found. Facebook page linked from OpenStreetMap; current activity could not be checked."
+last_entry_min = 0
+daylight_only = false
+weather = "outdoor"
+
+visit_min = 30
+visit_typical = 60
+price = "€€"
+booking = "no"
+
+cuisine = ["cocktails", "beer"]
+meals = ["drinks"]
+
+description = """Beach bar on the ocean side of Costa Nova, about seven minutes on foot from the bus terminus: somewhere for a drink before the bus back to Aveiro."""
+priority = 2
+
+[provenance]
+sources = ["https://www.openstreetmap.org/way/354964376"]
+hours_source = ""
+checked = 2026-10-22
+drafted_by = "claude"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "cuisine", "lat", "lon"]

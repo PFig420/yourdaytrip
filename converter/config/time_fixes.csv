@@ -1,0 +1,2 @@
+source,trip,stop_sequence,old_time,new_time,evidence
+pdfs/bus/bus.pdf,p5t1c6,4,17:02,17:20,"User decision 2026-10-19: PDF p.5 prints 17:02 (source typo, times go backwards); 17:20 chosen by Pedro"

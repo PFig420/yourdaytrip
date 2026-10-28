@@ -1,0 +1,34 @@
+id = "restaurante-necas-house-aveiro"
+name = "Necas House"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "local-life"]
+municipality = "Aveiro"
+lat = 40.642230
+lon = -8.654990
+osm = "node/1799584320"
+
+hours = "Mo,We-Su 12:00-15:30,19:00-22:30"
+hours_note = "Listed for eel stew (caldeirada de enguias). OSM node 'Casa Necas' is the probable position, not confirmed."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["eel", "regional", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A friendly place serving Aveiro family recipes with a daily set meal option. Closed Tuesdays."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/sao-joao/poi/restaurante-necas-house"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/sao-joao/poi/restaurante-necas-house"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

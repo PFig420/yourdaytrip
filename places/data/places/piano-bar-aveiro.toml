@@ -1,0 +1,33 @@
+id = "piano-bar-aveiro"
+name = "Piano Bar"
+kind = "drink"
+category = "bar"
+tags = ["indoor", "nightlife"]
+municipality = "Aveiro"
+lat = 40.642630
+lon = -8.653880
+osm = "node/1799575318"
+
+hours = ""
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. No opening hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 30
+visit_typical = 90
+price = "€"
+booking = "no"
+
+cuisine = ["cocktails", "beer"]
+meals = ["drinks"]
+
+description = """A long-standing nightlife address in the Beira-Mar quarter, on Rua dos Marnotos."""
+priority = 3
+
+[provenance]
+sources = ["https://www.instagram.com/pianobaraveiro/", "https://estacoesnauticas.turismodocentro.pt/pages/1037?geo_article_id=5156"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

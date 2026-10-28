@@ -1,0 +1,8 @@
+walk_speed_mps = 1.2
+walk_detour = 1.3
+transfer_max_m = 400
+access_max_m = 1200
+access_max_limit_m = 2000
+transfer_buffer_s = 120
+cache_dates = 8
+walk_overrides = "data/paths/walk_overrides.csv"   # real OSM path lengths for cached walks (WalkBarriers.md); a missing file changes nothing

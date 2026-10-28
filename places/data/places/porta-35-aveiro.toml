@@ -1,0 +1,34 @@
+id = "porta-35-aveiro"
+name = "Porta 35"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "family"]
+municipality = "Aveiro"
+lat = 40.642210
+lon = -8.654690
+osm = "node/2810695728"
+website = "https://www.porta35.com"
+
+hours = "Mo,We-Su 12:00-15:00,19:00-22:30"
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€"
+booking = "no"
+
+cuisine = ["portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """A welcoming spot best known for its burgers, on the street of small restaurants behind the fish square. Closed Tuesdays."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/sao-lourenco/poi/porta-35-86"]
+hours_source = "https://www.cm-aveiro.pt/visitantes/sabores-com-tradicao/vinhos-bairrada/sao-lourenco/poi/porta-35-86"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

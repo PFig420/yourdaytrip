@@ -1,0 +1,33 @@
+id = "taberna-do-barbosa-ovar"
+name = "Taberna do Barbosa"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "local-life"]
+municipality = "Ovar"
+lat = 40.856260
+lon = -8.614720
+osm = "node/7033970244"
+
+hours = ""
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. No opening hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€"
+booking = "no"
+
+cuisine = ["portuguese", "petiscos"]
+meals = ["lunch", "dinner"]
+
+description = """A taberna with traditional dishes and take-away, in Ovar."""
+priority = 3
+
+[provenance]
+sources = ["https://www.facebook.com/people/Taberna-do-Barbosa/100063486223341/"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

@@ -1,0 +1,32 @@
+id = "museu-maritimo-ilhavo"
+name = "Museu Marítimo de Ílhavo"
+kind = "sight"
+category = "museum"
+tags = ["maritime", "history", "family", "indoor", "rainy-day"]
+municipality = "Ílhavo"
+lat = 40.604330
+lon = -8.666350
+osm = "way/104691248"
+website = "https://museumaritimo.cm-ilhavo.pt"
+
+hours = "Tu-Su 10:00-13:00,14:00-18:00"
+hours_note = "Last entries 12:15 and 17:15. Closed Mondays. An older information page lists Sundays 14:00-18:00 only; the current home page and ship-museum page show a morning opening too. Ticket price not retrieved (estimate)."
+last_entry_min = 45
+daylight_only = false
+weather = "indoor"
+
+visit_min = 60
+visit_typical = 90
+price = "€€"
+booking = "no"
+
+description = """Ílhavo's museum of the sea tells the story of cod fishing, ships and the local ria through models, tools and displays. Easy to combine with the Santo André ship museum and the Vista Alegre porcelain site."""
+priority = 1
+
+[provenance]
+sources = ["https://museumaritimo.cm-ilhavo.pt/", "https://museumaritimo.cm-ilhavo.pt/museumaritimo/uploads/writer_file/document/829/26.html", "https://www.cm-ilhavo.pt/viver/areas-de-intervencao/cultura/equipamentos-culturais/museus/navio-museu-santo-andre"]
+hours_source = "https://museumaritimo.cm-ilhavo.pt/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "price"]

@@ -1,0 +1,31 @@
+id = "museu-de-ovar"
+name = "Museu de Ovar"
+kind = "sight"
+category = "museum"
+tags = ["history", "local-life", "art", "indoor", "rainy-day"]
+municipality = "Ovar"
+lat = 40.858960
+lon = -8.624660
+osm = "node/796567744"
+
+hours = "Tu-Sa 09:30-12:30,14:30-17:30; PH off"
+hours_note = "Closed Sundays, Mondays and holidays. Ticket price not found (estimate)."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 30
+visit_typical = 45
+price = "€"
+booking = "no"
+
+description = """A town museum with regional costumes, embroidery and lace, everyday objects, house interiors and hundreds of dolls from around the world. It also holds a contemporary ceramic painting collection."""
+priority = 2
+
+[provenance]
+sources = ["https://turismodocentro.pt/poi/museu-de-ovar/"]
+hours_source = "https://turismodocentro.pt/poi/museu-de-ovar/"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "price"]

@@ -1,0 +1,54 @@
+# Planner settings (Planner.md 13). Paths in the CLI and web app are relative to the repo root.
+[model]
+name = "claude-sonnet-5-5"        # Pedro's decision, 2026-10-23
+effort = "medium"                 # planner call; Gate 3 also tries "low"
+narrative_effort = "low"
+max_tokens = 16000
+server_fallback = true            # beta surface with fallbacks="default" (Planner.md 2.3)
+
+[schedule]
+max_wait_min = 45
+walk_between_m = 2000             # place-to-place and return walking limit
+plan_b_change_min = 10            # changes shorter than this get a plan B
+max_free_time_min = 120           # walk-only gap allowed before a dinner place (6.1)
+fill_free_time_min = 45           # free time at least this long may get one inserted visit
+suggest_free_time_min = 30        # a wait this long straight after a visit is shown as free time, with ideas nearby (6.1)
+suggest_walk_m = 800              # ideas are at most this far on foot, one way
+leave_mode_home_by = "23:59"      # "Leave by" requests: the latest arrival home the engine searches for (Planner.md 3.1)
+
+[pack]
+sights = 12
+food = 6
+min_clusters = 2
+hint_reference_hours = 3
+hint_max_min = 120
+profile = "compact"               # the local backend gets [pack.compact]; Claude always gets the full pack (Pedro, 2026-10-27)
+
+[pack.compact]                    # Execution.md M5; the full pack does not fit the laptop with VS Code open
+sights = 8
+food = 4
+description_max = 160             # characters, cut at a word boundary
+hint_max_min = 60
+
+[retries]
+max_retries = 2                   # planner calls = 1 + max_retries
+
+[web]                             # the test page's map (MapPlan.md 4.1); OSM's standard tiles are fine for local testing only
+tile_url = "https://tile.openstreetmap.org/{z}/{x}/{y}.png"
+tile_attribution = "© OpenStreetMap contributors"
+
+[paths]
+accepted_legs = "converter/config/accepted_legs.csv"
+
+[local]                           # self-hosted llama-server (Planner.md 2.5; setup in /home/pedro/selfhostedLLM)
+base_url = "http://127.0.0.1:8080"
+model_alias = "local-planner"
+model_label = "qwen3-4b-instruct-2507-q4_k_m"   # what reports and DayPlan.model show
+timeout_s = 900
+max_tokens = 800                 # drafts are 276-436 tokens; a runaway draft fails in ~2 min (Pedro, 2026-10-27)
+narrative_max_tokens = 1024
+narrative_retries = 1            # one more narrative call when the check fails (local backend only; Claude makes none)
+temperature = 0.3
+top_p = 0.8
+seed = 42
+api_key_env = "LOCAL_LLM_API_KEY"

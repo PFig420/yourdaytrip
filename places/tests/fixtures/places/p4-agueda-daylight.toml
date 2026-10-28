@@ -1,0 +1,23 @@
+id = "p4-agueda-daylight"
+name = "P4 Agueda daylight"
+kind = "sight"
+category = "nature"
+tags = ["maritime"]
+municipality = "Águeda"
+lat = 40.57749168
+lon = -8.448231459
+hours = "24/7"
+daylight_only = true
+weather = "outdoor"
+visit_min = 30
+visit_typical = 90
+price = "free"
+description = "Fixture place."
+priority = 2
+
+[provenance]
+sources = []
+hours_source = ""
+checked = 2026-10-01
+status = "confirmed"
+estimates = []

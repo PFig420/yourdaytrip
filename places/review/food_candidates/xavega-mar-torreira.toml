@@ -1,0 +1,35 @@
+id = "xavega-mar-torreira"
+name = "Xávega Mar"
+kind = "food"
+category = "restaurant"
+tags = ["indoor", "local-life", "maritime"]
+municipality = "Murtosa"
+lat = 40.759637
+lon = -8.712577
+osm = "node/2311054977"
+website = "https://www.facebook.com/xavegamarmarisqueira/"
+
+hours = "Mo-We,Fr-Su 10:00-02:00; Th off"
+hours_note = "Hours from the Murtosa municipality's Estação Náutica listing."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 60
+visit_typical = 90
+price = "€€"
+booking = "no"
+
+cuisine = ["seafood", "fish", "portuguese"]
+meals = ["lunch", "dinner"]
+
+description = """Seafood house in Torreira since 2002. Its signature is the Mariscada à Xávega, shellfish served in small models of the traditional xávega fishing boats; seafood rice is the other classic, and veal covers the meat side."""
+priority = 1
+
+[provenance]
+sources = ["https://estacaonautica.cm-murtosa.pt/pages/766?poi_id=68"]
+hours_source = "https://estacaonautica.cm-murtosa.pt/pages/766?poi_id=68"
+checked = 2026-10-22
+drafted_by = "claude"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon"]

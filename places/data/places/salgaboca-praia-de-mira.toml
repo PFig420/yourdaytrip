@@ -1,0 +1,33 @@
+id = "salgaboca-praia-de-mira"
+name = "Salgáboca"
+kind = "food"
+category = "restaurant"
+tags = ["indoor"]
+municipality = "Mira"
+lat = 40.452230
+lon = -8.803400
+osm = "node/11088889989"
+
+hours = ""
+hours_note = "Listed by the Mira Câmara (Mira à Mesa). No opening hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 45
+visit_typical = 75
+price = "€€"
+booking = "no"
+
+cuisine = ["portuguese", "seafood"]
+meals = ["lunch", "dinner"]
+
+description = """A restaurant near the sea in Praia de Mira, part of the municipality's regional food event."""
+priority = 3
+
+[provenance]
+sources = ["https://www.cm-mira.pt/node/3768"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

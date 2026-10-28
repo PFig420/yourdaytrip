@@ -1,0 +1,30 @@
+id = "umbrella-sky-agueda"
+name = "Umbrella Sky Project (Águeda)"
+kind = "sight"
+category = "architecture"
+tags = ["street-art", "art", "family", "free", "outdoor"]
+municipality = "Águeda"
+lat = 40.572300
+lon = -8.446640
+osm = "way/238558002"
+
+hours = ""
+hours_note = "Seasonal (usually July-September). The 2027 season dates are not confirmed, so hours are left unknown; AgitÁgueda 2027 was reported for 3-25 July."
+last_entry_min = 0
+daylight_only = true
+weather = "outdoor"
+
+visit_min = 20
+visit_typical = 45
+price = "free"
+booking = "no"
+
+description = """Every summer, several streets in the centre of Águeda are roofed with thousands of coloured umbrellas, an installation born from the AgitÁgueda art festival. Dates for 2027 were not found."""
+priority = 1
+
+[provenance]
+sources = ["https://www.cm-agueda.pt/noticia-6/rua-luis-de-camoes-entre-as-mais-bonitas-do-mundo", "https://www.cm-agueda.pt/viver/comunicacao/noticias-agueda/noticia/arte-urbana-surpreende-visitantes-de-agueda"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "hours"]

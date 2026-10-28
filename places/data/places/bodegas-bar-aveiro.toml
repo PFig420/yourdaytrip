@@ -1,0 +1,33 @@
+id = "bodegas-bar-aveiro"
+name = "Bodegas Bar"
+kind = "drink"
+category = "bar"
+tags = ["indoor", "nightlife"]
+municipality = "Aveiro"
+lat = 40.642120
+lon = -8.655110
+osm = "node/1799584390"
+
+hours = ""
+hours_note = "Facebook/Instagram page found by search; its current activity could not be checked. No opening hours found."
+last_entry_min = 0
+daylight_only = false
+weather = "indoor"
+
+visit_min = 30
+visit_typical = 90
+price = "€"
+booking = "no"
+
+cuisine = ["beer", "wine"]
+meals = ["drinks"]
+
+description = """A friendly, welcoming bar in the lower town, close to the fish square."""
+priority = 3
+
+[provenance]
+sources = ["https://www.facebook.com/bodegasbar/"]
+hours_source = ""
+drafted_by = "agent"
+status = "draft"
+estimates = ["visit_min", "visit_typical", "price", "lat", "lon", "hours"]

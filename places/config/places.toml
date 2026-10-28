@@ -1,0 +1,20 @@
+# Meal windows (PlacesLayer.md 5.3), local time. An end before the start runs past midnight.
+[meals]
+lunch = "12:00-15:00"
+dinner = "19:00-22:30"
+snack = "15:00-19:00"
+drinks = "18:00-02:00"
+
+[walk]
+cluster_minutes = 10       # single-link clustering radius (5.6)
+
+[freshness]
+stale_days = 180
+
+[area]
+# PlacesLayer.md 2.3
+municipalities = ["Aveiro", "Ílhavo", "Murtosa", "Ovar", "Estarreja", "Vagos", "Mira", "Águeda"]
+lat_min = 40.40
+lat_max = 40.90
+lon_min = -8.82   # widened from -8.80 (spec 2.3): Praia de Mira lies at about -8.80; see README Decisions
+lon_max = -8.40

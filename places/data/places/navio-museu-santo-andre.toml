@@ -1,0 +1,32 @@
+id = "navio-museu-santo-andre"
+name = "Navio-Museu Santo André"
+kind = "sight"
+category = "museum"
+tags = ["maritime", "history", "family", "kids", "boat"]
+municipality = "Ílhavo"
+lat = 40.641410
+lon = -8.730260
+osm = "way/783175515"
+website = "https://museumaritimo.cm-ilhavo.pt"
+
+hours = "Tu-Su 10:00-13:00,14:00-18:00"
+hours_note = "Last entries 12:15 and 17:15; closed Mondays. Ticket price not retrieved (estimate)."
+last_entry_min = 45
+daylight_only = false
+weather = "mixed"
+
+visit_min = 45
+visit_typical = 75
+price = "€"
+booking = "no"
+
+description = """A real 1948 cod-fishing trawler, kept in Gafanha da Nazaré as a branch of the maritime museum. Walk the decks and see how crews lived and worked on long fishing trips."""
+priority = 1
+
+[provenance]
+sources = ["https://www.cm-ilhavo.pt/viver/areas-de-intervencao/cultura/equipamentos-culturais/museus/navio-museu-santo-andre", "https://museumaritimo.cm-ilhavo.pt/museumaritimo/uploads/writer_file/document/829/26.html"]
+hours_source = "https://www.cm-ilhavo.pt/viver/areas-de-intervencao/cultura/equipamentos-culturais/museus/navio-museu-santo-andre"
+checked = 2026-10-20
+drafted_by = "agent"
+status = "confirmed"
+estimates = ["visit_min", "visit_typical", "lat", "lon", "price"]

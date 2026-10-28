@@ -1,0 +1,23 @@
+id = "p5-costa-nova-late"
+name = "P5 Costa Nova late"
+kind = "sight"
+category = "beach"
+tags = ["maritime"]
+municipality = "Ílhavo"
+lat = 40.612500
+lon = -8.749740
+hours = "Sa 18:00-23:00"
+daylight_only = false
+weather = "outdoor"
+visit_min = 30
+visit_typical = 60
+price = "free"
+description = "Fixture place."
+priority = 2
+
+[provenance]
+sources = []
+hours_source = ""
+checked = 2026-10-01
+status = "confirmed"
+estimates = []

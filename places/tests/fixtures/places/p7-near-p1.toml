@@ -1,0 +1,23 @@
+id = "p7-near-p1"
+name = "P7 near P1"
+kind = "sight"
+category = "beach"
+tags = ["maritime"]
+municipality = "Ílhavo"
+lat = 40.612950
+lon = -8.749740
+hours = "Sa 11:00-13:00"
+daylight_only = false
+weather = "outdoor"
+visit_min = 30
+visit_typical = 60
+price = "free"
+description = "Fixture place."
+priority = 2
+
+[provenance]
+sources = []
+hours_source = ""
+checked = 2026-10-01
+status = "confirmed"
+estimates = []

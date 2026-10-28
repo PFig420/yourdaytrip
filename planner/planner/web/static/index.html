@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>YourDayTrip planner test</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+:root {
+  --bg: #f6f7f5; --surface: #fff; --fg: #17201c; --muted: #5d6a64; --rule: #d6ddd9;
+  --accent: #0b6b5a; --accent-soft: #e1f1ec; --warn: #8f5600; --warn-soft: #fbefd9;
+  --bad: #a3372a; --bad-soft: #fbe9e6; --ride: #2c5aa0; --ride-soft: #e5edf9;
+  --mono: ui-monospace, Menlo, Consolas, monospace;
+  --m-rail: #8a3fb5; --m-bus: #2c5aa0; --m-ferry: #0f7d8c; --m-walk: #5d6a64; --m-food: #b5541c;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f1513; --surface: #161e1b; --fg: #e3ebe7; --muted: #98a8a1; --rule: #2b3833;
+    --accent: #5cc6ae; --accent-soft: #15302a; --warn: #f0b44c; --warn-soft: #2e2512;
+    --bad: #f08a7a; --bad-soft: #36201c; --ride: #8fb4ee; --ride-soft: #18243a;
+    --m-rail: #c79bec; --m-bus: #8fb4ee; --m-ferry: #5fd0de; --m-walk: #98a8a1; --m-food: #f0a070;
+  }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 15px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; }
+header { padding: 14px 16px; border-bottom: 1px solid var(--rule); background: var(--surface); display: flex; flex-wrap: wrap; gap: 6px 16px; align-items: baseline; }
+header h1 { font-size: 1.15rem; margin: 0; }
+header .meta { color: var(--muted); font-size: .85rem; font-family: var(--mono); }
+main { display: grid; grid-template-columns: minmax(260px, 340px) 1fr; gap: 20px; padding: 16px; max-width: 1200px; margin: 0 auto; }
+@media (max-width: 760px) { main { grid-template-columns: 1fr; } }
+.card { background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; padding: 14px 16px; min-width: 0; }
+form label { display: block; font-size: .8rem; color: var(--muted); margin: 10px 0 3px; }
+form input, form select { width: 100%; padding: 7px 8px; border: 1px solid var(--rule); border-radius: 5px; background: var(--bg); color: var(--fg); font: inherit; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; }
+.tags label { margin: 0; display: inline-flex; align-items: center; gap: 4px; padding: 2px 8px; border: 1px solid var(--rule); border-radius: 999px; font-size: .8rem; color: var(--fg); cursor: pointer; }
+.tags input { width: auto; margin: 0; }
+.tags label:has(input:checked) { background: var(--accent-soft); border-color: var(--accent); }
+.switch { display: flex; gap: 6px; margin-top: 10px; }
+.switch label { position: relative; flex: 1; margin: 0; text-align: center; padding: 5px 8px; border: 1px solid var(--rule); border-radius: 6px; font-size: .85rem; color: var(--fg); cursor: pointer; }
+.switch input { position: absolute; opacity: 0; width: 0; }
+.switch label:has(input:checked) { background: var(--accent-soft); border-color: var(--accent); font-weight: 600; }
+.switch label:has(input:focus-visible) { outline: 2px solid var(--accent); outline-offset: 2px; }
+.check { display: flex; align-items: center; gap: 6px; margin-top: 10px; font-size: .9rem; }
+.check input { width: auto; }
+button { margin-top: 14px; width: 100%; padding: 9px; border: 0; border-radius: 6px; background: var(--accent); color: var(--surface); font: inherit; font-weight: 600; cursor: pointer; }
+button:disabled { opacity: .6; cursor: wait; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.hint { color: var(--muted); font-size: .8rem; margin: 8px 0 0; }
+#status { font-family: var(--mono); font-size: .85rem; color: var(--muted); margin: 0 0 10px; min-height: 1.2em; }
+h2 { font-size: 1.2rem; margin: 0 0 4px; }
+h3 { font-size: .8rem; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 18px 0 6px; }
+.badges { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0 10px; }
+.badge { font-family: var(--mono); font-size: .75rem; padding: 1px 8px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+.badge.warn { background: var(--warn-soft); color: var(--warn); }
+.badge.bad { background: var(--bad-soft); color: var(--bad); }
+.summary { margin: 8px 0 0; }
+.notes { border: 1px dashed var(--rule); border-radius: 6px; padding: 6px 10px; margin: 8px 0; font-size: .88rem; }
+.notes p { margin: 2px 0; }
+ol.tl { list-style: none; padding: 0; margin: 0; }
+ol.tl li { display: grid; grid-template-columns: 92px 1fr; gap: 10px; padding: 7px 0; border-top: 1px solid var(--rule); }
+ol.tl li:first-child { border-top: 0; }
+.time { font-family: var(--mono); font-size: .85rem; color: var(--muted); white-space: nowrap; }
+.kind { font-size: .7rem; font-family: var(--mono); text-transform: uppercase; letter-spacing: .05em; margin-right: 6px; padding: 0 6px; border-radius: 4px; }
+li.visit .kind { background: var(--accent-soft); color: var(--accent); }
+li.ride .kind { background: var(--ride-soft); color: var(--ride); }
+li.free_time .kind { background: var(--warn-soft); color: var(--warn); border: 0; }
+.ideas { margin-top: 4px; }
+li.walk .kind, li.wait .kind { background: var(--bg); color: var(--muted); border: 1px solid var(--rule); }
+li.visit strong { font-size: 1rem; }
+.why { color: var(--muted); font-size: .88rem; display: block; }
+ul.plain { margin: 0; padding-left: 1.1em; }
+ul.plain li { margin: 3px 0; }
+.warnings li { color: var(--warn); }
+.errors li { color: var(--bad); }
+.attempt { border-left: 3px solid var(--rule); padding: 2px 0 2px 10px; margin: 8px 0; }
+.attempt p { margin: 2px 0; }
+ol.plain { margin: 4px 0; padding-left: 1.4em; }
+table { border-collapse: collapse; width: 100%; font-size: .82rem; font-family: var(--mono); }
+.tbl { overflow-x: auto; }
+th, td { text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--rule); white-space: nowrap; }
+th { color: var(--muted); font-weight: 500; }
+details { margin-top: 14px; }
+pre.raw { max-height: 160px; overflow: auto; white-space: pre-wrap; word-break: break-all; }
+pre { overflow-x: auto; font-size: .75rem; background: var(--bg); padding: 10px; border-radius: 6px; max-height: 420px; }
+.empty { color: var(--muted); }
+#mapbox { margin: 0 0 14px; }
+#map { height: 400px; border: 1px solid var(--rule); border-radius: 8px; background: var(--bg); z-index: 0; }
+@media (max-width: 760px) { #map { height: 300px; } }
+.mapbar { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 6px; }
+.mapbar button { margin: 0; width: auto; padding: 4px 12px; font-size: .8rem; font-weight: 500; background: var(--surface); color: var(--fg); border: 1px solid var(--rule); }
+.mapbar button.on { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+#maplegend { display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: .78rem; color: var(--muted); margin: 6px 0 0; }
+#maplegend .sw { display: inline-block; width: 22px; height: 0; border-top: 4px solid; vertical-align: middle; margin-right: 5px; }
+#maplegend .sw.dash { border-top: 2px dashed; }
+#maplegend .sw.dot { border-top: 3px dotted; }
+#mapmsg { color: var(--muted); font-size: .85rem; }
+#mapwarn { color: var(--warn); font-size: .8rem; margin: 4px 0 0; padding-left: 1.1em; }
+.pin { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: var(--accent); color: #fff; border: 2px solid #fff; font: 700 13px/1 system-ui, sans-serif; box-shadow: 0 1px 4px rgba(0,0,0,.45); }
+.pin.food { background: var(--m-food); }
+.pin.origin { background: #17201c; border-radius: 6px; }
+.pin.clock { width: 22px; height: 22px; background: #fff; color: var(--warn); border: 3px solid var(--warn); font-size: 12px; }
+.pin.idea { width: 14px; height: 14px; background: transparent; border: 2px solid var(--m-food); box-shadow: none; }
+.pin.hot { outline: 3px solid #ffb400; transform: scale(1.25); }
+ol.tl li { cursor: pointer; }
+ol.tl li:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+ol.tl li.sel { background: var(--accent-soft); }
+</style>
+</head>
+<body>
+<header>
+  <h1>YourDayTrip planner test</h1>
+  <span class="meta" id="server">loading…</span>
+</header>
+<main>
+  <form class="card" id="f">
+    <label for="origin">Start from</label>
+    <select id="origin"></select>
+    <label for="date">Date</label>
+    <input id="date" type="date" required>
+    <div class="switch" role="radiogroup" aria-label="Deadline">
+      <label><input type="radio" name="deadline" value="home" checked>Back home by</label>
+      <label><input type="radio" name="deadline" value="leave">Leave by</label>
+    </div>
+    <div class="row">
+      <div><label for="leave">Leave after</label><input id="leave" type="time" value="09:30" required></div>
+      <div><label for="back" id="backLabel">Back home by</label><input id="back" type="time" value="19:00" required></div>
+    </div>
+    <label>Interests</label>
+    <div class="tags" id="interests"></div>
+    <label for="text">Anything else (optional)</label>
+    <input id="text" maxlength="200" placeholder="e.g. we like seafood and short walks">
+    <div class="row">
+      <div><label for="pace">Pace</label><select id="pace"><option>relaxed</option><option>packed</option></select></div>
+      <div><label for="weather">Weather</label><select id="weather"><option value="any">any</option><option value="rain">rain</option></select></div>
+    </div>
+    <div class="check"><input id="food" type="checkbox" checked><label for="food" style="margin:0;color:inherit;font-size:inherit">Include meals</label></div>
+    <div class="check"><input id="llm" type="checkbox" checked><label for="llm" style="margin:0;color:inherit;font-size:inherit">Use the model (off: code-only plan, instant)</label></div>
+    <button id="go" type="submit">Plan the day</button>
+    <p class="hint" id="hint"></p>
+  </form>
+  <section class="card" id="out">
+    <p id="status"></p>
+    <div id="mapbox" hidden>
+      <div class="mapbar">
+        <button type="button" id="vwhole">Whole day</button>
+        <button type="button" id="vdest">Destination</button>
+      </div>
+      <div id="map" role="img" aria-label="Map of the planned day"></div>
+      <div id="maplegend"></div>
+      <ul id="mapwarn"></ul>
+    </div>
+    <div id="plan"><p class="empty">Fill in the form and press “Plan the day”.</p></div>
+  </section>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const $ = (id) => document.getElementById(id);
+const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"}[c]));
+const hm = (iso) => (iso || "").slice(11, 16);
+let meta = null;
+
+async function init() {
+  $("date").value = new Date().toISOString().slice(0, 10);
+  try {
+    meta = await (await fetch("/meta")).json();
+  } catch (e) {
+    $("server").textContent = "planner server not reachable";
+    return;
+  }
+  $("server").textContent = `backend ${meta.backend} · model ${meta.model}`;
+  $("hint").textContent = meta.backend === "local"
+    ? "Local model: a plan takes about 3–6 minutes. Keep this tab open."
+    : "Claude API backend: each plan is billed.";
+  $("origin").innerHTML = meta.origins.map((o) => `<option value="${esc(o.id)}">${esc(o.name)}</option>`).join("");
+  $("interests").innerHTML = meta.interests.map((t) =>
+    `<label><input type="checkbox" value="${esc(t)}">${esc(t)}</label>`).join("");
+}
+
+const deadline = () => document.querySelector('input[name="deadline"]:checked').value;
+document.querySelectorAll('input[name="deadline"]').forEach((r) => r.addEventListener("change", () => {
+  $("backLabel").textContent = deadline() === "leave" ? "Leave by" : "Back home by";
+}));
+
+$("f").addEventListener("submit", async (ev) => {
+  ev.preventDefault();
+  if (!meta) return;
+  const origin = meta.origins.find((o) => o.id === $("origin").value);
+  const body = {
+    origin, date: $("date").value, leave_after: $("leave").value, back_by: $("back").value, deadline: deadline(),
+    interests: [...document.querySelectorAll("#interests input:checked")].map((i) => i.value),
+    text: $("text").value.trim(), pace: $("pace").value, weather: $("weather").value, include_food: $("food").checked,
+  };
+  const useLlm = $("llm").checked;
+  $("go").disabled = true;
+  const t0 = Date.now();
+  const tick = setInterval(() => {
+    const s = Math.round((Date.now() - t0) / 1000);
+    $("status").textContent = `Planning… ${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`;
+  }, 1000);
+  $("plan").innerHTML = "";
+  try {
+    const r = await fetch(`/plan?use_llm=${useLlm}&debug=true&map=true`, {method: "POST", headers: {"content-type": "application/json"}, body: JSON.stringify(body)});
+    const j = await r.json();
+    if (!r.ok) {
+      const msg = Array.isArray(j.detail) ? j.detail.map((d) => d.msg).join("; ") : j.detail;
+      $("plan").innerHTML = `<ul class="plain errors"><li>${esc(msg || r.statusText)}</li></ul>`;
+    } else {
+      render(j);
+    }
+    $("status").textContent = `Done in ${((Date.now() - t0) / 1000).toFixed(0)} s.`;
+  } catch (e) {
+    $("status").textContent = "The request failed: " + e;
+  } finally {
+    clearInterval(tick);
+    $("go").disabled = false;
+  }
+});
+
+function entry(e, lines) {
+  if (e.type === "visit") {
+    const tags = [e.meal, e.entry === "fixed" ? "fixed entry" : "", e.inserted ? "fills time before dinner" : ""].filter(Boolean);
+    const why = lines[e.place_id] || e.reason;
+    return [`${hm(e.start)}–${hm(e.end)}`, `<span class="kind">visit</span><strong>${esc(e.name)}</strong>` +
+      (tags.length ? ` <span class="badge">${esc(tags.join(" · "))}</span>` : "") + (why ? `<span class="why">${esc(why)}</span>` : "")];
+  }
+  if (e.type === "ride") {
+    return [`${hm(e.board_time)}–${hm(e.alight_time)}`, `<span class="kind">${esc(e.mode)} ${esc(e.route_short)}</span>${esc(e.board_stop)} → ${esc(e.alight_stop)}` +
+      `<span class="why">towards ${esc(e.headsign)} · trip ${esc(e.trip_id)}</span>`];
+  }
+  if (e.type === "walk") return [`${hm(e.depart)}–${hm(e.arrive)}`, `<span class="kind">walk</span>${esc(e.metres)} m to ${esc(e.to)}`];
+  const label = e.type === "free_time" ? "free time" : "wait";
+  const ideas = (e.suggestions || []).length
+    ? `<div class="ideas"><span class="why">Ideas nearby (optional)</span><ul class="plain">${e.suggestions.map((x) =>
+      `<li><strong>${esc(x.name)}</strong>${x.point ? ` (${esc(x.point)})` : ""} · ${esc(x.walk_m)} m, ${esc(x.walk_min)} min on foot · about ${esc(x.minutes_there)} min there` +
+      (x.open_until ? ` · open until ${esc(x.open_until)}` : "") + `<span class="why">${esc(x.description)}</span></li>`).join("")}</ul></div>`
+    : "";
+  return [`${hm(e.from)}–${hm(e.until)}`, `<span class="kind">${label}</span>at ${esc(e.at)}<span class="why">${esc(e.reason)}</span>${ideas}`];
+}
+
+function render(p) {
+  const r = p.request;
+  const lines = {};
+  (p.narrative?.stop_lines || []).forEach((s) => { lines[s.place_id] = s.line; });
+  const src = p.source === "llm" ? `<span class="badge">model plan</span>` : `<span class="badge warn">fallback plan</span>`;
+  const st = p.status === "ok" ? "" : `<span class="badge bad">no plan</span>`;
+  let h = `<h2>${esc(p.title || "Day plan")}</h2>
+    <div class="badges">${st}${src}<span class="badge">${esc(p.backend)}${p.model ? " · " + esc(p.model) : ""}</span>
+    <span class="badge">attempts ${p.attempts}</span><span class="badge">${p.usage.latency_s.toFixed(0)} s</span></div>
+    <div class="why">${esc(r.origin.name)} · ${esc(r.date)} · ${esc(r.leave_after)}–${esc(r.back_by)} · ${esc(r.pace)} ·
+    <strong>${r.deadline === "leave" ? "leave by" : "back by"} ${esc(r.back_by)}</strong></div>`;
+  const acc = p.debug?.draft;
+  if (p.debug) {
+    h += `<div class="notes"><strong>Model notes (testing)</strong>` + (acc
+      ? `<p>${esc(acc.title)}</p><p class="why">${acc.notes ? esc(acc.notes) : "The model left no notes."}</p>`
+      : `<p class="why">No accepted model draft (fallback plan or no plan).</p>`) + `</div>`;
+  }
+  if (p.narrative) h += `<p class="summary">${esc(p.narrative.summary)}</p>`;
+  if (p.errors.length) h += `<h3>Why no plan</h3><ul class="plain errors">${p.errors.map((e) => `<li>${esc(e.code)}: ${esc(e.message)}</li>`).join("")}</ul>`;
+  if (p.timeline.length) {
+    h += `<h3>Timeline</h3><ol class="tl">${p.timeline.map((e, i) => {
+      const [t, d] = entry(e, lines);
+      return `<li class="${esc(e.type)}" data-step="${i}" tabindex="0"><span class="time">${t}</span><span>${d}</span></li>`;
+    }).join("")}</ol>`;
+  }
+  const back = [];
+  if (r.deadline === "leave" && p.timeline.length) {
+    const ride = p.timeline.slice(p.timeline.findLastIndex((e) => e.type === "visit")).find((e) => e.type === "ride");
+    if (ride) back.push(`Leave by <strong>${esc(r.back_by)}</strong>: the ${esc(ride.route_short)} leaves ${esc(ride.board_stop)} at <strong>${hm(ride.board_time)}</strong>.`);
+  }
+  if (p.home_by) back.push(`${r.deadline === "leave" ? "Reach home" : "Home"} by <strong>${hm(p.home_by)}</strong>.`);
+  const s = p.last_safe_return;
+  if (s) {
+    const v = s.first_vehicle;
+    back.push(`Last safe return: leave ${esc(s.from_place)} by ${hm(s.depart)}` +
+      (v ? `, ${esc(v.mode)} ${esc(v.route_short)} at ${hm(v.board_time)} from ${esc(v.board_stop)}` : "") + `; home ${hm(s.arrive_home)}.` +
+      (s.backup ? ` One departure earlier: ${hm(s.backup.depart)}, home ${hm(s.backup.arrive_home)}.` : ""));
+  }
+  p.plan_b.forEach((b) => {
+    const m = b.missed;
+    back.push(`Plan B at ${esc(b.change_at)}: if you miss ${esc(m.route_short)} ${esc(m.headsign)} at ${hm(m.board_time)}, ` +
+      (b.arrive ? `the next one gets you to ${esc(b.target)} at ${hm(b.arrive)}.` : esc(b.note)));
+  });
+  if (back.length) h += `<h3>Getting back</h3><ul class="plain">${back.map((x) => `<li>${x}</li>`).join("")}</ul>`;
+  if (p.warnings.length) h += `<h3>Warnings</h3><ul class="plain warnings">${p.warnings.map((w) => `<li>${esc(w)}</li>`).join("")}</ul>`;
+  if (p.debug?.attempt_drafts?.length) {
+    h += `<h3>Failed model drafts</h3>` + p.debug.attempt_drafts.map((a, i) => {
+      const d = a.draft;
+      const stops = d ? `<ol class="plain">${d.stops.map((s) => `<li><strong>${esc(s.name || s.place_id)}</strong> · ${esc(s.visit_minutes)} min` +
+        (s.name ? "" : ` <span class="badge bad">unknown id</span>`) + `<span class="why">${esc(s.why)}</span></li>`).join("")}</ol>`
+        : (a.raw
+          ? `<p class="why"><strong>Cut off at the output limit.</strong> The text so far (${a.raw.length} characters):</p>` +
+            `<pre class="raw">${esc(a.raw.slice(0, 600))}${a.raw.length > 600 ? "…" : ""}</pre>` +
+            (a.raw.length > 600 ? `<details><summary>Full text</summary><pre class="raw">${esc(a.raw)}</pre></details>` : "")
+          : `<p class="why">No usable draft (cut off or not valid JSON).</p>`);
+      const notes = d && d.notes ? `<p class="why">Notes: ${esc(d.notes)}</p>` : "";
+      return `<div class="attempt"><p><strong>Attempt ${i + 1}</strong>${d ? ": " + esc(d.title) : ""}</p>${stops}${notes}` +
+        `<ul class="plain errors">${a.errors.map((e) => `<li>${esc(e.code)}: ${esc(e.message)}</li>`).join("")}</ul></div>`;
+    }).join("");
+  }
+  if (p.usage.calls.length) {
+    h += `<h3>Model calls</h3><div class="tbl"><table><tr><th>call</th><th>seconds</th><th>tokens in</th><th>out</th><th>cached</th><th>prompt tok/s</th><th>gen tok/s</th><th>error</th></tr>` +
+      p.usage.calls.map((c) => `<tr><td>${esc(c.label)}</td><td>${esc(c.latency_s)}</td><td>${esc(c.input_tokens ?? "")}</td><td>${esc(c.output_tokens ?? "")}</td>` +
+        `<td>${esc(c.cache_read_tokens ?? "")}</td><td>${esc(c.prompt_tps ?? "")}</td><td>${esc(c.gen_tps ?? "")}</td><td>${esc(c.backend_error || c.error || "")}</td></tr>`).join("") +
+      `</table></div>`;
+  }
+  h += `<h3>Notes</h3><ul class="plain">${p.disclaimers.map((d) => `<li>${esc(d)}</li>`).join("")}</ul>`;
+  h += `<details><summary>Raw JSON</summary><pre>${esc(JSON.stringify(p, null, 2))}</pre></details>`;
+  $("plan").innerHTML = h;
+  drawMap(p.map);
+}
+
+// ---- the map (MapPlan.md 4): a picture of the checked plan; lines join stops in order, walks are straight lines ----------
+let map = null, layers = null, ideas = null, casing = null, byStep = {}, allLayers = [], views = {}, selected = null;
+const css = (name, fallback) => (getComputedStyle(document.documentElement).getPropertyValue(name) || "").trim() || fallback;
+const MODE = { rail: "--m-rail", bus: "--m-bus", ferry: "--m-ferry" };
+const FALLBACK = { rail: "#8a3fb5", bus: "#2c5aa0", ferry: "#0f7d8c" };
+const modeColour = (m) => css(MODE[m] || "--m-bus", FALLBACK[m] || "#2c5aa0");
+const bounds = (b) => L.latLngBounds([[b[1], b[0]], [b[3], b[2]]]);
+const ll = (c) => [c[1], c[0]];
+
+function popup(f) {
+  const q = f.properties, k = q.kind;
+  if (k === "visit") return `<strong>${esc(q.n)} · ${esc(q.name)}</strong><br>${q.meal ? esc(q.meal) + " " : ""}${esc(q.start)}–${esc(q.end)}` +
+    (q.point_name ? `<br>at: ${esc(q.point_name)}` : "") + (q.inserted ? "<br>fills time before dinner" : "") + (q.reason ? `<br>${esc(q.reason)}` : "");
+  if (k === "ride") return `<strong>${esc(q.mode)} ${esc(q.route_short)}</strong> towards ${esc(q.headsign)}<br>${esc(q.board_time)} → ${esc(q.alight_time)}, ${esc(q.stops)} stops<br>${esc(q.board_stop)} → ${esc(q.alight_stop)}` +
+    (q.path === "straight" ? `<br><span class="why">no path found: straight lines between stops</span>` : q.path === "partial" ? `<br><span class="why">part of the line is straight between stops</span>` : "") +
+    ({ relation: "<br>Route: as mapped in OpenStreetMap",
+       mixed: "<br>Route: partly as mapped in OpenStreetMap, partly the shortest road path",
+       shortest: "<br>Route: shortest road path between stops (this line is not mapped in OpenStreetMap)" }[q.route_source] || "");
+  if (k === "stop") return `${esc(q.role === "board" ? "Board" : "Get off")}: ${esc(q.name)} at ${esc(q.time)}`;
+  if (k === "walk") {
+    const far = q.path === "osm" && q.path_m && Math.abs(q.path_m - q.metres) / q.metres > 0.25;
+    return `Walk ${esc(q.metres)} m to ${esc(q.to)}<br>${esc(q.depart)} → ${esc(q.arrive)}` +
+      (far ? `<br>the street route is about ${esc(q.path_m)} m` : "") +
+      (q.path === "straight" ? `<br><span class="why">no path found: straight line</span>` : q.path === "partial" ? `<br><span class="why">part of the path is a straight line</span>` : "");
+  }
+  if (k === "idea_walk") return `Walk to ${esc(q.name)}, about ${esc(q.path_m)} m`;
+  if (k === "free_time") return `<strong>Free time</strong> ${esc(q.from)}–${esc(q.until)}<br>${esc(q.at)}<br>${esc(q.reason)}`;
+  if (k === "idea") return `<strong>${esc(q.name)}</strong>${q.point_name ? ` (${esc(q.point_name)})` : ""}<br>${esc(q.walk_m)} m, ${esc(q.walk_min)} min on foot, about ${esc(q.minutes_there)} min there` +
+    (q.open_until ? `, open until ${esc(q.open_until)}` : "") + `<br><span class="why">${esc(q.description)}</span>`;
+  return esc(q.name || k);
+}
+
+function pin(cls, text, size) {
+  return L.divIcon({ className: "", html: `<div class="pin ${cls}">${text}</div>`, iconSize: [size, size], iconAnchor: [size / 2, size / 2] });
+}
+
+// a polyline split into runs: solid where a path was found, dotted grey where only a straight line is known (a guess never looks real)
+function runs(coords, gaps) {
+  const cut = new Set();
+  (gaps || []).forEach(([i, j]) => { for (let k = i; k < j; k++) cut.add(k); });        // segment k joins coords k and k+1
+  const out = [];
+  let cur = null;
+  for (let k = 0; k < coords.length - 1; k++) {
+    const gap = cut.has(k);
+    if (!cur || cur.gap !== gap) { cur = { gap, pts: [coords[k]] }; out.push(cur); }
+    cur.pts.push(coords[k + 1]);
+  }
+  return out;
+}
+const DOTTED = () => ({ color: css("--m-walk", "#5d6a64"), weight: 3, dashArray: "1 7", opacity: .9, lineCap: "round" });
+
+function drawMap(fc) {
+  const box = $("mapbox");
+  if (!fc) { box.hidden = true; return; }
+  box.hidden = false;
+  if (map) map.invalidateSize();
+  if (typeof L === "undefined") {                          // no network: the timeline stands on its own
+    $("map").innerHTML = `<p id="mapmsg">The map needs Leaflet from the internet and could not load. The timeline below is complete.</p>`;
+    return;
+  }
+  if (!map) {
+    map = L.map("map");
+    L.tileLayer((meta || {}).tile_url || "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      { attribution: (meta || {}).tile_attribution || "© OpenStreetMap contributors", maxZoom: 19 }).addTo(map);
+    if (map.attributionControl) map.attributionControl.addAttribution("paths derived from OpenStreetMap");
+    document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") clearSelection(); });
+  }
+  if (layers) { map.removeLayer(layers); map.removeLayer(ideas); map.removeLayer(casing); if (map._ctl) map.removeControl(map._ctl); }
+  layers = L.featureGroup().addTo(map);
+  ideas = L.featureGroup().addTo(map);
+  casing = L.featureGroup().addTo(map);
+  byStep = {}; allLayers = []; selected = null;
+  const modes = new Set();
+  const order = { walk: 0, idea_walk: 0, ride: 1, stop: 2, free_time: 3, visit: 4, origin: 5, idea: 6 };
+  const feats = [...fc.features].sort((a, b) => order[a.properties.kind] - order[b.properties.kind]);
+  feats.forEach((f) => {
+    const q = f.properties, k = q.kind, g = f.geometry;
+    const reg = (layer, base, group) => {
+      layer.bindPopup(popup(f));
+      group.addLayer(layer);
+      allLayers.push({ layer, kind: k, base });
+      if (q.step !== undefined) {
+        (byStep[q.step] = byStep[q.step] || []).push({ layer, kind: k, base, coords: layer.getLatLngs ? layer.getLatLngs() : null });
+        layer.on("click", () => select(q.step, true));
+      }
+    };
+    if (k === "walk" || k === "idea_walk" || k === "ride") {
+      if (k === "ride") modes.add(q.mode);
+      const solid = k === "ride" ? { color: modeColour(q.mode), weight: 5, opacity: .85 }
+                                 : { color: css("--m-walk", "#5d6a64"), weight: 3, dashArray: "6 6", opacity: .9 };
+      runs(g.coordinates.map(ll), q.gaps).forEach((r) => reg(L.polyline(r.pts, r.gap ? DOTTED() : solid), r.gap ? DOTTED() : solid,
+        k === "idea_walk" ? ideas : layers));
+    } else if (k === "stop") {
+      const base = { radius: 4, color: modeColour(q.mode), fillColor: "#fff", fillOpacity: 1, weight: 2 };
+      reg(L.circleMarker(ll(g.coordinates), base), base, layers);
+    } else if (k === "origin") {
+      reg(L.marker(ll(g.coordinates), { icon: pin("origin", "⌂", 26), zIndexOffset: 400 }), {}, layers);
+    } else if (k === "visit") {
+      reg(L.marker(ll(g.coordinates), { icon: pin(q.meal ? "food" : "", esc(q.n), 26), zIndexOffset: 500 }), {}, layers);
+    } else if (k === "free_time") {
+      reg(L.marker(ll(g.coordinates), { icon: pin("clock", "◔", 22), zIndexOffset: 300 }), {}, layers);
+    } else if (k === "idea") {
+      reg(L.marker(ll(g.coordinates), { icon: pin("idea", "", 14), zIndexOffset: 100 }), {}, ideas);
+    }
+  });
+  map._ctl = L.control.layers(null, { "Ideas nearby (optional)": ideas }, { collapsed: false }).addTo(map);
+  views.whole = fc.properties.bounds_all ? bounds(fc.properties.bounds_all) : null;
+  views.dest = fc.properties.bounds_destination ? bounds(fc.properties.bounds_destination) : views.whole;
+  const same = JSON.stringify(fc.properties.bounds_all) === JSON.stringify(fc.properties.bounds_destination);
+  showView(same ? "whole" : "dest");
+  $("vdest").hidden = same;
+  const names = { rail: "train", bus: "bus", ferry: "ferry" };
+  $("maplegend").innerHTML = [...modes].map((m) => `<span><span class="sw" style="color:${modeColour(m)}"></span>${esc(names[m] || m)}</span>`).join("") +
+    `<span><span class="sw dash" style="color:${css("--m-walk", "#5d6a64")}"></span>walk</span>` +
+    `<span><span class="sw dot" style="color:${css("--m-walk", "#5d6a64")}"></span>no path found</span>` +
+    `<span>Buses follow their route as mapped in OpenStreetMap where available, otherwise the shortest road path between stops; trains follow the railway; walks follow footpaths and streets. Dotted grey: no path found, straight line shown. Times come from the timetable and the planner's walking estimate.</span>`;
+  $("mapwarn").innerHTML = (fc.properties.warnings || []).map((w) => `<li>${esc(w)}</li>`).join("");
+  document.querySelectorAll("#plan li[data-step]").forEach((li) => {
+    const go = () => select(Number(li.dataset.step), false);
+    li.addEventListener("click", go);
+    li.addEventListener("keydown", (ev) => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); go(); } });
+  });
+}
+
+function showView(which) {
+  const b = views[which] || views.whole;
+  if (b && map) map.fitBounds(b.pad(0.08));
+  $("vwhole").classList.toggle("on", which === "whole");
+  $("vdest").classList.toggle("on", which === "dest");
+}
+
+const Z = { visit: 500, origin: 400, free_time: 300, idea: 100 };
+function dim(on) {
+  allLayers.forEach(({ layer, base }) => {
+    if (layer.setStyle) layer.setStyle(on ? { opacity: (base.opacity || 1) * 0.4, fillOpacity: 0.4 } : { opacity: base.opacity === undefined ? 1 : base.opacity, fillOpacity: base.fillOpacity === undefined ? 0.2 : base.fillOpacity });
+    else if (layer.setOpacity) layer.setOpacity(on ? 0.4 : 1);
+  });
+}
+
+function paint(step, on) {
+  (byStep[step] || []).forEach(({ layer, kind, base }) => {
+    if (layer.setStyle) {
+      if (on) {
+        // the highlighted path: a light outline (casing) under a stronger stroke, on top of the dimmed day
+        if (layer.getLatLngs) casing.addLayer(L.polyline(layer.getLatLngs(), { color: "#ffffff", weight: (base.weight || 3) + 6, opacity: 0.95, lineCap: "round" }));
+        layer.setStyle({ weight: (base.weight || 3) + 2, opacity: 1, radius: 7 });
+        if (layer.bringToFront) layer.bringToFront();
+      } else layer.setStyle(base);
+    } else {
+      const el = layer.getElement && layer.getElement();
+      if (el && el.firstChild) el.firstChild.classList.toggle("hot", on);
+      if (layer.setOpacity) layer.setOpacity(1);
+      if (layer.setZIndexOffset) layer.setZIndexOffset(on ? 1000 : Z[kind] || 0);
+    }
+  });
+  if (!on && casing) casing.clearLayers();
+}
+
+function clearSelection() {
+  if (selected === null) return;
+  paint(selected, false);
+  dim(false);
+  document.querySelectorAll("#plan li.sel").forEach((li) => li.classList.remove("sel"));
+  selected = null;
+}
+
+function select(step, fromMap) {
+  if (selected === step) { clearSelection(); return; }          // click again to clear
+  if (selected !== null) { paint(selected, false); }
+  document.querySelectorAll("#plan li.sel").forEach((li) => li.classList.remove("sel"));
+  const parts = byStep[step] || [];
+  selected = step;
+  const row = document.querySelector(`#plan li[data-step="${step}"]`);
+  if (row) { row.classList.add("sel"); if (fromMap && row.scrollIntoView) row.scrollIntoView({ block: "nearest", behavior: "smooth" }); }
+  if (!parts.length || !map) return;
+  dim(true);
+  paint(step, true);
+  const grp = L.featureGroup(parts.map((x) => x.layer));
+  const b = grp.getBounds();
+  if (!fromMap && !map.getBounds().contains(b)) {      // reveal it without zooming in or out more than needed
+    const z = Math.min(map.getZoom(), map.getBoundsZoom(b.pad(0.2)));
+    map.setView(b.getCenter(), z);
+  }
+  const pop = parts.find((x) => x.kind === "visit") || parts.find((x) => x.kind === "ride") || parts[0];
+  if (!fromMap) pop.layer.openPopup();
+}
+
+$("vwhole").addEventListener("click", () => showView("whole"));
+$("vdest").addEventListener("click", () => showView("dest"));
+
+init();
+</script>
+</body>
+</html>
